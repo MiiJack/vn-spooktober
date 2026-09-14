@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://cua2bkdfnwvod"]
+
+[ext_resource type="Script" uid="uid://biwx2uyyvf548" path="res://scenes/main_menu/main_menu.gd" id="1_fsom3"]
+
+[node name="MainMenu" type="CanvasLayer" unique_id=1188773545]
+script = ExtResource("1_fsom3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=517772318]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.5729883, 0.5729883, 0.5729883, 1)
+
+[node name="TitleContainer" type="MarginContainer" parent="." unique_id=460788683]
+custom_minimum_size = Vector2(200, 120)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -287.0
+offset_right = 287.0
+offset_bottom = 120.0
+grow_horizontal = 2
+
+[node name="Title" type="Label" parent="TitleContainer" unique_id=1109790667]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 50
+text = "VN TITLE PLACEHOLDER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonContainer" type="MarginContainer" parent="." unique_id=2062449937]
+custom_minimum_size = Vector2(150, 100)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -20.0
+offset_right = 23.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ButtonContainer" unique_id=596729463]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="StartButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=289389845]
+layout_mode = 2
+text = "Start"
+
+[node name="QuitButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=1814080016]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="ButtonContainer/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]

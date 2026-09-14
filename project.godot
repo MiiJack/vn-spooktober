@@ -26,8 +26,13 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"catherine": "res://story/characters/catherine.dch",
+"grace": "res://story/characters/grace.dch"
+}
+directories/dtl_directory={
+"intro_prologue": "res://story/timelines/chapter_01/intro_prologue.dtl"
+}
 layout/style_directory={}
 glossary/default_case_sensitive=true
 layout/style_list=[]
