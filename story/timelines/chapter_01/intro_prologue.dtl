@@ -1,1 +1,9 @@
-[background fade="0.0"]
+[background arg="res://icon.svg" fade="0.0"]
+join paul left [animation="Slide From Left"]
+paul: Hello, my name is paul.
+paul: I am a trans woman.
+- to choice 1
+	jump chapter1_choix1/kjf
+- to choice 2
+	jump chapter1_choix2/
+	label

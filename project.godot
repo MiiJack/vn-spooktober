@@ -16,6 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="VN-Project"
 config/tags=PackedStringArray("dialogic", "visual_novel")
+run/main_scene="uid://01i0bd3kgdsi"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
 [autoload]
@@ -28,9 +29,12 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 directories/dch_directory={
 "catherine": "res://story/characters/catherine.dch",
-"grace": "res://story/characters/grace.dch"
+"grace": "res://story/characters/grace.dch",
+"paul": "res://story/characters/paul.dch"
 }
 directories/dtl_directory={
+"chapter1_choix1": "res://story/timelines/chapter_01/chapter1_choix1.dtl",
+"chapter1_choix2": "res://story/timelines/chapter_01/chapter1_choix2.dtl",
 "intro_prologue": "res://story/timelines/chapter_01/intro_prologue.dtl"
 }
 layout/style_directory={}
