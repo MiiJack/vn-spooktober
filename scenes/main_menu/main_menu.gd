@@ -1,15 +1,23 @@
 extends CanvasLayer
 
+@export var option_menu_ref: PackedScene
+@export var quit_box_ref: PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 
 func _on_start_button_pressed() -> void:
-	pass # Replace with function body.
+	GameManager.go_to("res://scenes/level/main.tscn")
+
+
+func _on_option_button_pressed() -> void:
+	var new_option_menu = option_menu_ref.instantiate()
+	add_child(new_option_menu)
+
+
+func _on_quit_button_pressed() -> void:
+	var new_quit_box = quit_box_ref.instantiate()
+	add_child(new_quit_box)

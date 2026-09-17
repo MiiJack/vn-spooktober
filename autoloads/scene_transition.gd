@@ -1,9 +1,23 @@
-extends Node
-## Scene transition singleton (autoload name: "SceneTransition").
-##
-## Centralizes "go from screen A to screen B" so individual scenes
-## (main menu, VN player, settings, credits) don't need to know about
-## each other's file paths directly.
+extends CanvasLayer
 
-func go_to(scene_path: String) -> void:
-	get_tree().change_scene_to_file(scene_path)
+@onready var color_rect: ColorRect = $ColorRect
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	visible = false
+
+func _fade_out(duration: float = 1.0) -> void:
+	visible = true
+	color_rect.modulate.a = 0.0
+	var tween = create_tween()
+	tween.tween_property(color_rect, "modulate:a", 1.0, duration)
+	await tween.finished
+	
+	
+func _fade_in(duration: float = 1.0) -> void:
+	color_rect.modulate.a = 1.0
+	var tween = create_tween()
+	tween.tween_property(color_rect, "modulate:a", 0.0, duration)
+	await tween.finished
+	visible = false

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0obofp3mbkmo"
-path="res://.godot/imported/pauline_whisper.png-76cdc69197003ae47572a9ba2214665a.ctex"
+uid="uid://c82eqlwaxi0rs"
+path="res://.godot/imported/Small_Apartment_Kitchen.png-1c25084ba6c31b45ca7a7d74caaf55d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/paul/pauline_whisper.png"
-dest_files=["res://.godot/imported/pauline_whisper.png-76cdc69197003ae47572a9ba2214665a.ctex"]
+source_file="res://assets/backgrounds/Placeholder/Small_Apartment_Kitchen.png"
+dest_files=["res://.godot/imported/Small_Apartment_Kitchen.png-1c25084ba6c31b45ca7a7d74caaf55d3.ctex"]
 
 [params]
 

@@ -16,14 +16,15 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="VN-Project"
 config/tags=PackedStringArray("dialogic", "visual_novel")
-run/main_scene="uid://01i0bd3kgdsi"
+run/main_scene="uid://cua2bkdfnwvod"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
 [autoload]
 
 GameState="*res://autoloads/game_state.gd"
-SceneTransition="*res://autoloads/scene_transition.gd"
 Dialogic="*uid://ds2q0uclmolvu"
+SceneTransition="*uid://6tnub1fk0hh7"
+GameManager="*uid://7gvtanrju75q"
 
 [dialogic]
 

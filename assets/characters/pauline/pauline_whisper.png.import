@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da27430y7oo2j"
-path="res://.godot/imported/avetetsuya-studios-bb310433-original.jpg-369746ea12f7b00c35d5d7ec6359eba1.ctex"
+uid="uid://0obofp3mbkmo"
+path="res://.godot/imported/pauline_whisper.png-90324ce2584d8ecc73cb8c8198162835.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/paul/avetetsuya-studios-bb310433-original.jpg"
-dest_files=["res://.godot/imported/avetetsuya-studios-bb310433-original.jpg-369746ea12f7b00c35d5d7ec6359eba1.ctex"]
+source_file="res://assets/characters/pauline/pauline_whisper.png"
+dest_files=["res://.godot/imported/pauline_whisper.png-90324ce2584d8ecc73cb8c8198162835.ctex"]
 
 [params]
 

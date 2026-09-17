@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://c2dsnpd68ppwm"]
+
+[ext_resource type="Script" uid="uid://cu4yo2x1jjeix" path="res://scenes/main_menu/quit_confirmation.gd" id="1_asle3"]
+
+[node name="QuitConfirmation" type="CanvasLayer" unique_id=613933054]
+layer = 6
+script = ExtResource("1_asle3")
+
+[node name="Container" type="MarginContainer" parent="." unique_id=1395013402]
+custom_minimum_size = Vector2(300, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Container" unique_id=1618462733]
+layout_mode = 2
+color = Color(0.34781694, 0.34781697, 0.3478169, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Container" unique_id=160271983]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/MarginContainer" unique_id=574250085]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Container/MarginContainer/VBoxContainer" unique_id=2104848799]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Quit game ?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="Container/MarginContainer/VBoxContainer" unique_id=1360341453]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/MarginContainer/VBoxContainer" unique_id=981895529]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="YesButton" type="Button" parent="Container/MarginContainer/VBoxContainer/HBoxContainer" unique_id=825051423]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "YES"
+
+[node name="NoButton" type="Button" parent="Container/MarginContainer/VBoxContainer/HBoxContainer" unique_id=668221864]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "NO"
+
+[connection signal="pressed" from="Container/MarginContainer/VBoxContainer/HBoxContainer/YesButton" to="." method="_on_yes_button_pressed"]
+[connection signal="pressed" from="Container/MarginContainer/VBoxContainer/HBoxContainer/NoButton" to="." method="_on_no_button_pressed"]

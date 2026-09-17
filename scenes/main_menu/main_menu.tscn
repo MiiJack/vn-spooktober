@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://cua2bkdfnwvod"]
 
 [ext_resource type="Script" uid="uid://biwx2uyyvf548" path="res://scenes/main_menu/main_menu.gd" id="1_fsom3"]
+[ext_resource type="PackedScene" uid="uid://baq8ml6hfvo0x" path="res://scenes/main_menu/option_menu.tscn" id="2_ob46e"]
+[ext_resource type="PackedScene" uid="uid://c2dsnpd68ppwm" path="res://scenes/main_menu/quit_confirmation.tscn" id="3_uqeha"]
 
 [node name="MainMenu" type="CanvasLayer" unique_id=1188773545]
 script = ExtResource("1_fsom3")
+option_menu_ref = ExtResource("2_ob46e")
+quit_box_ref = ExtResource("3_uqeha")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=517772318]
 anchors_preset = 15
@@ -47,6 +51,7 @@ grow_vertical = 2
 size_flags_vertical = 4
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ButtonContainer" unique_id=596729463]
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 4
 
@@ -54,8 +59,17 @@ size_flags_vertical = 4
 layout_mode = 2
 text = "Start"
 
+[node name="OptionButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=1413216185]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Option"
+
 [node name="QuitButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=1814080016]
 layout_mode = 2
 text = "Quit"
 
+[node name="BGMMainMenu" type="AudioStreamPlayer" parent="." unique_id=843670717]
+
 [connection signal="pressed" from="ButtonContainer/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="ButtonContainer/VBoxContainer/OptionButton" to="." method="_on_option_button_pressed"]
+[connection signal="pressed" from="ButtonContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
