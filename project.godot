@@ -19,6 +19,10 @@ config/tags=PackedStringArray("dialogic", "visual_novel")
 run/main_scene="uid://cua2bkdfnwvod"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
+[audio]
+
+buses/default_bus_layout="uid://c0geyeurt21wr"
+
 [autoload]
 
 GameState="*res://autoloads/game_state.gd"
@@ -34,6 +38,8 @@ directories/dch_directory={
 "paul": "res://story/characters/paul.dch"
 }
 directories/dtl_directory={
+"Chapter_01_Intro": "res://story/timelines/chapter_01/Chapter_01_Intro.dtl",
+"Prologue": "res://story/timelines/Prologue/Prologue.dtl",
 "chapter1_choix1": "res://story/timelines/chapter_01/chapter1_choix1.dtl",
 "chapter1_choix2": "res://story/timelines/chapter_01/chapter1_choix2.dtl",
 "intro_prologue": "res://story/timelines/chapter_01/intro_prologue.dtl"
@@ -60,6 +66,26 @@ choices/reveal_delay=0
 choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
+text/autopauses={}
+audio/channel_defaults={
+"": {
+"audio_bus": "SFX",
+"fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music": {
+"audio_bus": "BGM",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+}
+}
+
+[display]
+
+window/size/viewport_width=1500
+window/size/viewport_height=900
 
 [editor_plugins]
 

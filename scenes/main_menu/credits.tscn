@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cl2lfpk0ndkxr"]
+
+[ext_resource type="Script" uid="uid://c6cjm83w7hhwr" path="res://scenes/main_menu/credits.gd" id="1_hfc70"]
+
+[node name="Credits" type="CanvasLayer" unique_id=1698882985]
+script = ExtResource("1_hfc70")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=644848614]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6052743, 0.6052743, 0.6052743, 1)
+
+[node name="Return" type="Button" parent="." unique_id=693209285]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_top = -31.0
+offset_right = 31.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Return"
+
+[connection signal="pressed" from="Return" to="." method="_on_return_pressed"]

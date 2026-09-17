@@ -19,7 +19,7 @@
 &"portraits": {
 "pauline_whisper": {
 "export_overrides": {
-"image": "\"res://assets/characters/paul/pauline_whisper.png\""
+"image": "\"res://assets/characters/pauline/pauline_whisper.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
