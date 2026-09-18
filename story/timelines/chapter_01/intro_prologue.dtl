@@ -8,3 +8,4 @@ paul: I am a trans woman.
 	leave paul [animation="Slide To Left" wait="true"]
 	jump chapter1_choix2/
 	label LabelTest
+do ChapterTracking.chapter_done()

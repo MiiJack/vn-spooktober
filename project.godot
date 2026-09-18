@@ -29,6 +29,7 @@ GameState="*res://autoloads/game_state.gd"
 Dialogic="*uid://ds2q0uclmolvu"
 SceneTransition="*uid://6tnub1fk0hh7"
 GameManager="*uid://7gvtanrju75q"
+ChapterTracking="*uid://cf18sx6yxo4ox"
 
 [dialogic]
 
@@ -53,7 +54,13 @@ layout/style_directory={
 glossary/default_case_sensitive=true
 layout/style_list=["res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"]
 layout/default_style="res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"
-variables={}
+variables={
+"ChapterTracking": {
+"current_chapter": 0,
+"human_meeting": false,
+"monster_meeting": false
+}
+}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
