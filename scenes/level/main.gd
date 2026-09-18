@@ -5,3 +5,4 @@ extends Node
 func _ready() -> void:
 	await get_tree().create_timer(1).timeout
 	Dialogic.start("Prologue", 0)
+	GameManager._dialogic_ready()

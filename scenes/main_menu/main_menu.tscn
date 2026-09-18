@@ -31,7 +31,7 @@ color = Color(0.21568628, 0.21568628, 0.21568628, 0.7882353)
 [node name="TitleContainer" type="MarginContainer" parent="." unique_id=460788683]
 custom_minimum_size = Vector2(200, 120)
 anchors_preset = -1
-anchor_left = 1.0
+anchor_left = 0.9066667
 anchor_right = 0.9066667
 offset_left = -456.0
 offset_top = 90.0

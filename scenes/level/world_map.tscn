@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://nmfx7203n87k"]
+
+[ext_resource type="Texture2D" uid="uid://bym0c5vlmerxb" path="res://assets/backgrounds/Placeholder/VN_MapPlaceholder.jpg" id="1_ls7sy"]
+[ext_resource type="Script" uid="uid://mesn2uhddfmp" path="res://scenes/level/world_map.gd" id="1_ts6qr"]
+
+[node name="WorldMap" type="CanvasLayer" unique_id=919446563]
+script = ExtResource("1_ts6qr")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=590661525]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -260.0
+offset_bottom = 380.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ls7sy")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1435486332]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.649102, 0.57423294, 0.80205387, 0.36078432)
+
+[node name="TownCenter" type="Button" parent="." unique_id=1987698387]
+offset_left = 860.0
+offset_top = 585.0
+offset_right = 988.0
+offset_bottom = 644.0
+text = "Town Center"
+
+[node name="Hotel" type="Button" parent="." unique_id=382492508]
+offset_left = 487.0
+offset_top = 409.0
+offset_right = 615.0
+offset_bottom = 468.0
+text = "Hotel"

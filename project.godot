@@ -33,6 +33,8 @@ GameManager="*uid://7gvtanrju75q"
 [dialogic]
 
 directories/dch_directory={
+"Marloch": "res://story/characters/Monsters/Marloch.dch",
+"Nyo": "res://story/characters/Monsters/Nyo.dch",
 "catherine": "res://story/characters/catherine.dch",
 "grace": "res://story/characters/grace.dch",
 "paul": "res://story/characters/paul.dch"
@@ -44,10 +46,13 @@ directories/dtl_directory={
 "chapter1_choix2": "res://story/timelines/chapter_01/chapter1_choix2.dtl",
 "intro_prologue": "res://story/timelines/chapter_01/intro_prologue.dtl"
 }
-layout/style_directory={}
+layout/style_directory={
+"": "res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres",
+"Default_VN_Style": "res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"
+}
 glossary/default_case_sensitive=true
-layout/style_list=[]
-layout/default_style="Default"
+layout/style_list=["res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"]
+layout/default_style="res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"
 variables={}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

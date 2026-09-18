@@ -1,5 +1,6 @@
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav"
-[background arg="res://assets/cg/placeholders/Prologue/Background_0.png" fade="0.5" wait="true"]
+[background arg="res://assets/cg/placeholders/Prologue/Background_0.png" fade="0.0"]
+[background arg="res://assets/cg/placeholders/Prologue/Background_0.png" fade="0.0"]
 catherine: My name is Catherin, my friends call me Cathy. But I don't have any friends.
 catherine: "sobs"
 catherine: That's already sad enough, but I will tell you an even sadder story.
