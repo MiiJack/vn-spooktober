@@ -69,17 +69,25 @@ size_flags_vertical = 4
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
-[node name="StartButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=289389845]
+[node name="NewGameButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=152192843]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_font_sizes/font_size = 30
-text = "Start"
+text = "NewGame"
+
+[node name="ContinueButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=992396437]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Continue"
+
+[node name="LoadButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=1960386389]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Load"
 
 [node name="OptionButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=1413216185]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
-text = "Option"
+text = "Options"
 
 [node name="CreditsButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=662455952]
 layout_mode = 2
@@ -95,7 +103,9 @@ text = "Quit"
 
 [node name="BGMMainMenu" type="AudioStreamPlayer" parent="." unique_id=843670717]
 
-[connection signal="pressed" from="ButtonContainer/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="ButtonContainer/VBoxContainer/NewGameButton" to="." method="_start_game"]
+[connection signal="pressed" from="ButtonContainer/VBoxContainer/ContinueButton" to="." method="_continue_game"]
+[connection signal="pressed" from="ButtonContainer/VBoxContainer/LoadButton" to="." method="_open_load_menu"]
 [connection signal="pressed" from="ButtonContainer/VBoxContainer/OptionButton" to="." method="_on_option_button_pressed"]
 [connection signal="pressed" from="ButtonContainer/VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="ButtonContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

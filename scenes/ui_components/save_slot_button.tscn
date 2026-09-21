@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://c5hcwqrs7yngr"]
+
+[ext_resource type="Script" uid="uid://bcjuhsdydp6yl" path="res://scenes/ui_components/save_slot_button.gd" id="1_slot"]
+
+[node name="SaveSlotButton" type="Button" unique_id=891361236]
+custom_minimum_size = Vector2(0, 96)
+script = ExtResource("1_slot")
+
+[node name="Row" type="HBoxContainer" parent="." unique_id=521823784]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="Thumbnail" type="TextureRect" parent="Row" unique_id=1524485764]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(142, 80)
+layout_mode = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Details" type="VBoxContainer" parent="Row" unique_id=1805181573]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="TitleLabel" type="Label" parent="Row/Details" unique_id=1334933700]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Slot"
+
+[node name="DateLabel" type="Label" parent="Row/Details" unique_id=650401460]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.6)
+layout_mode = 2
+
+[node name="PreviewLabel" type="Label" parent="Row/Details" unique_id=374701193]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+text = "— Empty —"
+autowrap_mode = 3
+text_overrun_behavior = 3
+max_lines_visible = 2
+
+[node name="DeleteButton" type="Button" parent="Row" unique_id=1397902810]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+text = "X"

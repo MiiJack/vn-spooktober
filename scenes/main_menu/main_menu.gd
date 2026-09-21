@@ -4,13 +4,30 @@ extends CanvasLayer
 @export var quit_box_ref: PackedScene
 @export var credit_menu_ref: PackedScene
 
+@onready var _continue_button: Button = %ContinueButton
+@onready var _load_button: Button = %LoadButton
+
+const SAVE_MENU_SCENE := preload("res://scenes/save_menu/save_menu.tscn")
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	var has_saves := SaveManager.has_any_save()
+	_continue_button.disabled = not has_saves
+	_load_button.disabled = not has_saves
 
-
-func _on_start_button_pressed() -> void:
-	GameManager.go_to("res://scenes/level/main.tscn")
+func _open_load_menu() -> void:
+	var menu := SAVE_MENU_SCENE.instantiate()
+	menu.mode = menu.Mode.LOAD
+	add_child(menu)
+	
+func _start_game() -> void:
+	SaveManager.start_new_game()
+	
+func _continue_game() -> void:
+	SaveManager.continue_latest()
+	
+func _load_game() -> void:
+	_open_load_menu()
 
 
 func _on_option_button_pressed() -> void:

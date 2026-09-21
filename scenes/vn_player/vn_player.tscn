@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://db8qpwub3ut3j"]
+
+[ext_resource type="Script" uid="uid://d11nerjbh1soq" path="res://scenes/vn_player/vn_player.gd" id="1_vnplayer"]
+
+[node name="VnPlayer" type="Node" unique_id=1158810389]
+script = ExtResource("1_vnplayer")

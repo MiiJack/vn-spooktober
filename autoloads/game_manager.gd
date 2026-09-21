@@ -4,14 +4,16 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Dialogic.signal_event.connect(_on_show_map_triggered)
-	
 
 
-func go_to(scene) -> void:
+func go_to(scene_path:String) -> void:
+	var scene := get_tree().change_scene_to_file(scene_path)
+	if scene != OK:
+		push_error("[SceneTransition] Could not change to '%s': %s" % [scene_path, error_string(scene)])
 	if get_tree().current_scene:
 		get_tree().current_scene.queue_free()
 	SceneTransition._fade_out()
-	get_tree().change_scene_to_file(scene)
+	scene
 	SceneTransition._fade_in()
 	
 

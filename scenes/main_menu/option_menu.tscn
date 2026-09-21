@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dykel1a3osqjg"]
+
+[ext_resource type="Script" path="res://scenes/main_menu/option_menu.gd" id="1_arx4y"]
+
+[node name="OptionMenu" type="CanvasLayer" unique_id=2057342962]
+layer = 5
+script = ExtResource("1_arx4y")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2006975081]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.46618086, 0.4661808, 0.4661808, 1)
+
+[node name="Return" type="Button" parent="." unique_id=603161964]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -45.5
+offset_top = -43.0
+offset_right = 45.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Return"
+
+[connection signal="pressed" from="Return" to="." method="_on_return_pressed"]
