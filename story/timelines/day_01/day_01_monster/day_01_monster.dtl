@@ -1,0 +1,8 @@
+Narrator: As dusk falls, Catherine notices a pale, ghostly silhouette slipping between the houses. She follows it all the way to an empty cemetery.
+Narrator: The weird silhouette turns and reveals itself.
+Narrator: the creature has  grey skin, red lips, white hair, a black tuxedo under a blood-red coat, and fangs.
+[background arg="res://assets/backgrounds/Placeholder/Onsen_Building.png" fade="0.0"]
+if {ChapterTracking.is_evil} == true:
+	join Nyo center [animation="Fade In"]
+	catherine: *surprised*
+else:

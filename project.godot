@@ -35,8 +35,14 @@ EndingTracking="*uid://pvaqgwpu6uuw"
 [dialogic]
 
 directories/dch_directory={
+"Arlette": "res://story/characters/Villagers/Arlette.dch",
+"Chrisostome": "res://story/characters/Villagers/Chrisostome.dch",
 "Marloch": "res://story/characters/Monsters/Marloch.dch",
+"Narrator": "res://story/characters/Narrator/Narrator.dch",
+"Narrator_catherine": "res://story/characters/Narrator/Narrator_catherine.dch",
 "Nyo": "res://story/characters/Monsters/Nyo.dch",
+"Old_woman": "res://story/characters/Villagers/Old_woman.dch",
+"Simon": "res://story/characters/Villagers/Simon.dch",
 "catherine": "res://story/characters/MainCharacter/catherine.dch",
 "grace": "res://story/characters/MainCharacter/grace.dch",
 "paul": "res://story/characters/Villagers/paul.dch"
@@ -46,14 +52,33 @@ directories/dtl_directory={
 "day_01_intro": "res://story/timelines/day_01/day_01_intro.dtl",
 "day_01_lake_side": "res://story/timelines/day_01/day_01_human/day_01_lake_side.dtl",
 "day_01_main_road": "res://story/timelines/day_01/day_01_human/day_01_main_road.dtl",
+"day_01_monster": "res://story/timelines/day_01/day_01_monster/day_01_monster.dtl",
 "day_01_town_center": "res://story/timelines/day_01/day_01_human/day_01_town_center.dtl",
+"day_02_cemetery": "res://story/timelines/day_02/day_02_human/day_02_cemetery.dtl",
+"day_02_hotel": "res://story/timelines/day_02/day_02_human/day_02_hotel.dtl",
 "day_02_intro": "res://story/timelines/day_02/day_02_intro.dtl",
 "day_02_lake_side": "res://story/timelines/day_02/day_02_human/day_02_lake_side.dtl",
-"day_02_town_center": "res://story/timelines/day_02/day_02_human/day_02_town_center.dtl",
+"day_02_monster": "res://story/timelines/day_02/day_02_monster/day_02_monster.dtl",
+"day_03_forest": "res://story/timelines/day_03/day_03_human/day_03_forest.dtl",
+"day_03_hotel": "res://story/timelines/day_03/day_03_human/day_03_hotel.dtl",
 "day_03_intro": "res://story/timelines/day_03/day_03_intro.dtl",
+"day_03_main_road": "res://story/timelines/day_03/day_03_human/day_03_main_road.dtl",
+"day_03_monster": "res://story/timelines/day_03/day_03_monster/day_03_monster.dtl",
+"day_04_cemetery": "res://story/timelines/day_04/day_04_human/day_04_cemetery.dtl",
+"day_04_forest": "res://story/timelines/day_04/day_04_human/day_04_forest.dtl",
 "day_04_intro": "res://story/timelines/day_04/day_04_intro.dtl",
+"day_04_main_road": "res://story/timelines/day_04/day_04_human/day_04_main_road.dtl",
+"day_04_monster": "res://story/timelines/day_04/day_04_monster/day_04_monster.dtl",
+"day_05_hotel": "res://story/timelines/day_05/day_05_human/day_05_hotel.dtl",
 "day_05_intro": "res://story/timelines/day_05/day_05_intro.dtl",
+"day_05_lake_side": "res://story/timelines/day_05/day_05_human/day_05_lake_side.dtl",
+"day_05_monster": "res://story/timelines/day_05/day_05_monster/day_05_monster.dtl",
+"day_05_town_center": "res://story/timelines/day_05/day_05_human/day_05_town_center.dtl",
+"day_06_cemetery": "res://story/timelines/day_06/day_06_human/day_06_cemetery.dtl",
+"day_06_forest": "res://story/timelines/day_06/day_06_human/day_06_forest.dtl",
 "day_06_intro": "res://story/timelines/day_06/day_06_intro.dtl",
+"day_06_monster": "res://story/timelines/day_06/day_06_monster/day_06_monster.dtl",
+"day_06_town_center": "res://story/timelines/day_06/day_06_human/day_06_town_center.dtl",
 "ending_01": "res://story/timelines/endings/ending_01.dtl",
 "ending_02": "res://story/timelines/endings/ending_02.dtl",
 "ending_03": "res://story/timelines/endings/ending_03.dtl",
@@ -69,8 +94,7 @@ layout/default_style="res://scenes/ui_components/DialogicStyles/Default_VN_Style
 variables={
 "ChapterTracking": {
 "current_day": 0.0,
-"human_meeting": false,
-"monster_meeting": false
+"is_evil": false
 },
 "EndingTracking": {
 "catherine_sympathy": 0,
@@ -90,7 +114,7 @@ animations/leave_default_wait=true
 animations/cross_fade_default_length=0.5
 choices/autofocus_first=true
 choices/delay=0.2
-choices/reveal_delay=0
+choices/reveal_delay=0.5
 choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
@@ -113,8 +137,8 @@ audio/type_sound_bus="BGM"
 
 [display]
 
-window/size/viewport_width=1500
-window/size/viewport_height=900
+window/size/viewport_width=1400
+window/size/viewport_height=800
 
 [editor_plugins]
 

@@ -40,10 +40,10 @@ text = "Town Center"
 
 [node name="LakeSide" type="Button" parent="Buttons" unique_id=57178141]
 layout_mode = 0
-offset_left = 1137.0
-offset_top = 405.0
-offset_right = 1265.0
-offset_bottom = 464.0
+offset_left = 454.0
+offset_top = 589.0
+offset_right = 582.0
+offset_bottom = 648.0
 text = "Lake side"
 
 [node name="MainRoad" type="Button" parent="Buttons" unique_id=1188891694]
@@ -52,7 +52,7 @@ offset_left = 818.0
 offset_top = 405.0
 offset_right = 946.0
 offset_bottom = 464.0
-text = "MainRoad"
+text = "Main road"
 
 [node name="Cemetery" type="Button" parent="Buttons" unique_id=786141634]
 layout_mode = 0

@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "arlette_placeholder",
+&"description": "She is an old lady, simple and kind. She has been a receptionist since the hotel opened, so she knows almost everyone. She likes to talk to people, very curious about people’s lives. She is wearing a condom φ(*￣0￣) (it’s a headwear and yes, it’s called a condom), a shawl (large fabric on the shoulders), leather gloves, and a simple one-piece dress. and she is very courteous.",
+&"display_name": "Arlette",
+&"mirror": false,
+&"nicknames": ["Hotel receptionist"],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"arlette_placeholder": {
+"export_overrides": {
+"image": "\"res://assets/characters/placeholders/01.1 BustPlaceholder.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

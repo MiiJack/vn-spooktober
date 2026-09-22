@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cu5576mqfttc2"]
+
+[node name="BlackScreen" type="CanvasLayer" unique_id=1779275570]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=704530240]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)

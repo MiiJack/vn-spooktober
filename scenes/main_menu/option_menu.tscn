@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dykel1a3osqjg"]
 
-[ext_resource type="Script" path="res://scenes/main_menu/option_menu.gd" id="1_arx4y"]
+[ext_resource type="Script" uid="uid://bghd7byn7vfpo" path="res://scenes/settings/option_menu.gd" id="1_arx4y"]
 
 [node name="OptionMenu" type="CanvasLayer" unique_id=2057342962]
 layer = 5

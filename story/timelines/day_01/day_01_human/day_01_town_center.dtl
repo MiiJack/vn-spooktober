@@ -1,3 +1,23 @@
 Day_01_town_center
-[wait_input]
-jump day_02_intro/
+[background arg="res://assets/backgrounds/Placeholder/Small_Apartment_Kitchen.png" fade="1.0"]
+Narrator: Catherine reaches the town center with magnificent buildings and a big fountain.
+Narrator: As she walks by, she notices an old woman giving breadcrumbs to pigeons.
+Narrator: Thinking to herself that the woman might know a lot about the story of this town, she decides to walk up and talk to her.
+join Old_woman center [animation="Fade In Up" length="1.0" wait="true"]
+catherine: Hello, My name is Catherine and I am a newcomer to this town. Do you have a minute ?
+Old_woman: Hello there, a new face coming to town, that’s quite peculiar. What can I do for you dear ?
+- Ask about the monsters
+	catherine: With the stories I heard surrounding monsters in this town, I guess the newcomers aren’t plentiful here. Are those legends real or just tales ?
+	Old_woman: Oh, the monsters you say. I’ve heard those. I lived here all my life and I never encountered “monsters” here.
+	Old_woman: But if you ever saw one, best stay clear of them, if the old stories are true, dear. Some of them have quite the temper  and worse, once provoked.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+- Ask about why there are not many newcomers
+	catherine: Quite peculiar you say ? What do you mean ? This town looks beautiful and agreeable to live in.
+	catherine: I've heard this town has some unusual creatures living nearby. Are those even real and  what are they like?
+	Old_woman: let’s say there are things that happen in this town that are out of the ordinary. You just came to Shateroo, right ?
+	Old_woman: I am sure you will encounter them sooner or later. Just make sure to be understanding. After all, all creatures have emotions and feelings, same as you and me.
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 1.0
+leave Old_woman [animation="Slide From Left" wait="true"]
+jump day_01_monster/

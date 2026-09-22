@@ -10,14 +10,14 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "marloch_placeholder",
-&"description": "Main monster",
-&"display_name": "Marloch",
+&"default_portrait": "chrisostome_placeholder",
+&"description": "",
+&"display_name": "Chrisostome",
 &"mirror": false,
-&"nicknames": [""],
+&"nicknames": ["Creepy guy"],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"marloch_placeholder": {
+"chrisostome_placeholder": {
 "export_overrides": {
 "image": "\"res://assets/characters/placeholders/01.1 BustPlaceholder.png\""
 },

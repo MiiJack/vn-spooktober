@@ -10,14 +10,14 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "marloch_placeholder",
-&"description": "Main monster",
-&"display_name": "Marloch",
+&"default_portrait": "old_woman_placeholder",
+&"description": "",
+&"display_name": "Old Woman",
 &"mirror": false,
-&"nicknames": [""],
+&"nicknames": ["Old woman feeding pigeons"],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"marloch_placeholder": {
+"old_woman_placeholder": {
 "export_overrides": {
 "image": "\"res://assets/characters/placeholders/01.1 BustPlaceholder.png\""
 },

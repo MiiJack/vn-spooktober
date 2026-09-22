@@ -1,17 +1,17 @@
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav"
 [background arg="res://assets/cg/Prologue/Prologue_1_Placeholder.PNG" fade="1.0" wait="true"]
-catherine: Hello, my name is Catherine.
+Narrator_catherine: Hello, my name is Catherine.
 [background arg="res://assets/cg/Prologue/Prologue_2_Placeholder.png" fade="1.0" wait="true"]
-catherine: Since birth, I was destined to an early death. That’s not something anyone would want to live through.
-catherine: But as bleak as it seemed, my mother, Grace, kept supporting me and wanted to give me the life I could never have.
-catherine: Each night before sleep, she tells me tales of a magical town located in the outskirts of the country.
+Narrator_catherine: Since birth, I was destined to an early death. That’s not something anyone would want to live through.
+Narrator_catherine: But as bleak as it seemed, my mother, Grace, kept supporting me and wanted to give me the life I could never have.
+Narrator_catherine: Each night before sleep, she tells me tales of a magical town located in the outskirts of the country.
 [background arg="res://assets/cg/Prologue/Prologue_3_Placeholder.png" fade="1.0" wait="true"]
-catherine: A magical town where normal meets supernatural, where normal folks and mystical creatures lived in harmony. Those mystical creatures had a lot of powers, from reading minds, possessing people, making harvests a thousand times better and so on.
-catherine: But among those creatures lived one so mighty and powerful that it could fulfill every wish and cure every disease.
+Narrator_catherine: A magical town where normal meets supernatural, where normal folks and mystical creatures lived in harmony. Those mystical creatures had a lot of powers, from reading minds, possessing people, making harvests a thousand times better and so on.
+Narrator_catherine: But among those creatures lived one so mighty and powerful that it could fulfill every wish and cure every disease.
 [background arg="res://assets/cg/Prologue/Prologue_4_Placeholder.png" fade="1.0" wait="true"]
-catherine: At 19, my mother passed away unexpectedly.
-catherine: I was impressed I survived that long. But with her support now gone and my disease not cured, my days were also counted.
+Narrator_catherine: At 19, my mother passed away unexpectedly.
+Narrator_catherine: I was impressed I survived that long. But with her support now gone and my disease not cured, my days were also counted.
 [background arg="res://assets/cg/Prologue/Prologue_5_Placeholder.png" fade="1.0" wait="true"]
-catherine: Taking a chance at life, I decided to look for that town where magic is supposed to exist. I had nothing left to lose, so I looked at a map and found a town with the same name \: “Shateroo”. My story begins, or ends in this town..
+Narrator_catherine: Taking a chance at life, I decided to look for that town where magic is supposed to exist. I had nothing left to lose, so I looked at a map and found a town with the same name \: “Shateroo”. My story begins, or ends in this town..
 jump day_01_intro/
 [wait_input]
