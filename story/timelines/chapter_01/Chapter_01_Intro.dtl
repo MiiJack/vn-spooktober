@@ -1,8 +1,0 @@
-[background arg="res://assets/backgrounds/Placeholder/Onsen_Building.png" fade="0.0"]
-join catherine center
-catherine: Finally, I am here. The famous town of Shateroo.
-catherine: This can be a new beginning for me.
-catherine: I need to gather as much information as I can and find that coveted creature.
-catherine: Where should I go first, let's see
-[signal arg="show_map"]
-[wait_input]

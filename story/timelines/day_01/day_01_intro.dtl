@@ -1,0 +1,8 @@
+set {ChapterTracking.current_day} = 1.0
+[background arg="res://assets/backgrounds/Placeholder/Onsen_Building.png" fade="2.0" transition="Swipe Left To Right" wait="true"]
+[wait_input]
+catherine: Finally, I am here. Finding this town on my own wasn't so bad after all.
+catherine: This can be a new beginning for me. I need to gather as much information as I can and find that coveted creature.
+catherine: Where should I go first, let's see.
+catherine: *opens the town map*
+[signal arg="show_map"]

@@ -1,48 +1,17 @@
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav"
-[background arg="res://assets/cg/placeholders/Prologue/Background_0.png" fade="0.0"]
-[background arg="res://assets/cg/placeholders/Prologue/Background_0.png" fade="0.0"]
-catherine: My name is Catherin, my friends call me Cathy. But I don't have any friends.
-catherine: "sobs"
-catherine: That's already sad enough, but I will tell you an even sadder story.
+[background arg="res://assets/cg/Prologue/Prologue_1_Placeholder.PNG" fade="1.0" wait="true"]
+catherine: Hello, my name is Catherine.
+[background arg="res://assets/cg/Prologue/Prologue_2_Placeholder.png" fade="1.0" wait="true"]
+catherine: Since birth, I was destined to an early death. That’s not something anyone would want to live through.
+catherine: But as bleak as it seemed, my mother, Grace, kept supporting me and wanted to give me the life I could never have.
+catherine: Each night before sleep, she tells me tales of a magical town located in the outskirts of the country.
+[background arg="res://assets/cg/Prologue/Prologue_3_Placeholder.png" fade="1.0" wait="true"]
+catherine: A magical town where normal meets supernatural, where normal folks and mystical creatures lived in harmony. Those mystical creatures had a lot of powers, from reading minds, possessing people, making harvests a thousand times better and so on.
+catherine: But among those creatures lived one so mighty and powerful that it could fulfill every wish and cure every disease.
+[background arg="res://assets/cg/Prologue/Prologue_4_Placeholder.png" fade="1.0" wait="true"]
+catherine: At 19, my mother passed away unexpectedly.
+catherine: I was impressed I survived that long. But with her support now gone and my disease not cured, my days were also counted.
+[background arg="res://assets/cg/Prologue/Prologue_5_Placeholder.png" fade="1.0" wait="true"]
+catherine: Taking a chance at life, I decided to look for that town where magic is supposed to exist. I had nothing left to lose, so I looked at a map and found a town with the same name \: “Shateroo”. My story begins, or ends in this town..
+jump day_01_intro/
 [wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue1.png" fade="0.0"]
-catherine: When I was a innocent baby who didn't discover wattpad yet. I fell sick.
-catherine: So sick, I didn't have much time to live. It's a miracle I survived this long.
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue2.png" fade="0.5"]
-catherine: The doctor told my mom, Grace, that I was going to die very soon.
-catherine: And my mom cried, a lot.
-catherine: *sobs again*
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue3.png" fade="0.5"]
-catherine: So, to cheer me up and make my life a little bit more bearable. (Bear, rawr)
-catherine: She told me tales of mystical creatures and fantastic worlds before sleep.
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue4.png" fade="0.5"]
-catherine: En vrai je suis fatigué la, mais je pense il faut moins de cg pour le début. Le gameplay prends trop de temps a arriver.
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue5.png" fade="0.5"]
-PlaceHolderText
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue6.png" fade="0.5"]
-PlaceHolderText
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue7.png" fade="0.5"]
-PlaceHolderText
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue8.png" fade="0.5"]
-PlaceHolderText
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue9.png" fade="0.5"]
-PlaceHolderText
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue10.png" fade="0.5"]
-PlaceHolderText
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue11.png" fade="0.5"]
-PlaceHolderText
-[wait_input]
-[background arg="res://assets/cg/placeholders/Prologue/Background_Monologue.png" fade="0.5"]
-PlaceHolderText
-[wait_input]
-jump Chapter_01_Intro/

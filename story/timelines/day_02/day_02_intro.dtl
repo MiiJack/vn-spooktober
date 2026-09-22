@@ -1,0 +1,3 @@
+set {ChapterTracking.current_day} = 2.0
+day_02_intro
+[signal arg="show_map"]

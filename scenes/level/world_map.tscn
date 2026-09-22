@@ -24,16 +24,63 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.649102, 0.57423294, 0.80205387, 0.36078432)
 
-[node name="TownCenter" type="Button" parent="." unique_id=1987698387]
-offset_left = 860.0
-offset_top = 585.0
-offset_right = 988.0
-offset_bottom = 644.0
+[node name="Buttons" type="Control" parent="." unique_id=316940445]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TownCenter" type="Button" parent="Buttons" unique_id=1987698387]
+layout_mode = 0
+offset_left = 821.0
+offset_top = 600.0
+offset_right = 949.0
+offset_bottom = 659.0
 text = "Town Center"
 
-[node name="Hotel" type="Button" parent="." unique_id=382492508]
-offset_left = 487.0
-offset_top = 409.0
-offset_right = 615.0
-offset_bottom = 468.0
+[node name="LakeSide" type="Button" parent="Buttons" unique_id=57178141]
+layout_mode = 0
+offset_left = 1137.0
+offset_top = 405.0
+offset_right = 1265.0
+offset_bottom = 464.0
+text = "Lake side"
+
+[node name="MainRoad" type="Button" parent="Buttons" unique_id=1188891694]
+layout_mode = 0
+offset_left = 818.0
+offset_top = 405.0
+offset_right = 946.0
+offset_bottom = 464.0
+text = "MainRoad"
+
+[node name="Cemetery" type="Button" parent="Buttons" unique_id=786141634]
+layout_mode = 0
+offset_left = 515.0
+offset_top = 189.0
+offset_right = 643.0
+offset_bottom = 248.0
+text = "Cemetery"
+
+[node name="Forest" type="Button" parent="Buttons" unique_id=1191954329]
+layout_mode = 0
+offset_left = 1049.0
+offset_top = 232.0
+offset_right = 1177.0
+offset_bottom = 291.0
+text = "Forest"
+
+[node name="Hotel" type="Button" parent="Buttons" unique_id=382492508]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 394.0
+offset_right = 600.0
+offset_bottom = 453.0
 text = "Hotel"
+
+[connection signal="pressed" from="Buttons/TownCenter" to="." method="_on_town_center_pressed"]
+[connection signal="pressed" from="Buttons/LakeSide" to="." method="_on_lake_side_pressed"]
+[connection signal="pressed" from="Buttons/MainRoad" to="." method="_on_main_road_pressed"]
+[connection signal="pressed" from="Buttons/Cemetery" to="." method="_on_cemetery_pressed"]
+[connection signal="pressed" from="Buttons/Forest" to="." method="_on_forest_pressed"]
+[connection signal="pressed" from="Buttons/Hotel" to="." method="_on_hotel_pressed"]

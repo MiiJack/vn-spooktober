@@ -29,24 +29,35 @@ GameState="*res://autoloads/game_state.gd"
 Dialogic="*uid://ds2q0uclmolvu"
 SceneTransition="*uid://6tnub1fk0hh7"
 GameManager="*uid://7gvtanrju75q"
-ChapterTracking="*uid://cf18sx6yxo4ox"
 SaveManager="*uid://chko672e1c6j0"
+EndingTracking="*uid://pvaqgwpu6uuw"
 
 [dialogic]
 
 directories/dch_directory={
 "Marloch": "res://story/characters/Monsters/Marloch.dch",
 "Nyo": "res://story/characters/Monsters/Nyo.dch",
-"catherine": "res://story/characters/catherine.dch",
-"grace": "res://story/characters/grace.dch",
-"paul": "res://story/characters/paul.dch"
+"catherine": "res://story/characters/MainCharacter/catherine.dch",
+"grace": "res://story/characters/MainCharacter/grace.dch",
+"paul": "res://story/characters/Villagers/paul.dch"
 }
 directories/dtl_directory={
-"Chapter_01_Intro": "res://story/timelines/chapter_01/Chapter_01_Intro.dtl",
 "Prologue": "res://story/timelines/Prologue/Prologue.dtl",
-"chapter1_choix1": "res://story/timelines/chapter_01/chapter1_choix1.dtl",
-"chapter1_choix2": "res://story/timelines/chapter_01/chapter1_choix2.dtl",
-"intro_prologue": "res://story/timelines/chapter_01/intro_prologue.dtl"
+"day_01_intro": "res://story/timelines/day_01/day_01_intro.dtl",
+"day_01_lake_side": "res://story/timelines/day_01/day_01_human/day_01_lake_side.dtl",
+"day_01_main_road": "res://story/timelines/day_01/day_01_human/day_01_main_road.dtl",
+"day_01_town_center": "res://story/timelines/day_01/day_01_human/day_01_town_center.dtl",
+"day_02_intro": "res://story/timelines/day_02/day_02_intro.dtl",
+"day_02_lake_side": "res://story/timelines/day_02/day_02_human/day_02_lake_side.dtl",
+"day_02_town_center": "res://story/timelines/day_02/day_02_human/day_02_town_center.dtl",
+"day_03_intro": "res://story/timelines/day_03/day_03_intro.dtl",
+"day_04_intro": "res://story/timelines/day_04/day_04_intro.dtl",
+"day_05_intro": "res://story/timelines/day_05/day_05_intro.dtl",
+"day_06_intro": "res://story/timelines/day_06/day_06_intro.dtl",
+"ending_01": "res://story/timelines/endings/ending_01.dtl",
+"ending_02": "res://story/timelines/endings/ending_02.dtl",
+"ending_03": "res://story/timelines/endings/ending_03.dtl",
+"ending_04": "res://story/timelines/endings/ending_04.dtl"
 }
 layout/style_directory={
 "": "res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres",
@@ -57,9 +68,13 @@ layout/style_list=["res://scenes/ui_components/DialogicStyles/Default_VN_Style.t
 layout/default_style="res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"
 variables={
 "ChapterTracking": {
-"current_chapter": 0,
+"current_day": 0.0,
 "human_meeting": false,
 "monster_meeting": false
+},
+"EndingTracking": {
+"catherine_sympathy": 0,
+"marloch_feeling": 0
 }
 }
 text/letter_speed=0.01
