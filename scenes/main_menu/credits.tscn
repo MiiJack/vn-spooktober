@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c6cjm83w7hhwr" path="res://scenes/main_menu/credits.gd" id="1_hfc70"]
 
 [node name="Credits" type="CanvasLayer" unique_id=1698882985]
+layer = 6
 script = ExtResource("1_hfc70")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=644848614]

@@ -1,18 +1,18 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene format=3 uid="uid://dembx50d2ej8x"]
 
-[ext_resource type="Script" path="res://scenes/save_menu/save_menu.gd" id="1_savemenu"]
+[ext_resource type="Script" uid="uid://ctrt5xs7t3hl2" path="res://scenes/save_menu/save_menu.gd" id="1_savemenu"]
 
-[node name="SaveMenu" type="CanvasLayer"]
+[node name="SaveMenu" type="CanvasLayer" unique_id=1280784685]
 layer = 10
 script = ExtResource("1_savemenu")
 
-[node name="Dimmer" type="ColorRect" parent="."]
+[node name="Dimmer" type="ColorRect" parent="." unique_id=1007270744]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color(0, 0, 0, 0.6)
 
-[node name="Panel" type="PanelContainer" parent="."]
+[node name="Panel" type="PanelContainer" parent="." unique_id=1224263405]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -25,36 +25,36 @@ offset_bottom = 280.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Margin" type="MarginContainer" parent="Panel"]
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=411905362]
 layout_mode = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="Layout" type="VBoxContainer" parent="Panel/Margin"]
+[node name="Layout" type="VBoxContainer" parent="Panel/Margin" unique_id=501095744]
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="Header" type="HBoxContainer" parent="Panel/Margin/Layout"]
+[node name="Header" type="HBoxContainer" parent="Panel/Margin/Layout" unique_id=252466334]
 layout_mode = 2
 
-[node name="MenuTitle" type="Label" parent="Panel/Margin/Layout/Header"]
+[node name="MenuTitle" type="Label" parent="Panel/Margin/Layout/Header" unique_id=1145029678]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Save Game"
 
-[node name="CloseButton" type="Button" parent="Panel/Margin/Layout/Header"]
+[node name="CloseButton" type="Button" parent="Panel/Margin/Layout/Header" unique_id=932036830]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Close"
 
-[node name="Scroll" type="ScrollContainer" parent="Panel/Margin/Layout"]
+[node name="Scroll" type="ScrollContainer" parent="Panel/Margin/Layout" unique_id=1323655602]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="SlotList" type="VBoxContainer" parent="Panel/Margin/Layout/Scroll"]
+[node name="SlotList" type="VBoxContainer" parent="Panel/Margin/Layout/Scroll" unique_id=24713633]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3

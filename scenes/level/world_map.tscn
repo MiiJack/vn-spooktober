@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://nmfx7203n87k"]
 
-[ext_resource type="Texture2D" uid="uid://bym0c5vlmerxb" path="res://assets/backgrounds/Placeholder/VN_MapPlaceholder.jpg" id="1_ls7sy"]
 [ext_resource type="Script" uid="uid://mesn2uhddfmp" path="res://scenes/level/world_map.gd" id="1_ts6qr"]
+[ext_resource type="Texture2D" uid="uid://dixk0k4pjt4q4" path="res://assets/backgrounds/map/map_1.png" id="2_ts6qr"]
+[ext_resource type="Theme" uid="uid://bccgxn6g27yro" path="res://assets/theme/map_button.tres" id="3_kcbpc"]
 
 [node name="WorldMap" type="CanvasLayer" unique_id=919446563]
 script = ExtResource("1_ts6qr")
@@ -10,11 +11,15 @@ script = ExtResource("1_ts6qr")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -260.0
-offset_bottom = 380.0
+offset_left = -16.0
+offset_top = -23.0
+offset_right = 784.0
+offset_bottom = 577.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_ls7sy")
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("2_ts6qr")
+flip_h = true
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1435486332]
 anchors_preset = 15
@@ -32,51 +37,73 @@ offset_bottom = 40.0
 
 [node name="TownCenter" type="Button" parent="Buttons" unique_id=1987698387]
 layout_mode = 0
-offset_left = 821.0
-offset_top = 600.0
-offset_right = 949.0
-offset_bottom = 659.0
+offset_left = 690.0
+offset_top = 367.0
+offset_right = 818.0
+offset_bottom = 426.0
+theme = ExtResource("3_kcbpc")
 text = "Town Center"
 
 [node name="LakeSide" type="Button" parent="Buttons" unique_id=57178141]
 layout_mode = 0
-offset_left = 454.0
-offset_top = 589.0
-offset_right = 582.0
-offset_bottom = 648.0
+offset_left = 58.0
+offset_top = 513.0
+offset_right = 186.0
+offset_bottom = 572.0
+theme = ExtResource("3_kcbpc")
 text = "Lake side"
 
 [node name="MainRoad" type="Button" parent="Buttons" unique_id=1188891694]
 layout_mode = 0
-offset_left = 818.0
-offset_top = 405.0
-offset_right = 946.0
-offset_bottom = 464.0
+offset_left = 921.0
+offset_top = 590.0
+offset_right = 1049.0
+offset_bottom = 649.0
+theme = ExtResource("3_kcbpc")
 text = "Main road"
 
 [node name="Cemetery" type="Button" parent="Buttons" unique_id=786141634]
 layout_mode = 0
-offset_left = 515.0
-offset_top = 189.0
-offset_right = 643.0
-offset_bottom = 248.0
+offset_left = 708.0
+offset_top = 227.0
+offset_right = 836.0
+offset_bottom = 286.0
+theme = ExtResource("3_kcbpc")
 text = "Cemetery"
 
 [node name="Forest" type="Button" parent="Buttons" unique_id=1191954329]
 layout_mode = 0
-offset_left = 1049.0
-offset_top = 232.0
-offset_right = 1177.0
-offset_bottom = 291.0
+offset_left = 253.0
+offset_top = 31.0
+offset_right = 381.0
+offset_bottom = 90.0
+theme = ExtResource("3_kcbpc")
 text = "Forest"
 
 [node name="Hotel" type="Button" parent="Buttons" unique_id=382492508]
 layout_mode = 0
-offset_left = 472.0
-offset_top = 394.0
-offset_right = 600.0
-offset_bottom = 453.0
+offset_left = 670.0
+offset_top = 537.0
+offset_right = 798.0
+offset_bottom = 596.0
+theme = ExtResource("3_kcbpc")
 text = "Hotel"
+
+[node name="ShaterooMap" type="Label" parent="." unique_id=1541345670]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -423.0
+offset_top = 51.0
+offset_right = -82.0
+offset_bottom = 246.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0.19076231, 0.19076234, 0.19076231, 1)
+theme_override_font_sizes/font_size = 70
+text = "Shateroo 
+town map"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="Buttons/TownCenter" to="." method="_on_town_center_pressed"]
 [connection signal="pressed" from="Buttons/LakeSide" to="." method="_on_lake_side_pressed"]
