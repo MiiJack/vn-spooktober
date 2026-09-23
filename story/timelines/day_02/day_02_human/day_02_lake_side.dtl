@@ -1,0 +1,13 @@
+[background fade="0.0"]
+join Chrisostome center
+Chrisostome:  I … I didn't know if you'd come back. I got you one anyway.
+- Ask about the monsters
+	catherine: Have you seen the monster who lives by the lake? Sharp dressed, doesn't blink much. The tales about him are unsettling.
+	Chrisostome:  Stay away from him. He's not cruel, exactly, but he's not safe either. Not for a human, alone.
+	set {EndingTracking.catherine_sympathy} -= 1.0
+	set {ChapterTracking.is_evil} = true
+- Ask about the creature, out of curiosity
+	catherine:  Have you seen the creature who lives by the lake? Sharp-dressed, doesn't blink much.
+	Chrisostome: He's... actually not so bad, from what I've seen. Keeps to himself, minds his business. I don't think he'd hurt you.
+	set {EndingTracking.catherine_sympathy} += 1.0
+	set {ChapterTracking.is_evil} = false
