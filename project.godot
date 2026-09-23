@@ -48,6 +48,10 @@ directories/dch_directory={
 "paul": "res://story/characters/Villagers/paul.dch"
 }
 directories/dtl_directory={
+"Endings/ending_01": "res://story/timelines/Endings/ending_01.dtl",
+"Endings/ending_02": "res://story/timelines/Endings/ending_02.dtl",
+"Endings/ending_03": "res://story/timelines/Endings/ending_03.dtl",
+"Endings/ending_04": "res://story/timelines/Endings/ending_04.dtl",
 "Prologue": "res://story/timelines/Prologue/Prologue.dtl",
 "day_01_intro": "res://story/timelines/day_01/day_01_intro.dtl",
 "day_01_lake_side": "res://story/timelines/day_01/day_01_human/day_01_lake_side.dtl",
@@ -165,3 +169,7 @@ open_save_menu={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"

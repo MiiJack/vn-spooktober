@@ -44,18 +44,14 @@ func _go_to_location(location_id: String) -> void:
 func _on_town_center_pressed() -> void:
 	_go_to_location("town_center")
 
-
 func _on_lake_side_pressed() -> void:
 	_go_to_location("lake_side")
-
 
 func _on_main_road_pressed() -> void:
 	_go_to_location("main_road")
 
-
 func _on_cemetery_pressed() -> void:
 	_go_to_location("cemetery")
-
 
 func _on_forest_pressed() -> void:
 	_go_to_location("forest")
