@@ -1,1 +1,30 @@
 day_04_cemetery
+[background arg="res://assets/backgrounds/cemetery_placeholder.jpg" fade="0.0"]
+join Simon center
+Narrator: Simon is polishing a gravestone when Catherine approaches.
+Simon: Back again, I am impressed you are still alive. My wish came true after all.
+catherine: I'm beginning to think you expected me but anyway, I may be leaving soon.
+Simon: Ah, it’s not like I didn’t expect it.
+- Tell Simon you have failed
+	catherine:  I found what I was looking for.
+	catherine: And he doesn’t wanna do anything for me.
+	Simon: I see. Letting you leave is already something if It’s the one I know.
+	catherine: And that's all? Nothing else?
+	Simon: What would you have me say? You already got your answer, right?
+	catherine:  I don't know. You don't seem very frightened by death, do you? Because I am.
+	Simon:  I've spent half my life talking to people who are already dead.
+	catherine: And does it make it easier?
+	Simon: No. It merely teaches one that being afraid does not make death wait.
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 1.0
+- Ask whether Simon knows another way
+	catherine:  If you know so much about this place, surely there must be something I haven't heard.
+	Simon: There are always rumours, always. But you don’t need rumors anymore, right. You need a miracle
+	catherine: Yes, it's kind of obvious.
+	Simon: Miracles have a habit of becoming tragedies when desperate people go looking for them.
+	catherine: I don’t understand your blabbering. I am going to find a way to do what this..thing.. told me to.
+	Simon: Hahahaha, such ego. As I said before, just don’t die
+	catherine: If I don’t do anything I will die.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} += 1.0
+jump day_04_monster/

@@ -1,1 +1,35 @@
 day_05_town_center
+[background arg="res://assets/backgrounds/town_center_placeholder.jpg" fade="0.0"]
+Narrator: The old woman is feeding the pigeons again.
+join Old_woman center
+Old_woman: You have that look. The look of someone who has made a decision and wishes someone else would make it for her.
+catherine: That's rather specific.
+Old_woman: I've lived a long time, I know a lot of specific looks.
+catherine: More like you have grown an instinct to judge people
+- Ask about her regret
+	catherine: Do you have any regrets?  Having lived as long as you have been.
+	Old_woman: A lot.
+	catherine: What do you do with them?
+	Old_woman: I feed them to the pigeons.
+	catherine: That explains a great deal.
+	<Empty Text Event>
+	Old_woman: Regret is useful only when it teaches you something. If it doesn’t, Then it is merely another weight.
+	catherine:  I don't think I have room for any more.
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 1.0
+- Ask whether people deserve miracles
+	catherine: Do you think people deserve miracles?
+	Old_woman: No, People deserve food, shelter, kindness and perhaps a little luck.
+	Old_woman: Miracles are dangerous because people begin believing they are entitled to them.
+	catherine: Even if they are suffering?
+	Old_woman: Especially then.
+	catherine: That’s harsh.
+	Old_woman: It make me sound like I am wise, but I am as foolish as everyone else.
+	catherine: I’ve been fooled believing in miracles. Maybe I should have known better.
+	Old_woman: You didn’t know anything when you made that decision. You just took your chances. Don’t blame yourself for taking a shot at it.
+	catherine: What you say might be true but, in the end, I am the one who will suffer for the consequences. I am the one who won’t be here anymore.
+	Old_woman: Poor soul.
+	catherine: I don’t wanna bore you with my depressing stories anymore, I should get going.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+jump day_05_monster/

@@ -1,5 +1,7 @@
 set {ChapterTracking.current_day} = 3.0
 day_03_intro
-[background arg="res://assets/backgrounds/Placeholder/Bathroom.png" fade="0.0"]
-join Chrisostome center [animation="Fade In" wait="true"]
-Chrisostome: I get it, It’s understandable. But beware, your own desire might be perceived as greed by others. By others, I mean non-human creatures. They are after all, just souls like us.
+[background arg="res://assets/backgrounds/main_road_placeholder.jpg" fade="0.0"]
+Narrator:  The enormous amount of effort Catherine made for the last 2 days worsened her condition.
+Narrator: She coughs more and more. She knows that if she continues like that, her days might come even sooner.
+Narrator: Doomed either way, she decides to continue. But the atmosphere in the town feels heavier that the days before.
+[signal arg="show_map"]

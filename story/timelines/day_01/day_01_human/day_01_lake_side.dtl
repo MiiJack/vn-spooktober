@@ -1,2 +1,21 @@
 day_01_lake_side
+[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
+Narrator: Near the lake, a thin young weird man sits alone on a bench, nose buried in a book, flinching every time someone walks too close.
+join Vlad center
+catherine: Um, hello. Sorry to bother you. Mind if I sit?
+Vlad: ...Oh. Um. N-no, not really, but who are you ? I've never seen you around town.
+catherine: My name is Catherine, I am a newcomer here and I am looking for something, I don’t know if you can help me.
+Vlad: And what are you looking for ?
+- Tell him you are looking for something
+	catherine: Is it true, are there monsters living in and around this town ?
+	Vlad: What kind of question is that? where did you hear that from ?
+	catherine: I was just wondering
+	Vlad: Tell me straight. You are looking for something, are you ?
+	catherine: Yes I am. And it has something to do with the creatures there.
+	Vlad: flinching They're dangerous. People who go looking don't always come back the same. You shouldn't go looking either.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+- Ask about the creatures, out of curiosity
+	To complete
+leave Vlad
 jump day_02_intro/

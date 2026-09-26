@@ -1,1 +1,39 @@
 day_03_monster
+[background arg="res://assets/cg/rencontre01.png" fade="0.0"]
+Narrator: On the third evening, Catherine is walking through the main square when the air around her suddenly becomes unnaturally still.
+Narrator: A figure stands beneath the fountain. He wasn't there a moment ago.
+join Marloch center
+Marloch: It seems that you are looking for me.
+catherine: Who are you ?
+Marloch: I have eyes and ears all over this town. All the creatures you met before report to me. I am the one you are searching for. MARLOCH !
+catherine: I have something to ask from you. Something important. I’ve heard of you countless times. My mother told million stories about you and your deeds
+Marloch:  Of course, humans usually do when they want something. If you dare to be here then your said mother might have not told you everything. If she even knows.
+Marloch: But make your wish, but I warn you, do you have to sacrifice something of equal value.
+catherine: My body is falling apart, my mind is breaking. It’s like I am expiring faster than a normal human does.
+Marloch: I can cure you, I also can advise you to just accept what the universe has for you.
+- Ask to be cured
+	catherine: Then cure me !
+	Marloch: *Marloch smiles* That was disappointingly simple.
+	catherine: What?
+	Marloch:  I have experienced human greed all my life. No questions, nothing in regards to others, just me, me, me.
+	catherine: Isn't that fair that I wanna live ?
+	Marloch: Why ? Why can’t you humans just accept your fate and stop trying to control everything. You will just end up destroying everything.
+	catherine: I just wanna live, I don’t see anything wrong about that. *sobs*
+	Marloch: Yet you’re supposed to not live.
+	set {EndingTracking.marloch_feeling} -= 1.0
+- Ask more about what something of equal value is
+	catherine: What do you want for you to cure my disease ?
+	Marloch: Isn’t that obvious, you’re supposed to die, give someone else’s life you value as equally as yours.
+	catherine: But, I have nothing, I have no one left.?
+	Marloch: Really, look closer, you will find something, or someone.
+	catherine: I have my life.
+	Marloch: A life that is fading away ? You seem rather attached to it. Why would I accept your life in exchange for… you life ?
+	catherine: I…
+	Marloch: If you want to be saved, then find something you value more than your life ?
+	catherine: I don't think I can find something like that, I have no one left, no family, no friends, a little to no money left.
+	Marloch: I can’t believe you did go through all that just to give up here. You have answered your own question.
+	set {EndingTracking.marloch_feeling} += 1.0
+leave Marloch
+Narrator: He disappears. Catherine remains alone beside the fountain.
+Narrator: For the first time since arriving in Shateroo, she knows that the creature from her mother's stories is real. She also knows that this doesn’t automatically save her.
+jump day_04_intro/

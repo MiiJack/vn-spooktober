@@ -1,9 +1,12 @@
 day_03_forest
-[background fade="0.0"]
-join Chrisostome center
+[background arg="res://assets/backgrounds/Forest_placeHolder.jpg" fade="0.0"]
+join  center
 catherine: *screams* Oh, an ugly man.
-Chrisostome:  *astonished and a little bit hurt* Oh God! Wha-what are you doing here ?
-catherine:  Is there a point of hiding something anymore ?
-Chrisostome:  Absolutely not, but you are quite brave, despite how frail you look. You know wild animals could kill you here.
+Vlad: *astonished and a little bit hurt* Oh God! Wha-what are you doing here ?
+catherine: Is there a point of hiding something anymore ?
+Vlad: Absolutely not, but you are quite brave, despite how frail you look. You know wild animals could kill you here.
 catherine: It's not the wild animals that are worrying me.
-Chrisostome:  Still looking for hum, monsters *cough*. Are you ?
+Vlad: Still looking for hum, monsters *cough*. Are you ?
+- Choice 1
+- Choice 2
+jump day_03_monster/

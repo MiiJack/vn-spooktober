@@ -14,12 +14,12 @@ extends CanvasLayer
 }
 
 var location_available_day: Dictionary = {
-	1: ["town_center","main_road", "lake_side"],
+	1: ["town_center","hotel", "lake_side"],
 	2: ["hotel", "cemetery", "lake_side"],
 	3: ["main_road", "forest", "hotel"],
 	4: ["cemetery", "main_road", "forest"],
-	5: ["hotel", "town_center", "lake_side"],
-	6: ["cemetery", "town_center", "forest"]
+	5: ["forest", "town_center", "lake_side"],
+	6: ["cemetery", "town_center", "hotel"]
 }
 
 var current_day: int = 0

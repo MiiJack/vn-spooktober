@@ -1,5 +1,5 @@
 day_04_forest
-[background fade="0.0"]
+[background arg="res://assets/backgrounds/Forest_placeHolder.jpg" fade="0.0"]
 join Chrisostome center
 Chrisostome: H-hi, you... Have you found what you were looking for?
 catherine: Yeah… But he… it is not what I thought it would be. Things are too complicated for me.

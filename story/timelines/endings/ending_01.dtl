@@ -1,1 +1,14 @@
 Ending_01
+[background arg="res://assets/cg/Endings/end01.png" fade="0.0"]
+Narrator: After understanding Marloch's history. Catherine wants to live but doesn’t want to give up on Marloch. She also ends up resenting humanity’s greed.
+Narrator: Marloch and Catherine reach an agreement where Marloch turns Catherine into a magical creature and Catherine ends up living with Marloch in the magical realm.
+[background arg="res://assets/backgrounds/Forest_placeHolder.jpg" fade="0.0"]
+Narrator: Marloch has told her everything now. The wishes, the losses, the centuries of forgetting himself one grant at a time.
+join Marloch center
+Marloch: I could cure you. Or... I could give you something else. A longer answer than a cure.
+catherine: Tell me.
+Marloch: Become like me. No sickness, no clock running out  but no home to go back to, either. Not really. Not as you were.
+catherine: I stopped wanting to go back the day I understood what "home" cost people like you.
+Marloch: Then let's not waste any more of either of our centuries.
+Narrator: Catherine becomes a creature of Shateroo's hidden world, and stays there, with Marloch, at the edge of the trees where the two worlds meet.
+[signal arg="game_end"]

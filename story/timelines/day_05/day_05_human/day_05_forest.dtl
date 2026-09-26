@@ -1,0 +1,25 @@
+day_05_hotel
+[background arg="res://assets/backgrounds/Forest_placeHolder.jpg" fade="0.0"]
+Narrator: Simon is standing beside an old tree, looking at whatever is on the ground. Catherine approaches slowly until Simon notices her.
+join Simon center
+Simon: Oh, I didn’t see you there. Are you leaving Shateroo ? You look like someone preparing to leave.
+catherine: I don’t know. I don’t know anything anymore.
+Simon: I hope you have found what you came for.
+catherine:  I found it but It wasn't enough. I wish I had more time to figure things out.
+- Ask Simon whether wanting more is selfish
+	catherine: Is it selfish to want more time? Even when you know you cannot have it?
+	Simon:  I don’t think so, wanting something is not a crime.
+	catherine: What if someone gets hurt because you want it?
+	Simon: Then the wanting is innocent. What you do for it is another matter.
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 1.0
+- Ask Simon whether she should accept fate
+	catherine: Perhaps I should simply accept that this is how things end.
+	Simon: Sometimes we don’t really have a choice you know, look at me. Do you think I want to be a grave polisher? But acceptance is not always surrender.
+	catherine: Stop with your philosophical speech. What's the difference anyway?
+	Simon: Let’s put it like this. Acceptance says, "This is what happened." Surrender says, "There was never anything worth fighting for."
+	catherine: And which one do you think I'm doing?
+	Simon: What I say here doesn’t really matter. That’s up to you to decide.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+jump day_05_monster/

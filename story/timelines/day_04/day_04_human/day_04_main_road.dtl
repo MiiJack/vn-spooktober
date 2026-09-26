@@ -1,1 +1,24 @@
 day_04_main_road
+[background arg="res://assets/backgrounds/main_road_placeholder.jpg" fade="0.0"]
+Narrator: The old woman is sitting alone today.
+join Old_woman center
+Old_woman: You look tired. Did you find what you are searching for?
+- Admit you are giving up
+	catherine: I think I did. It wasn't the miracle I hoped for.
+	Old_woman: Well, that’s already a step toward the right direction. Take your time.
+	catherine: But I don’t have time. He could cure me.But …I couldn't pay his price.
+	Old_woman: Then perhaps you should stop thinking about what you could have had.
+	catherine: I don't know how.
+	Old_woman: Neither did I, when I was your age. But it will come.
+	catherine: I don’t have the time for that. Why do I always have to tell that.
+	Old_woman: Listen, you are not dead yet, you are still breathing and talking to me. So as long as you are, have hope. You don’t want to live the rest of your life in complete despair, do you?
+	Narrator: Catherine leaves without saying a word.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} += 1.0
+- Say the creature was selfish
+	catherine: He could have helped me and chose not to
+	Old_woman: Then he had his reasons.
+	Old_woman: You don’t need to excuse him, Just be careful that disappointment does not turn into hatred. Hatred is an expensive thing to carry.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+jump day_04_monster/

@@ -1,3 +1,5 @@
 set {ChapterTracking.current_day} = 2.0
 day_02_intro
+Narrator: Catherine wakes up early, continuing her research.
+catherine: I’ve got a little time left, but I know the tales are real. I’m sure someone in this town can point me toward the one that can cure my sickness.
 [signal arg="show_map"]

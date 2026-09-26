@@ -1,1 +1,12 @@
 Ending_03
+[background arg="res://assets/cg/Endings/end03.png" fade="0.0"]
+Marloch: I won't help you. I'm sorry. No, I'm not sorry. I don't know what I am anymore ?
+catherine: I know. I think I understood, before I even asked, that you might say no.
+catherine: I came here for myself. That was always the truth of it. Thank you for hearing me out anyway.
+Narrator: She turns and walks back into town, and does not come looking for him again.
+Narrator: Catherine's last days pass quietly, among the people and creatures she's come to know in Shateroo.
+Narrator: She dies young  but without bitterness, surrounded by more warmth than she expected to find at the edge of the world.
+Narrator: Marloch had braced for hatred, the way he'd always been hated.
+Narrator: Instead he watches humans and monsters mourn her together, side by side, and something old and closed in him creaks open, just slightly.
+Narrator: He begins granting wishes again  rarely, and only to those he judges worthy of one.
+[signal arg="game_end"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wv3ivpqguwwi"
-path="res://.godot/imported/e9b3901099dbc37e3f3d594335ae062a.jpg-544c0f15c454a10399f61d333ca70417.ctex"
+uid="uid://bgipxgnvvks63"
+path="res://.godot/imported/lake_side_placeholder.jpg-151c84903667cb55cd4e4b192c7b3bce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/Placeholder/e9b3901099dbc37e3f3d594335ae062a.jpg"
-dest_files=["res://.godot/imported/e9b3901099dbc37e3f3d594335ae062a.jpg-544c0f15c454a10399f61d333ca70417.ctex"]
+source_file="res://assets/backgrounds/lake_side_placeholder.jpg"
+dest_files=["res://.godot/imported/lake_side_placeholder.jpg-151c84903667cb55cd4e4b192c7b3bce.ctex"]
 
 [params]
 

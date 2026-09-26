@@ -4,7 +4,7 @@
 
 [node name="OptionMenu" type="CanvasLayer" unique_id=2057342962]
 process_mode = 3
-layer = 5
+layer = 15
 script = ExtResource("1_arx4y")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2006975081]

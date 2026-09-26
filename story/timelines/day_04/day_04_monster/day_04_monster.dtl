@@ -1,1 +1,27 @@
 day_04_monster
+[background arg="res://assets/cg/rencontre02.png" fade="0.0"]
+[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
+Narrator: That evening, Catherine finds Marloch sitting beside the lake. Almost tired.
+Narrator: He looks less threatening than before.
+join Marloch center
+Marloch: You came back.
+catherine: So did you.
+Marloch: I live here.
+catherine: Do you?
+Marloch: What sort of question is that?  it’s the least of pleasantries, yes, I’m not from here. You came all this way for nothing.
+catherine: Thank you for reminding me…
+Marloch: The universe can be unfair from time to time, I’m sorry
+Marloch: You seem disappointed. Is it because I refused to help you?
+catherine: Because I thought the stories were true. Perhaps that is what hurts most.
+catherine: My mother spent years telling me about this place.
+Marloch: And what did she say?
+catherine: That you were kind and powerful and understanding and.. whatever. Not like this.
+Marloch: Your mother was wrong.
+catherine: I don’t think she was, at least some of it is true. I believe you weren’t like someone bad before. Not as bad as you might look to be. I also don’t think you enjoyed becoming what you are.
+Marloch: You know nothing about me.
+catherine: No. But I know what it is like to be trapped inside something you never chose.
+catherine: Catherine's eyes begin to water.m I'm afraid. I am afraid of dying
+I still want to live. I want to travel. I want to see things. I want to be old and complain about my knees.
+Marloch: The universe can be unfair from time to time.
+set {EndingTracking.marloch_feeling} += 1.0
+jump day_05_intro/

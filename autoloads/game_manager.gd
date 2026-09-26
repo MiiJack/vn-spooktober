@@ -12,8 +12,9 @@ func go_to(scene_path:String) -> void:
 		push_error("[SceneTransition] Could not change to '%s': %s" % [scene_path, error_string(scene)])
 	if get_tree().current_scene:
 		get_tree().current_scene.queue_free()
+
 	SceneTransition._fade_out()
-	scene
+	get_tree().change_scene_to_file(scene_path)
 	SceneTransition._fade_in()
 	
 

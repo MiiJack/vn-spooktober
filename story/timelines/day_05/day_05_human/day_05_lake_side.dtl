@@ -1,10 +1,11 @@
 day_05_lake_side
-[background fade="0.0"]
-join Chrisostome center
+[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
+join Vlad center
 catherine: It’s you, again.
-Chrisostome: ...sorry you have to see my face… I know it’s ugly and scary as you repeatedly said. But you look terrible, are you okay ?
+Vlad: ...sorry you have to see my face… I know it’s ugly and scary as you repeatedly said. But you look terrible, are you okay ?
 catherine: *sighs. I’m alright, just a little cold…
 - Bad
 	catherine: That heartless monster… he asked for something I could not afford. I feel like I’m losing hope in my body and my soul.
 - Good
-	catherine:  I’m sad, actually. But I think I can understand him somehow. In this life, everything comes at a price.
+	catherine: I’m sad, actually. But I think I can understand him somehow. In this life, everything comes at a price.
+jump day_05_monster/

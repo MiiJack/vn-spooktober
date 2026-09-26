@@ -1,22 +1,39 @@
 Day_01_town_center
-[background arg="res://assets/backgrounds/Placeholder/Small_Apartment_Kitchen.png" fade="1.0"]
+[background arg="res://assets/backgrounds/town_center_placeholder.jpg" fade="1.0"]
 Narrator: Catherine reaches the town center with magnificent buildings and a big fountain.
 Narrator: As she walks by, she notices an old woman giving breadcrumbs to pigeons.
 Narrator: Thinking to herself that the woman might know a lot about the story of this town, she decides to walk up and talk to her.
 join Old_woman center [animation="Fade In Up" length="1.0" wait="true"]
-catherine: Hello, My name is Catherine and I am a newcomer to this town. Do you have a minute ?
-Old_woman: Hello there, a new face coming to town, that’s quite peculiar. What can I do for you dear ?
-- Ask about the monsters
-	catherine: With the stories I heard surrounding monsters in this town, I guess the newcomers aren’t plentiful here. Are those legends real or just tales ?
-	Old_woman: Oh, the monsters you say. I’ve heard those. I lived here all my life and I never encountered “monsters” here.
-	Old_woman: But if you ever saw one, best stay clear of them, if the old stories are true, dear. Some of them have quite the temper  and worse, once provoked.
+catherine: Hello, My name is Catherine and I am a newcomer to this town. Do you happen to have a minute ? I’ve got some questions to ask.
+Old_woman: Morning !
+Old_woman: A new face coming to town, that’s quite peculiar. What can I do for you dear ?
+- Directly ask about the monsters and the tales Catherine’s mother told
+	catherine: I know it may come off as weird but I’ve heard a lot of tales surrounding this town, something about magic and monsters.
+	catherine: And how to say .. it.
+	Old_woman: You wanna ask if they are real, that’s it, right ?
+	catherine: yes, yes.. how do you know ?
+	Old_woman: Well, you know. I've lived long enough. I’ve seen and heard a lot of things during my life. And I am quite old.
+	catherine: So they are real, right
+	Old_woman: I don’t think it’s useful to hide something for you because you’re gonna meet them soon enough if you stay in this town. But you seem quite excited. Why so ?
+	catherine: Oh you know, I’ve got something to ask, or a … wish.
+	Old_woman: A wish ? I don’t know what stories you heard about this town. But if you think about wishes or your own person, better stay clear of the creatures.
+	catherine:  I don’t really understand
+	Old_woman: Just stay clear of them. It’s getting late. Also, walls here have eyes and ears. I think I am going to go home.
+	Old_woman: Looking forward to seeing you around. Please stay safe as clear of anything supernatural.
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
 - Ask about why there are not many newcomers
 	catherine: Quite peculiar you say ? What do you mean ? This town looks beautiful and agreeable to live in.
+	Old_woman:  Let’s say there are things that happen in this town that are out of the ordinary.
 	catherine: I've heard this town has some unusual creatures living nearby. Are those even real and  what are they like?
-	Old_woman: let’s say there are things that happen in this town that are out of the ordinary. You just came to Shateroo, right ?
-	Old_woman: I am sure you will encounter them sooner or later. Just make sure to be understanding. After all, all creatures have emotions and feelings, same as you and me.
+	Old_woman:  You just came to Shateroo, right ?
+	catherine: yes, that's right.
+	Old_woman: I am sure you will encounter them sooner or later. Just make sure to be understanding. After all, all creatures have emotions and feelings.
+	catherine: I can’t quite follow you
+	Old_woman: I am sure you’ll understand soon enough. You should leave now. It’s getting late. Better leave now and find a place to stay. There is an inn on the main road of the town.
+	Old_woman: They will likely have a room for you for an affordable place.
+	Old_woman: Better move. You don’t wanna stay late outside in this town.
+	Old_woman: Okay, see you around town. I’ll get moving.
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
 leave Old_woman [animation="Slide From Left" wait="true"]

@@ -1,1 +1,37 @@
 day_03_main_road
+[background arg="res://assets/backgrounds/main_road_placeholder.jpg" fade="0.0"]
+Narrator: The old woman is sitting beneath the same tree as before, feeding the pigeons. Catherine approaches and notices that she has a small bundle of letters beside her.
+catherine: You're rather here often.
+Old_woman: And so are you, dear. I was beginning to wonder whether Shateroo had swallowed you whole.
+catherine:  Not yet, but I am starting to get my way around this town. It’s also not that big.
+Old_woman:  That's a good sign.
+catherine: May I ask you something?
+- Ask about the letters
+	catherine: That’s a lot of letters you have, who are those letters for?
+	Old_woman: People who no longer live here.
+	catherine: You still write to them?
+	Old_woman: Sometimes. One writes letters for many reasons. To remember. To apologise. To say things one was too proud to say while the other person could still hear them.
+	catherine: Do you ever receive an answer?
+	Old_woman: Not the sort you expect.
+	catherine:  Then why keep doing it?
+	Old_woman: Because some things deserve to be said even when nobody is listening.
+	catherine: I suppose I understand that.
+	catherine: My mother used to tell me stories. I suppose I came here because I couldn't bear for them to end with her.
+	Old_woman: Ah, then perhaps you ought to be careful what you ask this town to remember for you.
+	catherine: Why?
+	Old_woman: Some things remember too well. Others forget too easily.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} += 1.0
+- Ask whether the stories are dangerous
+	catherine: Everyone keeps warning me about the creatures. Yet nobody seems willing to tell me what they've actually done.
+	Old_woman: Because people prefer frightening stories to complicated truths.
+	catherine: So the stories aren't true?
+	Old_woman: Oh, they're true enough.
+	catherine:  Then why defend them?
+	Old_woman:  I didn't say I was defending them. I merely said that being frightening and being wicked are not always the same thing.
+	catherine: But if one of them could hurt someone?
+	Old_woman: Then I should hope you would run.
+	catherine: Even if you knew nothing about why it did so?
+	Old_woman: Especially then.
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 1.0

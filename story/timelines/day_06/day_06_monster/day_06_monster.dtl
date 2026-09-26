@@ -1,1 +1,31 @@
 day_06_monster
+Narrator: Catherine reaches the gates of Shateroo. Her luggage is light but her heart is not.
+Narrator: Just before she leaves, Marloch appears in the road.
+join Marloch center
+catherine: I suppose this is goodbye.
+Marloch: You were really going to leave without saying anything?
+catherine: I thought it would be easier.
+Marloch: You came here looking for a miracle. And now you're leaving with nothing.
+catherine:  I found something. Answers, I suppose, but not the ones I wanted.
+Marloch: You still haven't changed your mind about me.
+catherine: I don't know what I think about you anymore.
+catherine: I don't know what I think about you anymore.
+Marloch: You said every wish takes something from you. And you kept granting them anyway.
+Marloch: At first, I wanted to help. Then I wanted to be needed. Then I wanted humans to suffer. Eventually, I forgot why I wanted anything at all.
+catherine: And you blame humans for that.
+Marloch: They took everything from me.
+catherine: Some did. But you can't possibly believe every human deserves the same punishment.
+Marloch: You sound very certain now.
+catherine: I'm not. I just know what I've seen.
+Marloch: And what have you seen?
+catherine: People who are afraid. People who are grieving. People who are lonely. People who are kind. People who are cruel. Just like creatures. Just like me.
+Marloch: ...
+catherine: Maybe that's what my mother never told me. The stories made everything simple. Good creatures. Bad creatures. Heroes. Monsters. But people aren't stories.
+Marloch: Neither am I.
+Marloch: You came here wanting to live. And you still do. Even after everything?
+catherine: Of course I do.
+catherine: Wanting to live doesn't disappear just because I'm afraid of what it might cost.
+Marloch: Then perhaps there is one thing left for me to decide.
+catherine: What?
+Marloch: What I do with you. You should go. Whatever happens next...
+[signal arg="trigger_ending"]

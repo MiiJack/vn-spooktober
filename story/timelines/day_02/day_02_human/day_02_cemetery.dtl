@@ -1,1 +1,35 @@
 day_02_cemetery
+[background arg="res://assets/backgrounds/cemetery_placeholder.jpg" fade="0.0"]
+Narrator: The cemetery gate creaks. A tall man in a black coat is polishing a headstone, murmuring to it like an old friend.
+join Simon center
+catherine: Good … morning, I am sorry to disturb you but I have a few questions to ask.
+Simon: *surprised* A GHOST ?  Who are you ? What are you doing here ?
+catherine: I am not a ghost, I might look pale and frail but I am still alive.
+catherine: But since you are here, can you do me a favor? You see, I am looking for how to say that ?
+Simon: GHOSTS !?
+catherine: What ? Ghost ? no ? What’s up with you and ghosts ?
+Simon: I am joking, kids like you are previsible.
+Simon: Let me guess, you heard of legends around this town and are looking for a quick buck ? Right ?
+- Admit it
+	catherine: Yes, you got me. But it’s not about money. I want to live.
+	catherine: I want to live my life to the fullest.
+	catherine: And I heard, or more accurately, my late mother told me that there is something, I mean, someone who could cure me here.
+	Simon: I get it, It’s understandable. But beware, your own desire might be perceived as greed by others. By others, I mean non-human creatures. They are after all, just souls like us
+	Simon: I assume you’ve already seen one before. I can’t fathom someone going here and not seeing one. And tourists tend to leave really fast after such an encounter.
+	catherine: So, are you willing to help me ?
+	Simon: Help you ? for god's sake. No. But I can assure you that you will meet one of them every evening here. You wil run in what you are searching for soon enough.
+	catherine: That is not really a useful informations.
+	Simon: You can't have everything in life kid, now leave. I have a job to finish.
+	catherine: I don't really have a life.
+	Simon: I SAID LEAVE NOW !
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 1.0
+- Deny it
+	catherine: No, what are you talking about ? A quick buck ? Me ? Of course not. I am just here to… visit.
+	Simon: Don't make me laugh kid. I saw you yesterday. There is no way you haven’t seen something or someone unusual in this town.
+	Simon: But listen, if you really want to be stubborn.
+	Simon: What might seem as simple desire in your mind will be interpreted as pure greed by other creatures. And that will kill you. I will keep a place for you here.
+	Simon: I just hope to see you again, alaive and breathing.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+jump day_02_monster/

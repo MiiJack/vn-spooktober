@@ -5,24 +5,23 @@ extends CanvasLayer
 enum Mode { SAVE, LOAD }
 
 @export var mode: Mode = Mode.SAVE
+@export var option_menu_ref : PackedScene
 
 const SLOT_SCENE := preload("res://scenes/ui_components/save_slot_button.tscn")
 
 @onready var _slot_list: VBoxContainer = %SlotList
 @onready var _title_label: Label = %MenuTitle
-@onready var _close_button: Button = %CloseButton
+
+
 
 
 func _ready() -> void:
 	_title_label.text = "Save Game" if mode == Mode.SAVE else "Load Game"
-	_close_button.pressed.connect(close)
 	SaveManager.slots_changed.connect(_refresh)
 	_refresh()
 
-
 func close() -> void:
 	queue_free()
-
 
 func _refresh() -> void:
 	for child in _slot_list.get_children():
@@ -63,3 +62,18 @@ func _on_slot_pressed(slot_name: String) -> void:
 
 func _on_slot_delete_requested(slot_name: String) -> void:
 	SaveManager.delete_slot(slot_name)
+
+
+func _on_main_menu_pressed() -> void:
+	if Dialogic.current_timeline:
+		Dialogic.clear()
+	GameManager.go_to("res://scenes/main_menu/main_menu.tscn")
+
+
+func _on_settings_pressed() -> void:
+	var new_option_menu = option_menu_ref.instantiate()
+	add_child(new_option_menu)
+
+
+func _on_close_button_pressed() -> void:
+	queue_free()

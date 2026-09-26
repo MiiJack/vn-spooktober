@@ -1,0 +1,32 @@
+day_01_main_road
+[background arg="res://assets/backgrounds/main_road_placeholder.jpg" fade="0.0"]
+Narrator: The main road leads Catherine to a small hotel.
+Narrator: Behind the desk, an old woman in an old fashioned headdress looks up and beams at her.
+join Arlette center [animation="Bounce In" wait="true"]
+Arlette: Well, aren't you a new face! checking in ?
+catherine: Yes, I just arrived. Is there any room free at this time ?
+Arlette: We don't have that many visitors, let me check.
+catherine: Yes, most of the rooms are free at the moment.
+Arlette: That’s great, I will stay here for the time being, I don’t know for how long yet.
+catherine: Great, I’ll book you a room then.
+- Ask if guests ever saw something weird
+	catherine: It might come off weird but do your guest talk about monsters or ghosts sometimes?
+	Arlette: Monsters you say? well most of them leave before I had the chance to make a chat with them. But yeah, I’ve heard some weird encounters stories.
+	catherine: oh okey, actually. I am looking for one if they do exists.
+	Arlette: oh, bold, like a ghostbuster kind. Best of luck to you.
+	Arlette: if you ever meet something, tell me.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+- Tell her directly what you are in for
+	catherine: I think it’s better to tell you right away. Actually. I am here to find a specific creature.
+	Arlette:  What? like ghosts, or the wendigoon or something ?
+	catherine: I don’t know, I don’t even know his name or if “it” has a name. But I am sick and I hope it can cure me.
+	catherine: I don’t know, I don’t even know his name or if “it” has a name. But I am sick and I hope it can cure me.
+	catherine: Have you heard any stories about the creatures around here?
+	Arlette: Oh, I see. I’ve heard some rumors on weird apparitions from around the world.
+	Arlette: Oh, I see. I’ve heard some rumors on weird apparitions from around the world.
+	catherine: Best of luck though. But if you want an advice, don’t go to weird places in search of what you want. This town is not the safest and some humans might be more of a threat than the creatures you are searching for.
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 1.0
+leave Arlette
+jump day_01_monster/

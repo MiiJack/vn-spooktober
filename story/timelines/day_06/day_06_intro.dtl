@@ -1,2 +1,4 @@
 set {ChapterTracking.current_day} = 6.0
 day_06_intro
+Narrator: Morning comes too quickly. Catherine packs her belongings. There is nothing left to search for. She has one last day in Shateroo.
+[signal arg="show_map"]

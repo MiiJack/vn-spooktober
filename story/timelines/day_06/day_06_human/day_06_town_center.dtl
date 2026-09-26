@@ -1,1 +1,39 @@
 day_06_town_center
+[background arg="res://assets/backgrounds/town_center_placeholder.jpg" fade="0.0"]
+Narrator: The old woman is feeding the pigeons. Catherine stops beside her.
+join Old_woman center
+Old_woman: Leaving today, are you?
+catherine: Yes. I have seen what I wanted to see. I don’t think there is anything for me here anymore.
+- Say goodbye warmly
+	catherine: Thank you for talking to me, I know it’s been a few days but it made me feel alive.
+	Old_woman: You are welcome, I am sad it ends here.
+	catherine: I don’t wanna be all doom and gloom but I am going to carry those memories in the afterlife
+	Old_woman: I am old, I will meet you there soon enough.
+	catherine: Don’t say that, the pigeons need you.
+	Old_woman: Don’t make me laugh. I need them more than they need me.
+	catherine: Well, this is what it is, right?
+	Old_woman: This is what it is.
+	catherine: Anyway, you never told me your name.
+	Old_woman: Oh, of course I forgot. Silly me. It’s Margareth.
+	catherine: My grandma had the same name. What a coincidence.
+	Old_woman: A nice coincidence indeed
+	catherine: It was nice talking to you. I think I’ll get going now.
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 1.0
+- Blame the town
+	catherine: I came here because I believed the stories. Now I think they are not lies, but half-truths. And half truth hurts more than lies.
+	Old_woman: Why? Why do you say that?
+	Old_woman: Because they make people hope for things they cannot have.
+	catherine: Sometimes hope is all a person has.
+	catherine: It wasn't enough for me.
+	Old_woman: I am sorry you got dealt with a bad hand like that.
+	catherine: You don’t have to be. I choose to come here. I don’t regret that decision.
+	catherine: Anyway, you never told me your name, did you?
+	Old_woman: Oh, silly me, I didn’t. It’s Margareth.
+	catherine: Nice to meet you Margareth. You have the same name as my grandma.
+	Old_woman: I should take that as a compliment. Nice to meet you too, Catherine.
+	catherine: Goodbye, Margarerth
+	Old_woman: Goodbye, Catherine
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+jump day_06_monster/

@@ -1,1 +1,9 @@
 Ending_04
+[background arg="res://assets/cg/Endings/end04.png" fade="0.0"]
+Narrator: Deeply upset by Catherine’s words and behavior, Marloch ends up leaching out on her.
+Marloch: *something in him finally breaks loose, ugly and total* Of course. Of course it ends like this. It always does.
+Narrator: Catherine's words or choices have undone whatever fragile restraint Marloch had left.
+He unleashes centuries of fury on Shateroo. Catherine flees, but the town does not survive the night  homes, streets, the fountain in the square, all of it erased before morning.
+Narrator: The villagers who survive never forgive her. She should never have come, they say. Wanting to live, in the face of what she was owed by fate, was its own kind of greed.
+Narrator: Catherine dies days later in fear, and in guilt she never finds a way to put down.
+[signal arg="game_end"]

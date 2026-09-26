@@ -1,1 +1,38 @@
 day_05_monster
+[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
+Narrator: Catherine returns to the lake at dusk.
+Narrator: Marloch is already waiting.
+join Marloch center
+Marloch: You have returned. I hoped you wouldn't.
+catherine: Then why are you here?
+Marloch: Because I have been thinking. You want to live ? Then I can offer you another solution.
+catherine: I want to live more than anything.
+Marloch: There is a person in this town. Their life for yours.
+catherine: You mean kill them?
+Marloch: I said nothing of killing.
+catherine: Their life ends either way.Why offer this now?
+Marloch: Because you have spent days telling me you want to live.
+- Accept the bargain
+	catherine: I barely know anyone is this town. It barely matters to me.
+	Marloch: You are really bad at lying, you know. It is obvious that you are already attached to some of them.
+	catherine: If I have to become someone who can do that to live, then I don't think I want the life you're offering.
+	Marloch:  Interesting, but previsible. It’s nice to think you are not as greedy as I hoped for.
+	catherine: You sound disappointed.
+	Marloch: You don’t know anything.
+	set {EndingTracking.marloch_feeling} += 1.0
+- Refuse
+	catherine: No. I won’t do that. I will no trade someone’s life for mine.
+	Marloch: You answered quickly. Even if it means dying?
+	Marloch: Foolish. Humans are very strange creatures.
+	set {EndingTracking.marloch_feeling} -= 1.0
+- Question the bargain
+	catherine: Why them?
+	Marloch:  Because their life has value, and that is what I am looking for. That is the source of my powers.
+	catherine: Then why should mine be worth more?
+	Marloch: ...
+	catherine: You don't actually have an answer, do you?
+	Marloch: You don’t know anything, you fool.
+	set {EndingTracking.marloch_feeling} += 1.0
+Narrator: Marloch fades into the lake without saying anything.
+Narrator: Catherine could barely react. Now she is even more desperate. No deal, no cure. This should have ended here and there.
+jump day_06_intro/

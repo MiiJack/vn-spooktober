@@ -1,8 +1,31 @@
+[background arg="res://assets/backgrounds/cemetery_placeholder.jpg" fade="1.0" wait="true"]
 Narrator: As dusk falls, Catherine notices a pale, ghostly silhouette slipping between the houses. She follows it all the way to an empty cemetery.
 Narrator: The weird silhouette turns and reveals itself.
 Narrator: the creature has  grey skin, red lips, white hair, a black tuxedo under a blood-red coat, and fangs.
-[background arg="res://assets/backgrounds/Placeholder/Onsen_Building.png" fade="0.0"]
+join Nyo center [animation="Fade In"]
 if {ChapterTracking.is_evil} == true:
-	join Nyo center [animation="Fade In"]
 	catherine: *surprised*
+	Nyo: Grrr... poh. What brings a mere human to my hideout? Why are you following me, little brat?
+	catherine: *frozen* I I didn't mean to intrude, I swear
+	- Respond with kindness and understanding
+		catherine: I'm sorry for startling you. I only followed out of curiosity. I meant no harm, and I still mean none.
+		Nyo: *a pause* ...Curiosity. Most who say that are lying. You, oddly, might not be.
+		set {EndingTracking.marloch_feeling} += 1.0
+	- Respond with fear and condescension
+		catherine: Backing away I just stay back, please, I don't want any trouble from a thing like you
+		Nyo: Baring his teeth "A thing." Charming. Go home, human, before your manners get you hurt.
+		set {EndingTracking.marloch_feeling} -= 1.0
 else:
+	Nyo: ...You're not screaming. Most humans scream when they see me for the first time.
+	catherine: I’ve heard countless tales about creatures like you. And from what I’ve heard in this town, should I be ?
+	Nyo: Depends what you plan to do next.
+	- Dismiss him, keep your distance
+		catherine: To complete
+		set {EndingTracking.marloch_feeling} -= 1.0
+	- Validate him, stay and talk
+		catherine: To complete
+		set {EndingTracking.marloch_feeling} += 1.0
+Narrator: Nyo melts back into the  of the cemetery. Word, somehow, has a way of reaching further than Shateroo's streets.
+Narrator: The town's hidden folk all seem to know each other's business, one way or another.ts.
+catherine: He disappeared, I feel I should get a place to go right now. I’ve missed this but this is an important part.
+jump day_02_intro/

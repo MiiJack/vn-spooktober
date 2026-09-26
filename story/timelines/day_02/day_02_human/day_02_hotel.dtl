@@ -1,1 +1,30 @@
 day_02_hotel
+[background arg="res://assets/backgrounds/hotel_placeholder.jpg" fade="0.0"]
+join Arlette center
+Arlette: Slept alright,? You look a little pale, paler than usual.
+catherine: I slept well, thank you. Actually. I came here pretty late yesterday. But I meet someone, or something. I don’t know what it was.
+Arlette: What ? tell me more about it ghostbuster.
+- Talk about your late evening encounter
+	catherine: I saw someone last night, near the cemetery. It didn’t look human. Well it wasn’t human at all. It talked to me.
+	Arlette: And what did he tell you?
+	catherine: It just told me to go home and not mess with him or his kind.
+	Arlette: If you really want my advice, consider yourself lucky and don't go back. Some of them aren't looking for company, especially for a newcomer like you. you.
+	catherine: Wait, you know them ?
+	Arlette: Of course, I know them. I live here. I didn’t tell you anything because I didn’t want you to get hurt.
+	Arlette: But here, the tales are real more often than not. But they are more harmful that what people say about them. So don’t get close to them.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+- Talk about the creature, out of curiosity
+	catherine: I think I saw one of the creatures last night, near the cemetery.
+	Arlette: I am surprised it didn’t put someone like you in trouble this time. You know, I mean a newcomer.
+	Arlette: But aren’t you scared there are monsters like that roaming around in this town ?
+	catherine: I heard some of them can make wishes come true.
+	catherine: To be honest, I have been suffering from a disease since birth. I just wish I could live a little bit more. That’s the sole reason I am here.
+	Arlette: That’s a bit disheartening; I understand where you come from. But you have someone in your life right, family, friends.
+	catherine: I had, my mother died. She was the only one I had left. I don’t have friends because I spend most of my life at home.
+	Arlette: You still got the desire to keep living, the least I could tell you is to keep that. But don’t go out of your way to cheat death. Especially in this town.
+	Arlette: Some entities are not worth hanging out with, even if they promise something a mere mortal couldn’t get on its own.
+	Arlette: But I know you won’t stop here since you already made it that far. So be careful of what you say, anything. This town’s walls have eyes and ears.
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 1.0
+jump day_02_monster/

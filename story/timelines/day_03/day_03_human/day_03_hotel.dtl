@@ -1,1 +1,38 @@
 day_03_hotel
+[background arg="res://assets/backgrounds/hotel_placeholder.jpg" fade="0.0"]
+Narrator: A row of stalls lines the main road. Arlette is there, off duty, haggling cheerfully with a fruit seller.
+join Arlette center
+Arlette: You seem to really get your foothold in this town. 3 days already, most people would have left by now.
+catherine: I don’t  really have a choice if I wanna live.
+Arlette: You know there are many doctors in other towns, towns that are more welcoming and less.. weird than this one.
+catherine: I know that none of them have provided a cure for me. If there was someone capable of that, I would've known it by now..
+catherine: And if you think this town is that bad, why don’t you leave yourself ?
+Arlette: I’ve got my own issues and things that make me stay in this town.
+- Dig up Arlette's story
+	catherine: What do you mean, you too are looking for someone ?
+	Arlette: Well, yes actually. But meeting “that” someone is a bit complicated.
+	catherine: So what is it ?
+	Arlette: Have you even been told to mind your own business ?
+	catherine: You listened to my story and I stayed at your inn. Of course listening to you is the least I can do.
+	Arlette: That's really kind of you, I thought you were just someone obsessed with your own… quest.
+	Arlette: well, I.. you might have seen it but this doesn't have many people yet I am still taking care of it.
+	catherine: Yes, I was even wondering if it’s sustainable
+	Arlette: Well .. no, of course not. This town is pretty much dead. But I have been tasked to look over this inn in exchange for my parents ?
+	catherine: Your parents ? I’ve never met them.
+	Arlette: They are not really here. Actually, I … what I do is my dream job right now. But I had to sacrifice something or someone in order to get it. And that someone is.. my parents
+	Arlette: I know it’s stupid and greedy. People you care about for an inn.. but I’ve been fooled. And my only way to gain them back is to keep this inn running
+	catherine: That sounds awful.
+	Arlette: Well it is, but it’s also the reason this inn won’t close even if I run out of money.
+	Arlette: So, I need to meet that monster who fooled me and try to get what I lost with any means possible.
+	catherine: I see, we are in the same boat.
+	Arlette: haha, well.. you should keep going, you have to find what or who you are searching for.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+- Cheer Arlette up saying this town ain’t that bad
+	catherine: I am sorry if you didn’t want to bring that up.
+	Arlette: No, it’s fine. It’s fine.
+	Arlette: well .. hum.. I hope you find out what you are after. I don’t think the creatures are as villainous as this town makes them out to be.
+	catherine: Yes.. Thank you. I am going to go now.
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 1.0
+jump day_03_monster/

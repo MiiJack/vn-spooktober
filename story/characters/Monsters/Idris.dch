@@ -10,14 +10,14 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "chrisostome_placeholder",
+&"default_portrait": "Idris_placeholder",
 &"description": "",
-&"display_name": "Vlad",
+&"display_name": "Idris",
 &"mirror": false,
-&"nicknames": ["Creepy guy"],
+&"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"chrisostome_placeholder": {
+"Idris_placeholder": {
 "export_overrides": {
 "image": "\"res://assets/characters/placeholders/01.1 BustPlaceholder.png\""
 },

@@ -1,1 +1,23 @@
 day_06_cemetery
+[background arg="res://assets/backgrounds/cemetery_placeholder.jpg" fade="0.0"]
+Narrator: Simon is waiting beside the cemetery gate.
+Simon: I heard you were leaving.
+catherine: Yes I am, word travels quickly here.
+- Thank Simon
+	catherine: Thank you, Simon.
+	Simon: For what do you thank me for?
+	catherine: For speaking honestly with me.
+	Simon: You may find that honesty is easier when one has nothing left to lose.
+	Simon: Take care of yourself, Catherine.
+	set {ChapterTracking.is_evil} = false
+	set {EndingTracking.catherine_sympathy} += 0.0
+- Say you regret coming
+	catherine: Sometimes I wish I'd never found this place.
+	Simon: Yet here you are. Regret cannot return you to the person you were before you came here.
+	catherine: Yes. I know.
+	Simon: Then perhaps it is better to leave knowing what you know now.
+	catherine: That is a really bleak way to put it
+	It isn’t my story, you take what you can from it.
+	set {ChapterTracking.is_evil} = true
+	set {EndingTracking.catherine_sympathy} -= 1.0
+jump day_06_monster/

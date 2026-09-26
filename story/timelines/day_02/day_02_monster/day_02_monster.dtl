@@ -1,1 +1,28 @@
 day_02_monster
+[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
+join Idris center
+Narrator: Catherine finds a tall, slender figure there, grey skin gone strangely handsome up close, gloved hands, a smirk that doesn't reach his eyes.
+if {ChapterTracking.is_evil} == true:
+	Idris: Word travels fast in this town. I hear you've been calling us monsters.
+	catherine: Was only repeating what I'd heard.
+	- Respond with kindness and understanding
+		catherine: I'm sorry if it was unfair of me. I don't actually know you at all.
+		Idris:  An apology. From a human. Careful, that's the kind of thing that gets remembered around here.
+		set {EndingTracking.marloch_feeling} += 1.0
+	- Respond with fear and condescension
+		catherine: Well, can you blame anyone, looking at what you are?
+		Idris:  Careful. That mouth of yours will get you further trouble than you'd like.
+		To complete
+		set {EndingTracking.marloch_feeling} -= 1.0
+else:
+	Idris:  I hear you've been rather generous about my character, all things considered.
+	catherine: I only said what seemed fair.
+	- Dismiss him, stay guarded
+		catherine: That doesn't mean I trust you, though.
+		Idris: Trust is overrated. I didn't ask for it.
+		set {EndingTracking.marloch_feeling} -= 1.0
+	- Validate him, warm up to him
+		catherine: For what it's worth, I meant it. I don't think you're what people say.
+		Idris: ...Noted.
+		set {EndingTracking.marloch_feeling} += 1.0
+jump day_03_intro/

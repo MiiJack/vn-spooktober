@@ -1,2 +1,7 @@
 set {ChapterTracking.current_day} = 5.0
 day_05_intro
+[background arg="res://assets/backgrounds/town_center_placeholder.jpg" fade="0.0"]
+Narrator: Catherine has stopped pretending she can find another solution.
+Narrator: There is only one day left before she intends to leave Shateroo.
+Narrator: She spends the morning saying goodbye without admitting that she is doing so.
+[signal arg="show_map"]

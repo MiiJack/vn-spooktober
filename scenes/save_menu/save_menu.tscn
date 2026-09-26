@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://dembx50d2ej8x"]
 
 [ext_resource type="Script" uid="uid://ctrt5xs7t3hl2" path="res://scenes/save_menu/save_menu.gd" id="1_savemenu"]
+[ext_resource type="PackedScene" uid="uid://baq8ml6hfvo0x" path="res://scenes/settings/option_menu.tscn" id="2_gl16f"]
 
 [node name="SaveMenu" type="CanvasLayer" unique_id=1280784685]
 layer = 10
 script = ExtResource("1_savemenu")
+option_menu_ref = ExtResource("2_gl16f")
 
 [node name="Dimmer" type="ColorRect" parent="." unique_id=1007270744]
 anchors_preset = 15
@@ -45,11 +47,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 text = "Save Game"
 
-[node name="CloseButton" type="Button" parent="Panel/Margin/Layout/Header" unique_id=932036830]
-unique_name_in_owner = true
-layout_mode = 2
-text = "Close"
-
 [node name="Scroll" type="ScrollContainer" parent="Panel/Margin/Layout" unique_id=1323655602]
 layout_mode = 2
 size_flags_vertical = 3
@@ -59,3 +56,61 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 8
+
+[node name="Control" type="Control" parent="." unique_id=2119199745]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -615.0
+offset_right = 295.0
+offset_bottom = -114.0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=292033735]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.043010753
+anchor_top = -0.1237525
+anchor_right = 1.0573477
+anchor_bottom = 1.003992
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="MainMenu" type="Button" parent="Control/VBoxContainer" unique_id=705169696]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Main menu"
+
+[node name="Spacer2" type="Control" parent="Control/VBoxContainer" unique_id=1923717158]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Settings" type="Button" parent="Control/VBoxContainer" unique_id=1939904848]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Settings"
+
+[node name="Spacer3" type="Control" parent="Control/VBoxContainer" unique_id=140951604]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="QuitButton" type="Button" parent="Control/VBoxContainer" unique_id=582333913]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Quit"
+
+[node name="Spacer" type="Control" parent="Control/VBoxContainer" unique_id=777153214]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="Control/VBoxContainer" unique_id=932036830]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Close"
+
+[connection signal="pressed" from="Control/VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]
