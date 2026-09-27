@@ -1,6 +1,7 @@
-day_06_cemetery
+Shateroom cemetery
 [background arg="res://assets/backgrounds/cemetery_placeholder.jpg" fade="0.0"]
 Narrator: Simon is waiting beside the cemetery gate.
+join Simon center [animation="Fade In" length="1.0" wait="true"]
 Simon: I heard you were leaving.
 catherine: Yes I am, word travels quickly here.
 - Thank Simon
@@ -9,6 +10,8 @@ catherine: Yes I am, word travels quickly here.
 	catherine: For speaking honestly with me.
 	Simon: You may find that honesty is easier when one has nothing left to lose.
 	Simon: Take care of yourself, Catherine.
+	leave Simon [animation="Fade In" length="1.0" wait="true"]
+	[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 0.0
 - Say you regret coming
@@ -17,7 +20,10 @@ catherine: Yes I am, word travels quickly here.
 	catherine: Yes. I know.
 	Simon: Then perhaps it is better to leave knowing what you know now.
 	catherine: That is a really bleak way to put it
-	It isn’t my story, you take what you can from it.
+	Simon: It isn’t my story, you take what you can from it.
+	leave Simon [animation="Fade In" length="1.0" wait="true"]
+	[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 jump day_06_monster/

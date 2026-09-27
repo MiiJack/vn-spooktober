@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://t474b570ima"]
+
+[ext_resource type="Script" uid="uid://52ne7bnvt5ph" path="res://scenes/end_screen/end_screen.gd" id="1_g6lhc"]
+[ext_resource type="FontFile" uid="uid://fxedkfqik2h5" path="res://assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf" id="1_t763t"]
+[ext_resource type="FontFile" uid="uid://bqrph8yksy3le" path="res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf" id="2_g6lhc"]
+[ext_resource type="AudioStream" uid="uid://b8vxgx5kj1o8o" path="res://assets/audio/music/Arctic.ogg" id="4_tri4g"]
+[ext_resource type="AudioStream" uid="uid://bfkebyrv258v" path="res://assets/audio/sfx/uiSounds/Bip_2.ogg" id="5_fbjyk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m3t5o"]
+bg_color = Color(0.09010268, 0.0031621302, 0, 1)
+border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m5ve6"]
+bg_color = Color(0.39896408, 0.057867363, 9.62615e-08, 1)
+border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_728ge"]
+bg_color = Color(0.8946396, 0.16531965, 0, 1)
+border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 5
+
+[node name="EndScreen" type="CanvasLayer" unique_id=1658501276]
+script = ExtResource("1_g6lhc")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1703489213]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.53333336, 0.27058825, 0.1882353, 1)
+
+[node name="TheEndLabel" type="Label" parent="ColorRect" unique_id=1511099689]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -252.0
+offset_top = -143.0
+offset_right = 260.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_t763t")
+theme_override_font_sizes/font_size = 120
+text = "THE END"
+
+[node name="Label" type="Label" parent="ColorRect/TheEndLabel" unique_id=323059031]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -162.0
+offset_top = -4.0
+offset_right = 144.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_g6lhc")
+theme_override_font_sizes/font_size = 35
+text = "Thank you for playing"
+
+[node name="MainMenuButton" type="Button" parent="." unique_id=1073047461]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = -261.0
+offset_right = 106.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_g6lhc")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_m3t5o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m5ve6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_728ge")
+text = "Main menu"
+
+[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=1353365986]
+stream = ExtResource("4_tri4g")
+autoplay = true
+
+[node name="ButtonSFX" type="AudioStreamPlayer" parent="." unique_id=432396184]
+stream = ExtResource("5_fbjyk")
+
+[connection signal="pressed" from="MainMenuButton" to="." method="_on_main_menu_button_pressed"]

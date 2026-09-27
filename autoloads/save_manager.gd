@@ -131,7 +131,7 @@ func load_slot(slot_name: String) -> bool:
 		return false
 
 	_pending_slot = slot_name
-	SceneTransition.go_to(VN_PLAYER_SCENE)
+	GameManager.go_to(VN_PLAYER_SCENE)
 	return true
 
 func has_any_save() -> bool:

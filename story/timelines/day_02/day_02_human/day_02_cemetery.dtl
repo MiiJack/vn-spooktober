@@ -1,4 +1,6 @@
-day_02_cemetery
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+Shateroo, cemetery.
+audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
 [background arg="res://assets/backgrounds/cemetery_placeholder.jpg" fade="0.0"]
 Narrator: The cemetery gate creaks. A tall man in a black coat is polishing a headstone, murmuring to it like an old friend.
 join Simon center
@@ -19,9 +21,10 @@ Simon: Let me guess, you heard of legends around this town and are looking for a
 	catherine: So, are you willing to help me ?
 	Simon: Help you ? for god's sake. No. But I can assure you that you will meet one of them every evening here. You wil run in what you are searching for soon enough.
 	catherine: That is not really a useful informations.
-	Simon: You can't have everything in life kid, now leave. I have a job to finish.
+	Simon (Simon_angry): You can't have everything in life kid, now leave. I have a job to finish.
 	catherine: I don't really have a life.
-	Simon: I SAID LEAVE NOW !
+	Simon (Simon_angry): I SAID LEAVE NOW !
+	leave Simon
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
 - Deny it
@@ -30,6 +33,7 @@ Simon: Let me guess, you heard of legends around this town and are looking for a
 	Simon: But listen, if you really want to be stubborn.
 	Simon: What might seem as simple desire in your mind will be interpreted as pure greed by other creatures. And that will kill you. I will keep a place for you here.
 	Simon: I just hope to see you again, alaive and breathing.
+	leave Simon
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
 jump day_02_monster/

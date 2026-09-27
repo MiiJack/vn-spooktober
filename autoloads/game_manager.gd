@@ -17,9 +17,6 @@ func go_to(scene_path:String) -> void:
 	get_tree().change_scene_to_file(scene_path)
 	SceneTransition._fade_in()
 	
-
-func _dialogic_ready() -> void:
-	pass
 	
 func _on_show_map_triggered(argument: String) -> void:
 	if argument == "show_map":

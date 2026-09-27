@@ -26,6 +26,7 @@ var current_day: int = 0
 
 func _ready() -> void:
 	_update_available_locations()
+
 	
 func _update_available_locations() -> void:
 	current_day = Dialogic.VAR.get_variable("ChapterTracking.current_day")

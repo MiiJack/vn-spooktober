@@ -1,4 +1,5 @@
-day_06_town_center
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+Shateroo, town center.
 [background arg="res://assets/backgrounds/town_center_placeholder.jpg" fade="0.0"]
 Narrator: The old woman is feeding the pigeons. Catherine stops beside her.
 join Old_woman center
@@ -18,6 +19,7 @@ catherine: Yes. I have seen what I wanted to see. I don’t think there is anyth
 	catherine: My grandma had the same name. What a coincidence.
 	Old_woman: A nice coincidence indeed
 	catherine: It was nice talking to you. I think I’ll get going now.
+	leave Old_woman
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
 - Blame the town
@@ -34,6 +36,9 @@ catherine: Yes. I have seen what I wanted to see. I don’t think there is anyth
 	Old_woman: I should take that as a compliment. Nice to meet you too, Catherine.
 	catherine: Goodbye, Margarerth
 	Old_woman: Goodbye, Catherine
+	leave Old_woman
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+[wait time="1.0"]
 jump day_06_monster/

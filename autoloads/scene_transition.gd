@@ -1,3 +1,4 @@
+class_name scene_transition
 extends CanvasLayer
 
 @onready var color_rect: ColorRect = $ColorRect

@@ -1,6 +1,10 @@
 set {ChapterTracking.current_day} = 5.0
-day_05_intro
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+audio music -
+audio BGS -
+Shateroo, day 5.
 [background arg="res://assets/backgrounds/town_center_placeholder.jpg" fade="0.0"]
+audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
 Narrator: Catherine has stopped pretending she can find another solution.
 Narrator: There is only one day left before she intends to leave Shateroo.
 Narrator: She spends the morning saying goodbye without admitting that she is doing so.

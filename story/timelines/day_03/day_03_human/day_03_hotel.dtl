@@ -1,5 +1,9 @@
-day_03_hotel
-[background arg="res://assets/backgrounds/hotel_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+audio music -
+audio BGS -
+Shateroo, Inn.
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/Inn_placeholder.jpg" fade="0.0"]
 Narrator: A row of stalls lines the main road. Arlette is there, off duty, haggling cheerfully with a fruit seller.
 join Arlette center
 Arlette: You seem to really get your foothold in this town. 3 days already, most people would have left by now.
@@ -26,6 +30,7 @@ Arlette: I’ve got my own issues and things that make me stay in this town.
 	Arlette: So, I need to meet that monster who fooled me and try to get what I lost with any means possible.
 	catherine: I see, we are in the same boat.
 	Arlette: haha, well.. you should keep going, you have to find what or who you are searching for.
+	leave Arlette
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
 - Cheer Arlette up saying this town ain’t that bad
@@ -33,6 +38,10 @@ Arlette: I’ve got my own issues and things that make me stay in this town.
 	Arlette: No, it’s fine. It’s fine.
 	Arlette: well .. hum.. I hope you find out what you are after. I don’t think the creatures are as villainous as this town makes them out to be.
 	catherine: Yes.. Thank you. I am going to go now.
+	leave Arlette
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
+leave Arlette
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+[wait time="1.0"]
 jump day_03_monster/

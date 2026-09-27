@@ -32,7 +32,18 @@ scene = ExtResource("5_61ibx")
 script = ExtResource("2_h4wkf")
 scene = ExtResource("6_4vll1")
 overrides = {
-"box_size": "Vector2(750, 150)"
+"bold_font": "\"res://assets/fonts/Crimson_Text/CrimsonText-Bold.ttf\"",
+"bold_italics_font": "\"res://assets/fonts/Crimson_Text/CrimsonText-SemiBoldItalic.ttf\"",
+"box_size": "Vector2(750, 150)",
+"italics_font": "\"res://assets/fonts/Crimson_Text/CrimsonText-Italic.ttf\"",
+"name_label_custom_font_size": "22.0",
+"name_label_font": "\"res://assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf\"",
+"name_label_use_character_color": "false",
+"name_label_use_global_font": "false",
+"name_label_use_global_font_size": "false",
+"normal_font": "\"res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf\"",
+"text_size": "20.0",
+"text_use_global_size": "false"
 }
 
 [sub_resource type="Resource" id="Resource_r320e"]
@@ -42,6 +53,12 @@ scene = ExtResource("7_5rujm")
 [sub_resource type="Resource" id="Resource_s8moc"]
 script = ExtResource("2_h4wkf")
 scene = ExtResource("8_tub2u")
+overrides = {
+"font_custom": "\"res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf\"",
+"font_size_custom": "20.0",
+"font_size_use_global": "false",
+"font_use_global": "false"
+}
 
 [sub_resource type="Resource" id="Resource_usvfc"]
 script = ExtResource("2_h4wkf")
@@ -50,6 +67,14 @@ scene = ExtResource("9_8n50b")
 [sub_resource type="Resource" id="Resource_lb277"]
 script = ExtResource("2_h4wkf")
 scene = ExtResource("10_8mf4w")
+overrides = {
+"font_custom_bold": "\"res://assets/fonts/Crimson_Text/CrimsonText-Bold.ttf\"",
+"font_custom_italics": "\"res://assets/fonts/Crimson_Text/CrimsonText-Italic.ttf\"",
+"font_custom_normal": "\"res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf\"",
+"font_custom_size": "20.0",
+"font_use_global_fonts": "false",
+"font_use_global_size": "false"
+}
 
 [resource]
 script = ExtResource("11_b8yj8")
@@ -66,4 +91,4 @@ layer_info = {
 "16": SubResource("Resource_usvfc"),
 "17": SubResource("Resource_lb277")
 }
-metadata/_latest_layer = "15"
+metadata/_latest_layer = "13"

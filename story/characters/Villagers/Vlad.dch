@@ -10,16 +10,70 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "vlad_placeholder",
+&"default_portrait": "Vlad_normal",
 &"description": "",
 &"display_name": "Vlad",
 &"mirror": false,
 &"nicknames": ["Creepy guy"],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"Vlad_angry": {
+"export_overrides": {
+"image": "\"res://assets/characters/Vlad/Vald_angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vlad_confused": {
+"export_overrides": {
+"image": "\"res://assets/characters/Vlad/Vald_confused.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vlad_happy": {
+"export_overrides": {
+"image": "\"res://assets/characters/Vlad/Vald_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vlad_normal": {
+"export_overrides": {
+"image": "\"res://assets/characters/Vlad/Vald_normal.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vlad_sad": {
+"export_overrides": {
+"image": "\"res://assets/characters/Vlad/Vald_sad.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Vlad_talk": {
+"export_overrides": {
+"image": "\"res://assets/characters/Vlad/Vald_talk.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "vlad_placeholder": {
 "export_overrides": {
-"image": "\"res://assets/characters/placeholders/01.1 BustPlaceholder.png\""
+"image": "\"res://assets/characters/Vlad/Vlad_placeholder.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

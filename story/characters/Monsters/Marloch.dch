@@ -10,13 +10,58 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "marloch_placeholder",
+&"default_portrait": "Marloch_normal",
 &"description": "Main monster",
 &"display_name": "Marloch",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"Marloch_angry": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Marloch_normal": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_normal.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Marloch_satisfied": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_satisfied.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Marloch_what": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_what.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"marloch_happy": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "marloch_placeholder": {
 "export_overrides": {
 "image": "\"res://assets/characters/placeholders/01.1 BustPlaceholder.png\""

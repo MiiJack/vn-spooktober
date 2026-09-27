@@ -1,13 +1,17 @@
-day_06_monster
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Narrator: Catherine reaches the gates of Shateroo. Her luggage is light but her heart is not.
 Narrator: Just before she leaves, Marloch appears in the road.
+[wait time="1.0"]
+audio music "res://assets/audio/music/Scene_1_monster.wav" [loop="true"]
+audio BGS "res://assets/audio/sfx/Night - Sound.wav" [loop="true"]
+[background arg="res://assets/backgrounds/main_road_placeholder.jpg" fade="1.0" wait="true"]
 join Marloch center
 catherine: I suppose this is goodbye.
-Marloch: You were really going to leave without saying anything?
+Marloch (Marloch_angry): You were really going to leave without saying anything?
 catherine: I thought it would be easier.
-Marloch: You came here looking for a miracle. And now you're leaving with nothing.
-catherine:  I found something. Answers, I suppose, but not the ones I wanted.
-Marloch: You still haven't changed your mind about me.
+Marloch (Marloch_satisfied): You came here looking for a miracle. And now you're leaving with nothing.
+catherine: I found something. Answers, I suppose, but not the ones I wanted.
+Marloch (Marloch_angry): You still haven't changed your mind about me.
 catherine: I don't know what I think about you anymore.
 catherine: I don't know what I think about you anymore.
 Marloch: You said every wish takes something from you. And you kept granting them anyway.
@@ -28,4 +32,7 @@ catherine: Wanting to live doesn't disappear just because I'm afraid of what it 
 Marloch: Then perhaps there is one thing left for me to decide.
 catherine: What?
 Marloch: What I do with you. You should go. Whatever happens next...
+leave Marloch
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+[wait time="1.0"]
 [signal arg="trigger_ending"]

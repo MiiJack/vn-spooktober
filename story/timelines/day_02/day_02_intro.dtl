@@ -1,5 +1,12 @@
 set {ChapterTracking.current_day} = 2.0
-day_02_intro
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+audio music -
+audio BGS -
+Shateroo, day 2.
+[wait time="1.0"]
+audio music "res://assets/audio/music/Town_road_bgm.wav" [fade="2.0" loop="true"]
+[background arg="res://assets/backgrounds/hotel_placeholder.jpg" fade="1.0" transition="Swipe Left To Right" wait="true"]
 Narrator: Catherine wakes up early, continuing her research.
 catherine: I’ve got a little time left, but I know the tales are real. I’m sure someone in this town can point me toward the one that can cure my sickness.
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [signal arg="show_map"]

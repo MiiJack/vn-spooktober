@@ -10,16 +10,61 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "nyo_placeholder",
+&"default_portrait": "Nyo_talk",
 &"description": "Monster",
 &"display_name": "Nyo",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"Nyo_angry": {
+"export_overrides": {
+"image": "\"res://assets/characters/Nyo/Nyo_angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Nyo_happy": {
+"export_overrides": {
+"image": "\"res://assets/characters/Nyo/Nyo_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Nyo_sad": {
+"export_overrides": {
+"image": "\"res://assets/characters/Nyo/Nyo_sad.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Nyo_surprised": {
+"export_overrides": {
+"image": "\"res://assets/characters/Nyo/Nyo_suprised.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Nyo_talk": {
+"export_overrides": {
+"image": "\"res://assets/characters/Nyo/Nyo_talk.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "nyo_placeholder": {
 "export_overrides": {
-"image": "\"res://assets/characters/placeholders/01.1 BustPlaceholder.png\""
+"image": "\"res://assets/characters/Nyo/Nyo_Placeholder.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

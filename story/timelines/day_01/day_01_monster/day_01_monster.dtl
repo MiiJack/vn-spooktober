@@ -1,31 +1,68 @@
-[background arg="res://assets/backgrounds/cemetery_placeholder.jpg" fade="1.0" wait="true"]
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Narrator: As dusk falls, Catherine notices a pale, ghostly silhouette slipping between the houses. She follows it all the way to an empty cemetery.
+audio music "res://assets/audio/music/Scene_1_monster.wav" [loop="true"]
+audio BGS "res://assets/audio/sfx/Night - Sound.wav" [loop="true"]
+[background arg="res://assets/backgrounds/cemetery_night_placeholder.webp" fade="1.0" wait="true"]
 Narrator: The weird silhouette turns and reveals itself.
-Narrator: the creature has  grey skin, red lips, white hair, a black tuxedo under a blood-red coat, and fangs.
-join Nyo center [animation="Fade In"]
+Narrator: the creature has  grey skin,  white hair with a part of his vertices visible. It's like his neck's skin is transparent.
+join Nyo center [animation="Fade In" length="1.0" wait="true"]
 if {ChapterTracking.is_evil} == true:
 	catherine: *surprised*
-	Nyo: Grrr... poh. What brings a mere human to my hideout? Why are you following me, little brat?
-	catherine: *frozen* I I didn't mean to intrude, I swear
+	audio "res://assets/audio/sfx/DARK ENERGY - Soundt.wav"
+	Nyo: Grr...What brings a mere human to my hideout? Why are you following me, little brat?
+	catherine: *frozen* I... I didn't mean to intrude, I swear
 	- Respond with kindness and understanding
 		catherine: I'm sorry for startling you. I only followed out of curiosity. I meant no harm, and I still mean none.
 		Nyo: *a pause* ...Curiosity. Most who say that are lying. You, oddly, might not be.
+		leave Nyo [animation="Fade Out" length="0.0" wait="true"]
 		set {EndingTracking.marloch_feeling} += 1.0
+		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	- Respond with fear and condescension
 		catherine: Backing away I just stay back, please, I don't want any trouble from a thing like you
 		Nyo: Baring his teeth "A thing." Charming. Go home, human, before your manners get you hurt.
+		leave Nyo [animation="Fade Out" length="0.0" wait="true"]
 		set {EndingTracking.marloch_feeling} -= 1.0
+		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 else:
 	Nyo: ...You're not screaming. Most humans scream when they see me for the first time.
 	catherine: I’ve heard countless tales about creatures like you. And from what I’ve heard in this town, should I be ?
 	Nyo: Depends what you plan to do next.
 	- Dismiss him, keep your distance
-		catherine: To complete
+		catherine: I don' t know what you are.. just stay away from me.
+		Nyo: Hahaha, you a re the one that followed me to this cemetery.
+		Nyo: And you are alone here. Do you think something will find you if something happens ?
+		Nyo: No one know you yet, you migh as well be gone and no one would bat an eye.
+		catherine: I need to run away. I need to run away now.
+		leave Nyo [animation="Fade Out" length="0.0" wait="true"]
+		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+		Narrator: Catherine ran until she reached a place with some lighting.
+		[background arg="res://assets/backgrounds/hotel_placeholder.jpg" fade="1.0" wait="true"]
+		catherine: Here, I might be safe here. I am going in.
 		set {EndingTracking.marloch_feeling} -= 1.0
+		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	- Validate him, stay and talk
-		catherine: To complete
+		catherine: I don't what you really are. But my mother told countless tales about some magical creatures in this town. I suppose you are one of ther ?
+		Nyo: Quite bold of you to stay. Well I think it's obvious that I am not really.. human.
+		catherine: I am not going stirr the pot. I need to know. Are you the one who can fulfil any desires ? I am sick and I...
+		Nyo: Stop right there, why the hurry. Don't you even feel threatned ?
+		catherine: I... feel threat.. I need help ? I need help because I am dying.
+		Nyo: I see.. well. This town is a place of mystery. You might find who you are searching for here. But sadly, that's not me.
+		Narrator: Nyo melts back into the  of the cemetery. Word, somehow, has a way of reaching further than Shateroo's streets.
+		leave Nyo [animation="Fade Out" length="1.0" wait="true"]
+		catherine: Wait, then who is it ?
+		Narrator: The town's creatures folk all seem to know each other. I think if I continue to go out at night, I will find him, or her.. or them..
+		catherine: He disappeared, I feel I should get a place to go right now.
 		set {EndingTracking.marloch_feeling} += 1.0
-Narrator: Nyo melts back into the  of the cemetery. Word, somehow, has a way of reaching further than Shateroo's streets.
-Narrator: The town's hidden folk all seem to know each other's business, one way or another.ts.
-catherine: He disappeared, I feel I should get a place to go right now. I’ve missed this but this is an important part.
+		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+Narrator: Catherine enters the town Inn late at night and goes to sleep.
+Narrator: Meanwhile, somewhere in the outskirts of the town...
+[wait time="2.0"]
+join Marloch (Marloch_angry) left [animation="Fade In Up" length="1.0" wait="true"]
+Marloch (Marloch_angry): So, something to tell me. Nyo ?
+join Nyo (Nyo_sad) right [animation="Fade In Up"]
+Nyo: Yes, there is someone new in town. Someone who is trying to find you.
+Marloch (Marloch_satisfied): Oh, I see.. tell me more.
+leave Marloch [animation="Instant Out" length="1.0" wait="true"]
+leave Nyo [animation="Instant Out"]
+[wait time="1.0"]
 jump day_02_intro/

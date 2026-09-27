@@ -1,6 +1,11 @@
 set {ChapterTracking.current_day} = 4.0
-day_04_intro
-[background arg="res://assets/backgrounds/town_center_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+audio music -
+audio BGS -
+Shateroo, day 4.
+audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
+[background arg="res://assets/backgrounds/hotel_placeholder.jpg" fade="1.0" transition="Swipe Left To Right" wait="true"]
 Narrator: Catherine spends the morning walking through Shateroo without much purpose.
 Narrator: For the first time, she is not searching for the creature. She is simply looking for someone to talk to.
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [signal arg="show_map"]

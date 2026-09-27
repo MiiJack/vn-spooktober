@@ -1,4 +1,11 @@
 set {ChapterTracking.current_day} = 6.0
-day_06_intro
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+audio music -
+audio BGS -
+Shateroo, final day.
+[wait time="1.0"]
 Narrator: Morning comes too quickly. Catherine packs her belongings. There is nothing left to search for. She has one last day in Shateroo.
+[background arg="res://assets/backgrounds/hotel_placeholder.jpg" fade="1.0" wait="true"]
+catherine: This day feels heavy. I don't like this.
+catherine: I should go arount town to say goodbye, I think that's the least that I can do.
 [signal arg="show_map"]

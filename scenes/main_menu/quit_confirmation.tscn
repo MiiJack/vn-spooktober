@@ -1,6 +1,39 @@
 [gd_scene format=3 uid="uid://c2dsnpd68ppwm"]
 
 [ext_resource type="Script" uid="uid://cu4yo2x1jjeix" path="res://scenes/main_menu/quit_confirmation.gd" id="1_asle3"]
+[ext_resource type="FontFile" uid="uid://c8kensptni7t5" path="res://assets/fonts/Crimson_Text/CrimsonText-Bold.ttf" id="2_7plky"]
+[ext_resource type="FontFile" uid="uid://bqrph8yksy3le" path="res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf" id="3_lpwth"]
+[ext_resource type="AudioStream" uid="uid://bfkebyrv258v" path="res://assets/audio/sfx/uiSounds/Bip_2.ogg" id="4_lpwth"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m3t5o"]
+bg_color = Color(0.09010268, 0.0031621302, 0, 1)
+border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m5ve6"]
+bg_color = Color(0.39896408, 0.057867363, 9.62615e-08, 1)
+border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_728ge"]
+bg_color = Color(0.8946396, 0.16531965, 0, 1)
+border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 5
 
 [node name="QuitConfirmation" type="CanvasLayer" unique_id=613933054]
 layer = 6
@@ -22,7 +55,7 @@ grow_vertical = 2
 
 [node name="ColorRect" type="ColorRect" parent="Container" unique_id=1618462733]
 layout_mode = 2
-color = Color(0.34781694, 0.34781697, 0.3478169, 1)
+color = Color(0.53333336, 0.27058825, 0.1882353, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="Container" unique_id=160271983]
 custom_minimum_size = Vector2(300, 100)
@@ -33,6 +66,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="Container/MarginContainer/VBoxContainer" unique_id=2104848799]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7plky")
 theme_override_font_sizes/font_size = 30
 text = "Quit game ?"
 horizontal_alignment = 1
@@ -51,12 +85,25 @@ size_flags_vertical = 4
 [node name="YesButton" type="Button" parent="Container/MarginContainer/VBoxContainer/HBoxContainer" unique_id=825051423]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_lpwth")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_m3t5o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m5ve6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_728ge")
 text = "YES"
 
 [node name="NoButton" type="Button" parent="Container/MarginContainer/VBoxContainer/HBoxContainer" unique_id=668221864]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_lpwth")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_m3t5o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m5ve6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_728ge")
 text = "NO"
+
+[node name="ButtonSFX" type="AudioStreamPlayer" parent="." unique_id=1799936875]
+stream = ExtResource("4_lpwth")
 
 [connection signal="pressed" from="Container/MarginContainer/VBoxContainer/HBoxContainer/YesButton" to="." method="_on_yes_button_pressed"]
 [connection signal="pressed" from="Container/MarginContainer/VBoxContainer/HBoxContainer/NoButton" to="." method="_on_no_button_pressed"]

@@ -10,16 +10,61 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "simon_placeholder",
+&"default_portrait": "Simon_normal",
 &"description": "",
 &"display_name": "Simon",
 &"mirror": false,
 &"nicknames": ["Cemetery dude"],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"Simon_angry": {
+"export_overrides": {
+"image": "\"res://assets/characters/Simon/Simon_angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Simon_normal": {
+"export_overrides": {
+"image": "\"res://assets/characters/Simon/Simon_normal.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Simon_surprised": {
+"export_overrides": {
+"image": "\"res://assets/characters/Simon/Simon_surprisedpng.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Simon_talking": {
+"export_overrides": {
+"image": "\"res://assets/characters/Simon/Simon_talking.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Simon_what": {
+"export_overrides": {
+"image": "\"res://assets/characters/Simon/Simon_what.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "simon_placeholder": {
 "export_overrides": {
-"image": "\"res://assets/characters/placeholders/01.1 BustPlaceholder.png\""
+"image": "\"res://assets/characters/Simon/Simon_placeholder.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

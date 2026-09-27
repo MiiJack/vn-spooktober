@@ -1,5 +1,6 @@
-day_06_forest
-[background arg="res://assets/backgrounds/hotel_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+Shateroo, Inn
+[background arg="res://assets/backgrounds/Inn_placeholder.jpg" fade="0.0"]
 Narrator: Arlette is behind the reception desk when Catherine comes downstairs.
 join Arlette center
 Arlette: Are you leaving today? Catherine?
@@ -13,15 +14,17 @@ Arlette: I am courteous. I never said I was innocent.
 	catherine: If you ever hear another strange story about this town, remember that sometimes the creature in the story has a reason for what it does.
 	Arlette: You sound almost fond of them.
 	catherine: Perhaps I am, I came here hoping for something and I didn’t get it. But I think I got something different.
-	Arlette:  Cheer yourself up, Catherine. This isn't over until it is.
+	Arlette: Cheer yourself up, Catherine. This isn't over until it is.
 	catherine: What does that even mean?
 	Arlette: I don’t know. Well, all I can say is I was enchanted to meet you.
 	catherine: Same, friends?
 	Arlette: Friends
+	leave Arlette
+	[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	set {ChapterTracking.current_day} = 0
 	set {EndingTracking.catherine_sympathy} += 1.0
 - Warn Arlette about Marloch
-	catherine:  If anyone asks about me after I leave, tell them not to follow my path.
+	catherine: If anyone asks about me after I leave, tell them not to follow my path.
 	Arlette: Why?
 	catherine: Because some wishes are better left unanswered.
 	Arlette: What happened?
@@ -29,6 +32,10 @@ Arlette: I am courteous. I never said I was innocent.
 	Arlette: And?
 	catherine: I know you are searching for something yourself. But don’t get too deep in this, sometimes, fate is fate. Trying to change it will lead to worst outcomes.
 	Arlette: That is a lesson I had learn a long time ago. That’s the whole reason I have to stay here.
+	leave Arlette
+	[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+[wait time="1.0"]
 jump day_06_monster/

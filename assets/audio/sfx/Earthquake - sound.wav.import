@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://nmh7klfkdrj2"
+path="res://.godot/imported/Earthquake - sound.wav-960f0ce96da6d036a1766e1f6a96cc6b.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/Earthquake - sound.wav"
+dest_files=["res://.godot/imported/Earthquake - sound.wav-960f0ce96da6d036a1766e1f6a96cc6b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

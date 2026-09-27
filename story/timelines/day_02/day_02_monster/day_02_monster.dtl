@@ -1,28 +1,57 @@
-day_02_monster
-[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
-join Idris center
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Narrator: Catherine finds a tall, slender figure there, grey skin gone strangely handsome up close, gloved hands, a smirk that doesn't reach his eyes.
+[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
+audio music "res://assets/audio/music/Scene_1_monster.wav" [loop="true"]
+join Idris (Idris_smile) center [animation="Fade In" length="1.0" wait="true"]
 if {ChapterTracking.is_evil} == true:
-	Idris: Word travels fast in this town. I hear you've been calling us monsters.
-	catherine: Was only repeating what I'd heard.
+	Idris (Idris_angry): Word travels fast in this town. I hear you've been calling us monsters.
+	catherine: What do you mean, I was only repeating what I'd heard.
 	- Respond with kindness and understanding
-		catherine: I'm sorry if it was unfair of me. I don't actually know you at all.
-		Idris:  An apology. From a human. Careful, that's the kind of thing that gets remembered around here.
+		catherine: I didn't know you heard what I was saying. I don't know you at all.
+		Idris (Idris_angry): So you will only put respect on us if you know you are being watched ? Pathethic.
+		catherine: No, I'm sorry if it was unfair of me. I don't actually know you at all.
+		Idris (Idris_angry): An apology. From a human. Why would I even take that seriously.
+		Idris (Idris_angry): Careful around here, the walls have ears and eyes. And we got you in our sight, newcomer.
+		leave Idris
+		catherine: I geniunely felt threatened this time. But why don't they do nothing to me.
+		catherine: I need to be careful next time. I don't think finding that creature that could cure me is even a good idea now.
 		set {EndingTracking.marloch_feeling} += 1.0
 	- Respond with fear and condescension
 		catherine: Well, can you blame anyone, looking at what you are?
-		Idris:  Careful. That mouth of yours will get you further trouble than you'd like.
-		To complete
+		Idris: Careful. That mouth of yours will get you further trouble than you'd like.
+		catherine: You don't scare me.
+		Idris: You go around town saying you are looking for one of us, yet you threaten me now.
+		Idris: What do you even have in mind.
+		Idris: If I were you I would run and quit this town before something happen. No one will save you here.
+		catherine: *takes a step back an run*
+		catherine: I might have messed up, I need to get myself out of here.
+		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+		leave Idris
 		set {EndingTracking.marloch_feeling} -= 1.0
 else:
-	Idris:  I hear you've been rather generous about my character, all things considered.
+	Idris: I hear you've been rather generous about my character, all things considered.
 	catherine: I only said what seemed fair.
 	- Dismiss him, stay guarded
 		catherine: That doesn't mean I trust you, though.
 		Idris: Trust is overrated. I didn't ask for it.
+		leave Idris
+		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 		set {EndingTracking.marloch_feeling} -= 1.0
 	- Validate him, warm up to him
 		catherine: For what it's worth, I meant it. I don't think you're what people say.
 		Idris: ...Noted.
+		leave Idris
+		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 		set {EndingTracking.marloch_feeling} += 1.0
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+join Marloch (Marloch_angry) left [animation="Fade In" length="1.0" wait="true"]
+Marloch (Marloch_angry): You know what I want to know.
+join Idris right [animation="Fade In" length="1.0" wait="true"]
+Idris: She ain't worth the trouble, she will leave soon.
+Marloch (Marloch_angry): It's me who decides if she is worth the trouble or not. Just tell me what she wants.
+Idris: She looks sick. And she seems to have knowns something before coming to Shateroo.
+Marloch (Marloch_angry): I see...
+leave Marloch [animation="Fade Out" length="1.0" wait="true"]
+leave Idris [animation="Fade Out" length="1.0" wait="true"]
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 jump day_03_intro/

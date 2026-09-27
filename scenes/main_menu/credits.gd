@@ -7,4 +7,6 @@ func _ready() -> void:
 
 
 func _on_return_pressed() -> void:
+	$ButtonSFX.play()
+	await get_tree().create_timer(0.2).timeout
 	queue_free()

@@ -1,15 +1,23 @@
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+Shateroo, Lake.
+[wait time="1.0"]
+Narrator: Near the lake, a thin young weird man sits alone on a bench, flinching every time someone walks too close.
 [background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
-Narrator: Near the lake, a thin young weird man sits alone on a bench, nose buried in a book, flinching every time someone walks too close.
-join Vlad center
-Vlad: I … I didn't know if you'd come back. I got you one anyway.
+audio BGS "res://assets/audio/sfx/Lake - sound.wav" [loop="true"]
+audio music "res://assets/audio/music/Town_road_bgm.wav"
+join Vlad (Vlad_happy) center
+Vlad: I … I didn't know if you'd come. I got a chair if you wanna talk for a bit.
 - Ask about the monsters
 	catherine: Have you seen the monster who lives by the lake? Sharp dressed, doesn't blink much. The tales about him are unsettling.
 	Vlad: Stay away from him. He's not cruel, exactly, but he's not safe either. Not for a human, alone.
+	leave Vlad
 	set {EndingTracking.catherine_sympathy} -= 1.0
 	set {ChapterTracking.is_evil} = true
 - Ask about the creature
 	catherine: Have you seen the creature who lives by the lake? Sharp-dressed, doesn't blink much.
 	Vlad: He's... actually not so bad, from what I've seen. Keeps to himself, minds his business. I don't think he'd hurt you.
+	leave Vlad
 	set {EndingTracking.catherine_sympathy} += 1.0
 	set {ChapterTracking.is_evil} = false
+[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
 jump day_02_monster/

@@ -18,6 +18,7 @@ config/name="VN-Project"
 config/tags=PackedStringArray("dialogic", "visual_novel")
 run/main_scene="uid://cua2bkdfnwvod"
 config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
 
 [audio]
 
@@ -91,10 +92,12 @@ directories/dtl_directory={
 }
 layout/style_directory={
 "": "res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres",
-"Default_VN_Style": "res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"
+"Default_VN_Style": "res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres",
+"PrologueStyle": "res://assets/theme/PrologueStyle.tres",
+"TitleStyles": "res://assets/theme/TitleStyles.tres"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"]
+layout/style_list=["res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres", "res://assets/theme/TitleStyles.tres", "res://assets/theme/PrologueStyle.tres"]
 layout/default_style="res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"
 variables={
 "ChapterTracking": {
@@ -131,9 +134,15 @@ audio/channel_defaults={
 "loop": false,
 "volume": 0.0
 },
+"BGS": {
+"audio_bus": "BGS",
+"fade_length": 0.0,
+"loop": true,
+"volume": -6.0
+},
 "music": {
 "audio_bus": "BGM",
-"fade_length": 0.0,
+"fade_length": 1.0,
 "loop": true,
 "volume": 0.0
 }
@@ -144,6 +153,10 @@ audio/type_sound_bus="BGM"
 
 window/size/viewport_width=1400
 window/size/viewport_height=800
+
+[editor]
+
+movie_writer/movie_file="C:/Users/Lenovo/OneDrive/Bureau/Visual Novel Jam/Repository/Movies/Gameplay_01.avi"
 
 [editor_plugins]
 

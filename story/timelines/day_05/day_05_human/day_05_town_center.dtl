@@ -1,5 +1,7 @@
-day_05_town_center
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+Shateroo, town center.
 [background arg="res://assets/backgrounds/town_center_placeholder.jpg" fade="0.0"]
+audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
 Narrator: The old woman is feeding the pigeons again.
 join Old_woman center
 Old_woman: You have that look. The look of someone who has made a decision and wishes someone else would make it for her.
@@ -12,9 +14,9 @@ catherine: More like you have grown an instinct to judge people
 	catherine: What do you do with them?
 	Old_woman: I feed them to the pigeons.
 	catherine: That explains a great deal.
-	<Empty Text Event>
 	Old_woman: Regret is useful only when it teaches you something. If it doesn’t, Then it is merely another weight.
-	catherine:  I don't think I have room for any more.
+	catherine: I don't think I have room for any more.
+	leave Old_woman
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
 - Ask whether people deserve miracles
@@ -30,6 +32,9 @@ catherine: More like you have grown an instinct to judge people
 	catherine: What you say might be true but, in the end, I am the one who will suffer for the consequences. I am the one who won’t be here anymore.
 	Old_woman: Poor soul.
 	catherine: I don’t wanna bore you with my depressing stories anymore, I should get going.
+	leave Old_woman
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+[wait time="1.0"]
 jump day_05_monster/

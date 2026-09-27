@@ -65,15 +65,25 @@ func _on_slot_delete_requested(slot_name: String) -> void:
 
 
 func _on_main_menu_pressed() -> void:
+	$ButtonSFX.play()
+	await get_tree().create_timer(0.2).timeout
 	if Dialogic.current_timeline:
 		Dialogic.clear()
 	GameManager.go_to("res://scenes/main_menu/main_menu.tscn")
 
 
 func _on_settings_pressed() -> void:
+	$ButtonSFX.play()
+	await get_tree().create_timer(0.2).timeout
 	var new_option_menu = option_menu_ref.instantiate()
 	add_child(new_option_menu)
 
 
 func _on_close_button_pressed() -> void:
+	$ButtonSFX.play()
+	await get_tree().create_timer(0.2).timeout
 	queue_free()
+
+#func _unhandled_input(event: InputEvent) -> void:
+	#if event.is_action_pressed("open_save_menu"):
+		#queue_free()

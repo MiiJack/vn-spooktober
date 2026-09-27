@@ -1,7 +1,13 @@
 set {ChapterTracking.current_day} = 3.0
-day_03_intro
-[background arg="res://assets/backgrounds/main_road_placeholder.jpg" fade="0.0"]
-Narrator:  The enormous amount of effort Catherine made for the last 2 days worsened her condition.
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+audio music -
+audio BGS -
+Shaterro, day 3.
+[wait time="1.0"]
+audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav"
+[background arg="res://assets/backgrounds/hotel_placeholder.jpg" fade="1.0" transition="Swipe Left To Right" wait="true"]
+Narrator: The enormous amount of effort Catherine made for the last 2 days worsened her condition.
 Narrator: She coughs more and more. She knows that if she continues like that, her days might come even sooner.
 Narrator: Doomed either way, she decides to continue. But the atmosphere in the town feels heavier that the days before.
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [signal arg="show_map"]
