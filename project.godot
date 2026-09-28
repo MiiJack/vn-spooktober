@@ -132,7 +132,7 @@ audio/channel_defaults={
 "audio_bus": "BGS",
 "fade_length": 0.0,
 "loop": true,
-"volume": -6.0
+"volume": 0.0
 },
 "music": {
 "audio_bus": "BGM",

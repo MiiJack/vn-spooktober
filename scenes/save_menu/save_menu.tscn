@@ -3,37 +3,10 @@
 [ext_resource type="Script" uid="uid://ctrt5xs7t3hl2" path="res://scenes/save_menu/save_menu.gd" id="1_savemenu"]
 [ext_resource type="PackedScene" uid="uid://baq8ml6hfvo0x" path="res://scenes/settings/option_menu.tscn" id="2_gl16f"]
 [ext_resource type="FontFile" uid="uid://bqrph8yksy3le" path="res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf" id="3_5a421"]
+[ext_resource type="StyleBox" uid="uid://bcl66gbpcf0o1" path="res://assets/ui/texture/button/button-normal.tres" id="3_bxmmq"]
 [ext_resource type="AudioStream" uid="uid://bfkebyrv258v" path="res://assets/audio/sfx/uiSounds/Bip_2.ogg" id="4_7g4mk"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4xg86"]
-bg_color = Color(0.53333336, 0.27058825, 0.1882353, 1)
-border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
-border_blend = true
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-shadow_size = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_thkx5"]
-bg_color = Color(0.5739654, 0.23951626, 0.07355072, 1)
-border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
-border_blend = true
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-shadow_size = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2yjq"]
-bg_color = Color(0.6488623, 0.3408208, 0.24437883, 1)
-border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
-border_blend = true
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-shadow_size = 5
+[ext_resource type="StyleBox" uid="uid://vdiltyg76pt2" path="res://assets/ui/texture/button/button-pressed.tres" id="5_egmap"]
+[ext_resource type="StyleBox" uid="uid://c0fxixysnexi8" path="res://assets/ui/texture/button/button-hover.tres" id="6_jbvyk"]
 
 [node name="SaveMenu" type="CanvasLayer" unique_id=1280784685]
 process_mode = 3
@@ -59,6 +32,7 @@ offset_right = 360.0
 offset_bottom = 280.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = ExtResource("3_bxmmq")
 
 [node name="Margin" type="MarginContainer" parent="Panel" unique_id=411905362]
 layout_mode = 2
@@ -98,9 +72,9 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 16.0
-offset_top = -615.0
+offset_top = -617.0
 offset_right = 295.0
-offset_bottom = -114.0
+offset_bottom = -116.0
 grow_vertical = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=292033735]
@@ -119,9 +93,9 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("3_5a421")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_4xg86")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_thkx5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x2yjq")
+theme_override_styles/normal = ExtResource("3_bxmmq")
+theme_override_styles/pressed = ExtResource("5_egmap")
+theme_override_styles/hover = ExtResource("6_jbvyk")
 text = "Main menu"
 
 [node name="Spacer2" type="Control" parent="Control/VBoxContainer" unique_id=1923717158]
@@ -133,9 +107,9 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("3_5a421")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_4xg86")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_thkx5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x2yjq")
+theme_override_styles/normal = ExtResource("3_bxmmq")
+theme_override_styles/pressed = ExtResource("5_egmap")
+theme_override_styles/hover = ExtResource("6_jbvyk")
 text = "Settings"
 
 [node name="Spacer3" type="Control" parent="Control/VBoxContainer" unique_id=140951604]
@@ -147,9 +121,9 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("3_5a421")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_4xg86")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_thkx5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x2yjq")
+theme_override_styles/normal = ExtResource("3_bxmmq")
+theme_override_styles/pressed = ExtResource("5_egmap")
+theme_override_styles/hover = ExtResource("6_jbvyk")
 text = "Quit"
 
 [node name="Spacer" type="Control" parent="Control/VBoxContainer" unique_id=777153214]
@@ -161,9 +135,9 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("3_5a421")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_4xg86")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_thkx5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x2yjq")
+theme_override_styles/normal = ExtResource("3_bxmmq")
+theme_override_styles/pressed = ExtResource("5_egmap")
+theme_override_styles/hover = ExtResource("6_jbvyk")
 text = "Close"
 
 [node name="ButtonSFX" type="AudioStreamPlayer" parent="." unique_id=372918776]

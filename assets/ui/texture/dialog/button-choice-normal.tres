@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://dxbnxalyp50ex"]
+
+[ext_resource type="Texture2D" uid="uid://nluii5q2htq2" path="res://assets/ui/frame/dialog/button-choices-normal.png" id="1_k7gui"]
+
+[resource]
+texture = ExtResource("1_k7gui")
+texture_margin_left = 45.0
+texture_margin_top = 20.0
+texture_margin_right = 45.0
+texture_margin_bottom = 20.0

@@ -63,6 +63,9 @@ scene = ExtResource("7_5rujm")
 script = ExtResource("2_h4wkf")
 scene = ExtResource("8_tub2u")
 overrides = {
+"boxes_stylebox_focused": "\"res://assets/ui/texture/dialog/button-choice-hover.tres\"",
+"boxes_stylebox_hovered": "\"res://assets/ui/texture/dialog/button-choice-hover.tres\"",
+"boxes_stylebox_normal": "\"res://assets/ui/texture/dialog/button-choice-normal.tres\"",
 "font_custom": "\"res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf\"",
 "font_size_custom": "20.0",
 "font_size_use_global": "false",
