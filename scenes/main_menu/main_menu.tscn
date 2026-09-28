@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://cl2lfpk0ndkxr" path="res://scenes/main_menu/credits.tscn" id="4_wem23"]
 [ext_resource type="Texture2D" uid="uid://xqrjgb7ks8pe" path="res://assets/ui/MainMenu/ItchCover.png" id="5_wem23"]
 [ext_resource type="AudioStream" uid="uid://bd0g67c6wrmkh" path="res://assets/audio/music/Main_menu_music.wav" id="6_3ovsr"]
-[ext_resource type="FontFile" uid="uid://fxedkfqik2h5" path="res://assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf" id="6_4xg86"]
 [ext_resource type="Texture2D" uid="uid://bibn5pkw42yr7" path="res://assets/Cursed-title.png" id="6_x2yjq"]
 [ext_resource type="FontFile" uid="uid://bqrph8yksy3le" path="res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf" id="7_thkx5"]
 [ext_resource type="StyleBox" uid="uid://bcl66gbpcf0o1" path="res://assets/ui/texture/button/button-normal.tres" id="9_lqpn7"]
@@ -25,10 +24,10 @@ credit_menu_ref = ExtResource("4_wem23")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -2.0
-offset_top = -143.0
-offset_right = -2.0
-offset_bottom = 168.11108
+offset_left = 1.0
+offset_top = -156.0
+offset_right = 1.0
+offset_bottom = 155.11108
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_wem23")
@@ -50,10 +49,10 @@ custom_maximum_size = Vector2(720, 206.25)
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -958.0
-offset_top = 7.0
-offset_right = 962.0
-offset_bottom = 1087.0
+offset_left = -358.0
+offset_top = 1.0
+offset_right = 362.0
+offset_bottom = 207.25
 grow_horizontal = 2
 
 [node name="TextureRect" type="TextureRect" parent="TitleContainer" unique_id=1095083149]
@@ -78,22 +77,7 @@ text = "A tale between two worlds"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Title" type="Label" parent="TitleContainer" unique_id=1109790667]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("6_4xg86")
-theme_override_font_sizes/font_size = 120
-text = "CURSED"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="ButtonContainer" type="MarginContainer" parent="." unique_id=2062449937]
-custom_minimum_size = Vector2(400, 400)
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
@@ -108,7 +92,6 @@ grow_vertical = 2
 size_flags_vertical = 4
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ButtonContainer" unique_id=596729463]
-custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="NewGameButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=152192843]

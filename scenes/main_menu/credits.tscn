@@ -2,37 +2,10 @@
 
 [ext_resource type="Script" uid="uid://c6cjm83w7hhwr" path="res://scenes/main_menu/credits.gd" id="1_hfc70"]
 [ext_resource type="FontFile" uid="uid://bqrph8yksy3le" path="res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf" id="2_m3t5o"]
+[ext_resource type="StyleBox" uid="uid://bcl66gbpcf0o1" path="res://assets/ui/texture/button/button-normal.tres" id="3_bewxv"]
 [ext_resource type="AudioStream" uid="uid://bfkebyrv258v" path="res://assets/audio/sfx/uiSounds/Bip_2.ogg" id="3_m5ve6"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m3t5o"]
-bg_color = Color(0.09010268, 0.0031621302, 0, 1)
-border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
-border_blend = true
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-shadow_size = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m5ve6"]
-bg_color = Color(0.39896408, 0.057867363, 9.62615e-08, 1)
-border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
-border_blend = true
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-shadow_size = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_728ge"]
-bg_color = Color(0.8946396, 0.16531965, 0, 1)
-border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
-border_blend = true
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-shadow_size = 5
+[ext_resource type="StyleBox" uid="uid://vdiltyg76pt2" path="res://assets/ui/texture/button/button-pressed.tres" id="4_no65u"]
+[ext_resource type="StyleBox" uid="uid://c0fxixysnexi8" path="res://assets/ui/texture/button/button-hover.tres" id="5_6kmvh"]
 
 [node name="Credits" type="CanvasLayer" unique_id=1698882985]
 layer = 6
@@ -96,9 +69,9 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("2_m3t5o")
 theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_m3t5o")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m5ve6")
-theme_override_styles/hover = SubResource("StyleBoxFlat_728ge")
+theme_override_styles/normal = ExtResource("3_bewxv")
+theme_override_styles/pressed = ExtResource("4_no65u")
+theme_override_styles/hover = ExtResource("5_6kmvh")
 text = "Return"
 
 [node name="ButtonSFX" type="AudioStreamPlayer" parent="." unique_id=1027706984]

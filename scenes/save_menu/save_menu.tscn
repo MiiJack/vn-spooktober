@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://baq8ml6hfvo0x" path="res://scenes/settings/option_menu.tscn" id="2_gl16f"]
 [ext_resource type="FontFile" uid="uid://bqrph8yksy3le" path="res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf" id="3_5a421"]
 [ext_resource type="StyleBox" uid="uid://bcl66gbpcf0o1" path="res://assets/ui/texture/button/button-normal.tres" id="3_bxmmq"]
+[ext_resource type="PackedScene" uid="uid://c2dsnpd68ppwm" path="res://scenes/main_menu/quit_confirmation.tscn" id="3_egmap"]
 [ext_resource type="AudioStream" uid="uid://bfkebyrv258v" path="res://assets/audio/sfx/uiSounds/Bip_2.ogg" id="4_7g4mk"]
 [ext_resource type="StyleBox" uid="uid://vdiltyg76pt2" path="res://assets/ui/texture/button/button-pressed.tres" id="5_egmap"]
 [ext_resource type="StyleBox" uid="uid://c0fxixysnexi8" path="res://assets/ui/texture/button/button-hover.tres" id="6_jbvyk"]
@@ -13,6 +14,7 @@ process_mode = 3
 layer = 10
 script = ExtResource("1_savemenu")
 option_menu_ref = ExtResource("2_gl16f")
+quit_box_ref = ExtResource("3_egmap")
 
 [node name="Dimmer" type="ColorRect" parent="." unique_id=1007270744]
 anchors_preset = 15
@@ -145,4 +147,5 @@ stream = ExtResource("4_7g4mk")
 
 [connection signal="pressed" from="Control/VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]

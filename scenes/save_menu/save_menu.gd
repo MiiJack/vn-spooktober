@@ -12,6 +12,8 @@ const SLOT_SCENE := preload("res://scenes/ui_components/save_slot_button.tscn")
 @onready var _slot_list: VBoxContainer = %SlotList
 @onready var _title_label: Label = %MenuTitle
 
+@export var quit_box_ref: PackedScene
+
 
 
 
@@ -87,3 +89,8 @@ func _on_close_button_pressed() -> void:
 #func _unhandled_input(event: InputEvent) -> void:
 	#if event.is_action_pressed("open_save_menu"):
 		#queue_free()
+
+
+func _on_quit_button_pressed() -> void:
+	var new_quit_box = quit_box_ref.instantiate()
+	add_child(new_quit_box)
