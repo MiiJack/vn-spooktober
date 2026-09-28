@@ -36,4 +36,5 @@ Simon: Let me guess, you heard of legends around this town and are looking for a
 	leave Simon
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
+[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 jump day_02_monster/

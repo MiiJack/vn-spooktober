@@ -14,7 +14,7 @@ Old_woman: A new face coming to town, that’s quite peculiar. What can I do for
 	catherine: And how to say .. it.
 	Old_woman: You wanna ask if they are real, that’s it, right ?
 	catherine: yes, yes.. how do you know ?
-	Old_woman: Well, you know. I've lived long enough. I’ve seen and heard a lot of things during my life. And I am quite old.
+	Old_woman (Old_woman_talking): Well, you know. I've lived long enough. I’ve seen and heard a lot of things during my life. And I am quite old.
 	catherine: So they are real, right
 	Old_woman: I don’t think it’s useful to hide something for you because you’re gonna meet them soon enough if you stay in this town. But you seem quite excited. Why so ?
 	catherine: Oh you know, I’ve got something to ask, or a … wish.
@@ -22,6 +22,7 @@ Old_woman: A new face coming to town, that’s quite peculiar. What can I do for
 	catherine: I don’t really understand
 	Old_woman: Just stay clear of them. It’s getting late. Also, walls here have eyes and ears. I think I am going to go home.
 	Old_woman: Looking forward to seeing you around. Please stay safe as clear of anything supernatural.
+	leave Old_woman [animation="Slide From Left" wait="true"]
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
 - Ask about why there are not many newcomers
@@ -36,8 +37,8 @@ Old_woman: A new face coming to town, that’s quite peculiar. What can I do for
 	Old_woman: They will likely have a room for you for an affordable place.
 	Old_woman: Better move. You don’t wanna stay late outside in this town.
 	Old_woman: Okay, see you around town. I’ll get moving.
+	leave Old_woman [animation="Slide From Left" wait="true"]
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
-leave Old_woman [animation="Slide From Left" wait="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 jump day_01_monster/

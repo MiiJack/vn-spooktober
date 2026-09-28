@@ -33,6 +33,7 @@ Marloch: The universe can be unfair from time to time.
 	Marloch (Marloch_angry): Yes it's true. But it's all in the past now.
 	catherine: So what is the difference between my anger and your anger. You will aso change nothing
 	catherine: Stuck in this dying town full of.. nothing.
+	leave Marloch
 	set {EndingTracking.marloch_feeling} -= 1.0
 - Accept your fate.
 	catherine: You know what ? life has given me lemons without any juice. I just wanna give up.
@@ -42,9 +43,8 @@ Marloch: The universe can be unfair from time to time.
 	catherine: I still do, but not in the detriment of others.
 	Marloch (Marloch_satisfied): You are quite special, quite interesting.
 	Marloch (Marloch_satisfied): I am sure this won't be the last time we meet.
+	leave Marloch
 	set {EndingTracking.marloch_feeling} += 1.0
-leave Marloch
-set {EndingTracking.marloch_feeling} += 1.0
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_05_intro/

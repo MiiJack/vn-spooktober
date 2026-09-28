@@ -7,8 +7,8 @@ Shateroo, day 1.
 [wait time="1.0"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [fade="2.0" loop="true"]
 [background arg="res://assets/backgrounds/town_center_placeholder.jpg" fade="3.0" transition="Swipe Left To Right" wait="true"]
-catherine: Finally, I am here. Finding this town on my own wasn't so bad after all.
+catherine: Finally, I am here. Finding this town on my own wasn't so difficult after all.
 catherine: This can be a new beginning for me. I need to gather as much information as I can and find that coveted creature.
-catherine: Where should I go first, let's see.
+catherine: Where should I go first? Let's see.
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [signal arg="show_map"]

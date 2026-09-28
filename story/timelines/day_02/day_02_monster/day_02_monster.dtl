@@ -25,8 +25,8 @@ if {ChapterTracking.is_evil} == true:
 		Idris: If I were you I would run and quit this town before something happen. No one will save you here.
 		catherine: *takes a step back an run*
 		catherine: I might have messed up, I need to get myself out of here.
-		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 		leave Idris
+		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 		set {EndingTracking.marloch_feeling} -= 1.0
 else:
 	Idris: I hear you've been rather generous about my character, all things considered.

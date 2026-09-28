@@ -3,17 +3,18 @@
 Narrator_catherine: Hello, my name is Catherine.
 audio music "res://assets/audio/music/Town_road_bgm.wav" [fade="0.0" loop="true"]
 [background arg="res://assets/cg/Prologue_final/Prologue_02.png" fade="2.0" wait="true"]
-Narrator_catherine: Since birth, I was destined to an early death. That’s not something anyone would want to live through.
+Narrator_catherine: Since birth, I have been destined for an early death. That’s not something anyone would want to live through.
 Narrator_catherine: But as bleak as it seemed, my mother, Grace, kept supporting me and wanted to give me the life I could never have.
-Narrator_catherine: Each night before sleep, she told me tales of a magical town located in the outskirts of the country.
+Narrator_catherine: Each night before sleep, she told me tales of a magical town located on the outskirts of the country.
 [background arg="res://assets/cg/Prologue_final/Prologue_03.png" fade="2.0" wait="true"]
-Narrator_catherine: A magical town where normal meets supernatural, where normal folks and mystical creatures lived in harmony.
-Narrator_catherine: Those mystical creatures had a lot of powers, from reading minds, possessing people, making harvests a thousand times better and so on.
+Narrator_catherine: A magical town where normal meets supernatural, where normal folks and mystical creatures live in harmony.
+Narrator_catherine: Those mystical creatures had a lot of powers, from reading minds, possessing people, making harvests a thousand times better, and so on.
 Narrator_catherine: But among those creatures lived one so mighty and powerful that it could fulfill every wish and cure every disease.
 [background arg="res://assets/cg/Prologue_final/Prologue_04.png" fade="2.0" wait="true"]
-Narrator_catherine: At 19, my mother passed away unexpectedly.
+Narrator_catherine: At 23, my mother passed away unexpectedly.
 Narrator_catherine: I was impressed I survived that long. But with her support now gone and my disease not cured, my days were also counted.
 [background arg="res://assets/cg/Prologue_final/Prologue_05.png" fade="2.0" wait="true"]
-Narrator_catherine: Taking a chance at life, I decided to look for that town where magic is supposed to exist. I had nothing left to lose, so I looked at a map and found a town with the same name \: “Shateroo”.
+Narrator_catherine: Taking a chance at life, I decided to look for that town where magic is supposed to exist.
+Narrator_catherine: I had nothing left to lose, so I looked at a map and found a town with the same name \: “Shateroo”.
 Narrator_catherine: My story begins, or ends in this town.
 jump day_01_intro/

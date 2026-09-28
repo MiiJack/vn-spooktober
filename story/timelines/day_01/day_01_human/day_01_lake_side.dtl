@@ -16,6 +16,7 @@ Vlad (Vlad_talk): And what are you looking for ?
 	Vlad (Vlad_happy): Tell me straight. You are looking for something, are you ?
 	catherine: Yes I am. And it has something to do with the creatures there.
 	Vlad (Vlad_angry): *Flinching* They're dangerous. People who go looking don't always come back the same. You shouldn't go looking either.
+	leave Vlad
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
 - Ask about the creatures, out of curiosity
@@ -31,7 +32,6 @@ Vlad (Vlad_talk): And what are you looking for ?
 	catherine: Guess I have no luck today. Well, my questions are also really weird. I need to find another way to find the creatures.
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
-leave Vlad
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_01_monster/

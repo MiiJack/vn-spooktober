@@ -2,37 +2,38 @@
 Shateroo, Inn.
 audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
 [background arg="res://assets/backgrounds/Inn_placeholder.jpg" fade="1.0" transition="Push Left" wait="true"]
-Narrator: The road Catherine takes leads to a small Inn.
-Narrator: Behind the desk, a woman in an old fashioned headdress looks up and beams at her.
+Narrator: The road Catherine takes leads to a small inn.
+Narrator: Behind the desk, a woman in an old-fashioned headdress looks up at her.
 join Arlette (Arlette_talking) center [animation="Fade In Up" length="1.0" wait="true"]
-Arlette: Well, aren't you a new face! I am Arlette, the keeper of this Inn. Checking in ?
-catherine: Yes, I just arrived. Is there any room free at this time ?
+Arlette: Well, aren't you a new face! I am Arlette, the keeper of this inn. Checking in?
+catherine: Yes, I just arrived. Is there any room free at this time?
 Arlette: We don't have that many visitors, let me check.
 Arlette (Arlette_smug): Yes, most of the rooms are free at the moment.
 catherine: That’s great, I will stay here for the time being, I don’t know for how long yet.
-catherine: Since I am already here, I think you might now something about this town. Can I ask you,
-- Ask if guests ever saw something weird
-	catherine: It might come off weird but do your guest talk about monsters or ghosts sometimes?
-	Arlette (Arlette_confused): Monsters you say? well most of them leave before I had the chance to make a chat with them. But yeah, I’ve heard some weird encounters stories.
-	catherine: Oh okey, actually. I am looking for one if they do exists.
-	Arlette (Arlette_smug): Oh, bold, like a ghostbuster kind. Best of luck to you.
-	Arlette (Arlette_talking): if you ever meet something, tell me.
-	catherine: Yes, and thanks for the room. See you around town.
+catherine: Since I am already here, I think you might know something about this town. Can I ask you,
+- Ask if guests ever report seeing something weird
+	catherine: It might come off weird but do your guests talk about monsters or ghosts sometimes?
+	Arlette (Arlette_confused): Monsters, you say? Well, most of them leave before I had the chance to make a chat with them.
+	Arlette (Arlette_talking): But yeah, I’ve heard some weird encounter stories.
+	catherine: Oh okay. Actually, I am looking for one if they do exist..
+	Arlette (Arlette_smug): Oh, bold, like a ghostbuster. Best of luck to you.
+	Arlette (Arlette_smug): If you ever meet something, tell me.
+	catherine: Yes, I will, and thanks for the room. See you around town.
+	leave Arlette
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
 - Tell her directly what you are in for
 	catherine: I think it’s better to tell you right away. Actually. I am here to find a specific creature.
-	Arlette (Arlette_confused): What? like ghosts, or the wendigoon or something ?
+	Arlette (Arlette_confused): What? Like ghosts, or the wendigoon or something?
 	catherine: I don’t know, I don’t even know his name or if “it” has a name. But I am sick and I hope it can cure me.
 	catherine: Have you heard any stories about the creatures around here?
-	catherine: Thank you, and thank you for the room. See you around.
-	Arlette (Arlette_confused): Oh, I see. I’ve heard some rumors on weird apparitions from around the world.
-	Arlette (Arlette_talking): Best of luck though. But if you want an advice, don’t go to weird places in search of what you want.
+	Arlette (Arlette_confused): Oh, I see. I’ve heard some rumors about weird apparitions from around the world.
+	Arlette (Arlette_talking): Best of luck though. But if you want my advice, don’t go to weird places in search of what you want.
 	Arlette (Arlette_talking): This town is not the safest and some humans might be more of a threat than the creatures you are searching for.
-	catherine: Yes, thank you for the advice. And the room. See you around
+	catherine: Yes, thank you for the advice. And the room. See you around.
+	leave Arlette
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
-leave Arlette
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_01_monster/
