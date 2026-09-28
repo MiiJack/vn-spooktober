@@ -88,12 +88,10 @@ directories/dtl_directory={
 }
 layout/style_directory={
 "": "res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres",
-"Default_VN_Style": "res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres",
-"PrologueStyle": "res://assets/theme/PrologueStyle.tres",
-"TitleStyles": "res://assets/theme/TitleStyles.tres"
+"Default_VN_Style": "res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres", "res://assets/theme/TitleStyles.tres", "res://assets/theme/PrologueStyle.tres"]
+layout/style_list=["res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"]
 layout/default_style="res://scenes/ui_components/DialogicStyles/Default_VN_Style.tres"
 variables={
 "ChapterTracking": {
