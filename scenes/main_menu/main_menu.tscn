@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://xqrjgb7ks8pe" path="res://assets/ui/MainMenu/ItchCover.png" id="5_wem23"]
 [ext_resource type="AudioStream" uid="uid://bd0g67c6wrmkh" path="res://assets/audio/music/Main_menu_music.wav" id="6_3ovsr"]
 [ext_resource type="FontFile" uid="uid://fxedkfqik2h5" path="res://assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf" id="6_4xg86"]
+[ext_resource type="Texture2D" uid="uid://bibn5pkw42yr7" path="res://assets/Cursed-title.png" id="6_x2yjq"]
 [ext_resource type="FontFile" uid="uid://bqrph8yksy3le" path="res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf" id="7_thkx5"]
 [ext_resource type="AudioStream" uid="uid://bfkebyrv258v" path="res://assets/audio/sfx/uiSounds/Bip_2.ogg" id="9_thkx5"]
 
@@ -71,16 +72,40 @@ color = Color(0.2627451, 0.2509804, 0.21568628, 0.3254902)
 
 [node name="TitleContainer" type="MarginContainer" parent="." unique_id=460788683]
 custom_minimum_size = Vector2(200, 120)
+custom_maximum_size = Vector2(720, 206.25)
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -285.0
+offset_left = -958.0
 offset_top = 7.0
-offset_right = 289.0
-offset_bottom = 168.0
+offset_right = 962.0
+offset_bottom = 1087.0
 grow_horizontal = 2
 
+[node name="TextureRect" type="TextureRect" parent="TitleContainer" unique_id=1095083149]
+layout_mode = 2
+texture = ExtResource("6_x2yjq")
+
+[node name="SubTitle" type="Label" parent="TitleContainer/TextureRect" unique_id=36627394]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -701.0
+offset_top = 153.0
+offset_right = 698.0
+offset_bottom = 319.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("7_thkx5")
+theme_override_font_sizes/font_size = 50
+text = "A tale between two worlds"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Title" type="Label" parent="TitleContainer" unique_id=1109790667]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -90,24 +115,6 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("6_4xg86")
 theme_override_font_sizes/font_size = 120
 text = "CURSED"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="SubTitle" type="Label" parent="TitleContainer/Title" unique_id=36627394]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -700.5
-offset_top = 112.0
-offset_right = 698.5
-offset_bottom = 278.0
-grow_horizontal = 2
-size_flags_horizontal = 4
-size_flags_vertical = 1
-theme_override_fonts/font = ExtResource("7_thkx5")
-theme_override_font_sizes/font_size = 50
-text = "A tale between two worlds"
 horizontal_alignment = 1
 vertical_alignment = 1
 
