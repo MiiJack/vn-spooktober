@@ -50,10 +50,6 @@ directories/dch_directory={
 "paul": "res://story/characters/Villagers/paul.dch"
 }
 directories/dtl_directory={
-"Endings/ending_01": "res://story/timelines/Endings/ending_01.dtl",
-"Endings/ending_02": "res://story/timelines/Endings/ending_02.dtl",
-"Endings/ending_03": "res://story/timelines/Endings/ending_03.dtl",
-"Endings/ending_04": "res://story/timelines/Endings/ending_04.dtl",
 "Prologue": "res://story/timelines/Prologue/Prologue.dtl",
 "day_01_hotel": "res://story/timelines/day_01/day_01_human/day_01_hotel.dtl",
 "day_01_intro": "res://story/timelines/day_01/day_01_intro.dtl",
@@ -75,7 +71,7 @@ directories/dtl_directory={
 "day_04_intro": "res://story/timelines/day_04/day_04_intro.dtl",
 "day_04_main_road": "res://story/timelines/day_04/day_04_human/day_04_main_road.dtl",
 "day_04_monster": "res://story/timelines/day_04/day_04_monster/day_04_monster.dtl",
-"day_05_hotel": "res://story/timelines/day_05/day_05_human/day_05_forest.dtl",
+"day_05_forest": "res://story/timelines/day_05/day_05_human/day_05_forest.dtl",
 "day_05_intro": "res://story/timelines/day_05/day_05_intro.dtl",
 "day_05_lake_side": "res://story/timelines/day_05/day_05_human/day_05_lake_side.dtl",
 "day_05_monster": "res://story/timelines/day_05/day_05_monster/day_05_monster.dtl",
