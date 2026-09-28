@@ -7,30 +7,6 @@
 [ext_resource type="AudioStream" uid="uid://t8j7gnufshde" path="res://assets/audio/sfx/wind_sound.wav" id="5_2gifn"]
 [ext_resource type="StyleBox" uid="uid://b8vhhre24qdd8" path="res://assets/ui/texture/button/button-map.tres" id="5_vjdg6"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjdg6"]
-bg_color = Color(0.29409504, 2.2170227e-06, 0.008639049, 1)
-skew = Vector2(0.2, 0.1)
-border_width_left = 7
-border_width_bottom = 4
-border_color = Color(0.8862745, 0.69803923, 0.03137255, 1)
-corner_radius_top_left = 45
-corner_radius_top_right = 45
-corner_radius_bottom_right = 45
-shadow_size = 5
-shadow_offset = Vector2(10, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q5y87"]
-bg_color = Color(0.81831145, 0.2704977, 0.21673831, 1)
-skew = Vector2(0.2, 0.1)
-border_width_left = 7
-border_width_bottom = 4
-border_color = Color(0.8862745, 0.69803923, 0.03137255, 1)
-corner_radius_top_left = 45
-corner_radius_top_right = 45
-corner_radius_bottom_right = 45
-shadow_size = 5
-shadow_offset = Vector2(10, 0)
-
 [node name="WorldMap" type="CanvasLayer" unique_id=919446563]
 script = ExtResource("1_ts6qr")
 
@@ -74,8 +50,9 @@ theme_override_colors/font_color = Color(0.8862745, 0.69803923, 0.03137255, 1)
 theme_override_fonts/font = ExtResource("4_bgtxi")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = ExtResource("5_vjdg6")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_vjdg6")
-theme_override_styles/hover = SubResource("StyleBoxFlat_q5y87")
+theme_override_styles/pressed = ExtResource("5_vjdg6")
+theme_override_styles/hover = ExtResource("5_vjdg6")
+theme_override_styles/focus = ExtResource("5_vjdg6")
 text = "Town Center"
 
 [node name="LakeSide" type="Button" parent="Buttons" unique_id=57178141]
@@ -90,8 +67,9 @@ theme_override_colors/font_color = Color(0.8862745, 0.69803923, 0.03137255, 1)
 theme_override_fonts/font = ExtResource("4_bgtxi")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = ExtResource("5_vjdg6")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_vjdg6")
-theme_override_styles/hover = SubResource("StyleBoxFlat_q5y87")
+theme_override_styles/pressed = ExtResource("5_vjdg6")
+theme_override_styles/hover = ExtResource("5_vjdg6")
+theme_override_styles/focus = ExtResource("5_vjdg6")
 text = "Lake side"
 
 [node name="MainRoad" type="Button" parent="Buttons" unique_id=1188891694]
@@ -106,8 +84,9 @@ theme_override_colors/font_color = Color(0.8862745, 0.69803923, 0.03137255, 1)
 theme_override_fonts/font = ExtResource("4_bgtxi")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = ExtResource("5_vjdg6")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_vjdg6")
-theme_override_styles/hover = SubResource("StyleBoxFlat_q5y87")
+theme_override_styles/pressed = ExtResource("5_vjdg6")
+theme_override_styles/hover = ExtResource("5_vjdg6")
+theme_override_styles/focus = ExtResource("5_vjdg6")
 text = "Main road"
 
 [node name="Cemetery" type="Button" parent="Buttons" unique_id=786141634]
@@ -122,8 +101,9 @@ theme_override_colors/font_color = Color(0.8862745, 0.69803923, 0.03137255, 1)
 theme_override_fonts/font = ExtResource("4_bgtxi")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = ExtResource("5_vjdg6")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_vjdg6")
-theme_override_styles/hover = SubResource("StyleBoxFlat_q5y87")
+theme_override_styles/pressed = ExtResource("5_vjdg6")
+theme_override_styles/hover = ExtResource("5_vjdg6")
+theme_override_styles/focus = ExtResource("5_vjdg6")
 text = "Cemetery"
 
 [node name="Forest" type="Button" parent="Buttons" unique_id=1191954329]
@@ -138,8 +118,9 @@ theme_override_colors/font_color = Color(0.8862745, 0.69803923, 0.03137255, 1)
 theme_override_fonts/font = ExtResource("4_bgtxi")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = ExtResource("5_vjdg6")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_vjdg6")
-theme_override_styles/hover = SubResource("StyleBoxFlat_q5y87")
+theme_override_styles/pressed = ExtResource("5_vjdg6")
+theme_override_styles/hover = ExtResource("5_vjdg6")
+theme_override_styles/focus = ExtResource("5_vjdg6")
 text = "Forest"
 
 [node name="Hotel" type="Button" parent="Buttons" unique_id=382492508]
@@ -154,8 +135,9 @@ theme_override_colors/font_color = Color(0.8862745, 0.69803923, 0.03137255, 1)
 theme_override_fonts/font = ExtResource("4_bgtxi")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = ExtResource("5_vjdg6")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_vjdg6")
-theme_override_styles/hover = SubResource("StyleBoxFlat_q5y87")
+theme_override_styles/pressed = ExtResource("5_vjdg6")
+theme_override_styles/hover = ExtResource("5_vjdg6")
+theme_override_styles/focus = ExtResource("5_vjdg6")
 text = "Inn"
 
 [node name="ShaterooMap" type="Label" parent="." unique_id=1541345670]
