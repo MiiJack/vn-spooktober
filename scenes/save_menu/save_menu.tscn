@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://ctrt5xs7t3hl2" path="res://scenes/save_menu/save_menu.gd" id="1_savemenu"]
 [ext_resource type="PackedScene" uid="uid://baq8ml6hfvo0x" path="res://scenes/settings/option_menu.tscn" id="2_gl16f"]
+[ext_resource type="StyleBox" uid="uid://dhdq6m60m0j03" path="res://assets/ui/Style_boxes/button/button_texture_normal.tres" id="3_oti6l"]
+[ext_resource type="StyleBox" uid="uid://bislrtiraa7x1" path="res://assets/ui/Style_boxes/button/button_texture_pressed.tres" id="4_v65ss"]
+[ext_resource type="StyleBox" uid="uid://bwoo7t7b46bgy" path="res://assets/ui/Style_boxes/button/button_texture_hover.tres" id="5_bxmmq"]
 
 [node name="SaveMenu" type="CanvasLayer" unique_id=1280784685]
 layer = 10
@@ -26,6 +29,7 @@ offset_right = 360.0
 offset_bottom = 280.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = ExtResource("3_oti6l")
 
 [node name="Margin" type="MarginContainer" parent="Panel" unique_id=411905362]
 layout_mode = 2
@@ -82,6 +86,9 @@ metadata/_edit_use_anchors_ = true
 [node name="MainMenu" type="Button" parent="Control/VBoxContainer" unique_id=705169696]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/normal = ExtResource("3_oti6l")
+theme_override_styles/pressed = ExtResource("4_v65ss")
+theme_override_styles/hover = ExtResource("5_bxmmq")
 text = "Main menu"
 
 [node name="Spacer2" type="Control" parent="Control/VBoxContainer" unique_id=1923717158]
@@ -91,6 +98,9 @@ layout_mode = 2
 [node name="Settings" type="Button" parent="Control/VBoxContainer" unique_id=1939904848]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/normal = ExtResource("3_oti6l")
+theme_override_styles/pressed = ExtResource("4_v65ss")
+theme_override_styles/hover = ExtResource("5_bxmmq")
 text = "Settings"
 
 [node name="Spacer3" type="Control" parent="Control/VBoxContainer" unique_id=140951604]
@@ -100,6 +110,9 @@ layout_mode = 2
 [node name="QuitButton" type="Button" parent="Control/VBoxContainer" unique_id=582333913]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/normal = ExtResource("3_oti6l")
+theme_override_styles/pressed = ExtResource("4_v65ss")
+theme_override_styles/hover = ExtResource("5_bxmmq")
 text = "Quit"
 
 [node name="Spacer" type="Control" parent="Control/VBoxContainer" unique_id=777153214]
@@ -109,6 +122,9 @@ layout_mode = 2
 [node name="CloseButton" type="Button" parent="Control/VBoxContainer" unique_id=932036830]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/normal = ExtResource("3_oti6l")
+theme_override_styles/pressed = ExtResource("4_v65ss")
+theme_override_styles/hover = ExtResource("5_bxmmq")
 text = "Close"
 
 [connection signal="pressed" from="Control/VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]

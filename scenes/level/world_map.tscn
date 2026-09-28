@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://mesn2uhddfmp" path="res://scenes/level/world_map.gd" id="1_ts6qr"]
 [ext_resource type="Texture2D" uid="uid://dixk0k4pjt4q4" path="res://assets/backgrounds/map/map_1.png" id="2_ts6qr"]
 [ext_resource type="Theme" uid="uid://bccgxn6g27yro" path="res://assets/theme/map_button.tres" id="3_kcbpc"]
+[ext_resource type="StyleBox" uid="uid://bd04astconuim" path="res://assets/ui/Style_boxes/buttonmap_texture.tres" id="4_bgtxi"]
 
 [node name="WorldMap" type="CanvasLayer" unique_id=919446563]
 script = ExtResource("1_ts6qr")
@@ -42,6 +43,11 @@ offset_top = 367.0
 offset_right = 818.0
 offset_bottom = 426.0
 theme = ExtResource("3_kcbpc")
+theme_override_styles/normal = ExtResource("4_bgtxi")
+theme_override_styles/pressed = ExtResource("4_bgtxi")
+theme_override_styles/hover = ExtResource("4_bgtxi")
+theme_override_styles/hover_pressed = ExtResource("4_bgtxi")
+theme_override_styles/focus = ExtResource("4_bgtxi")
 text = "Town Center"
 
 [node name="LakeSide" type="Button" parent="Buttons" unique_id=57178141]
@@ -51,6 +57,11 @@ offset_top = 513.0
 offset_right = 186.0
 offset_bottom = 572.0
 theme = ExtResource("3_kcbpc")
+theme_override_styles/normal = ExtResource("4_bgtxi")
+theme_override_styles/pressed = ExtResource("4_bgtxi")
+theme_override_styles/hover = ExtResource("4_bgtxi")
+theme_override_styles/hover_pressed = ExtResource("4_bgtxi")
+theme_override_styles/focus = ExtResource("4_bgtxi")
 text = "Lake side"
 
 [node name="MainRoad" type="Button" parent="Buttons" unique_id=1188891694]
@@ -60,6 +71,11 @@ offset_top = 590.0
 offset_right = 1049.0
 offset_bottom = 649.0
 theme = ExtResource("3_kcbpc")
+theme_override_styles/normal = ExtResource("4_bgtxi")
+theme_override_styles/pressed = ExtResource("4_bgtxi")
+theme_override_styles/hover = ExtResource("4_bgtxi")
+theme_override_styles/hover_pressed = ExtResource("4_bgtxi")
+theme_override_styles/focus = ExtResource("4_bgtxi")
 text = "Main road"
 
 [node name="Cemetery" type="Button" parent="Buttons" unique_id=786141634]
@@ -69,6 +85,11 @@ offset_top = 227.0
 offset_right = 836.0
 offset_bottom = 286.0
 theme = ExtResource("3_kcbpc")
+theme_override_styles/normal = ExtResource("4_bgtxi")
+theme_override_styles/pressed = ExtResource("4_bgtxi")
+theme_override_styles/hover = ExtResource("4_bgtxi")
+theme_override_styles/hover_pressed = ExtResource("4_bgtxi")
+theme_override_styles/focus = ExtResource("4_bgtxi")
 text = "Cemetery"
 
 [node name="Forest" type="Button" parent="Buttons" unique_id=1191954329]
@@ -78,6 +99,11 @@ offset_top = 31.0
 offset_right = 381.0
 offset_bottom = 90.0
 theme = ExtResource("3_kcbpc")
+theme_override_styles/normal = ExtResource("4_bgtxi")
+theme_override_styles/pressed = ExtResource("4_bgtxi")
+theme_override_styles/hover = ExtResource("4_bgtxi")
+theme_override_styles/hover_pressed = ExtResource("4_bgtxi")
+theme_override_styles/focus = ExtResource("4_bgtxi")
 text = "Forest"
 
 [node name="Hotel" type="Button" parent="Buttons" unique_id=382492508]
@@ -87,6 +113,11 @@ offset_top = 537.0
 offset_right = 798.0
 offset_bottom = 596.0
 theme = ExtResource("3_kcbpc")
+theme_override_styles/normal = ExtResource("4_bgtxi")
+theme_override_styles/pressed = ExtResource("4_bgtxi")
+theme_override_styles/hover = ExtResource("4_bgtxi")
+theme_override_styles/hover_pressed = ExtResource("4_bgtxi")
+theme_override_styles/focus = ExtResource("4_bgtxi")
 text = "Hotel"
 
 [node name="ShaterooMap" type="Label" parent="." unique_id=1541345670]
