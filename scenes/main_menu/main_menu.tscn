@@ -4,42 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://baq8ml6hfvo0x" path="res://scenes/settings/option_menu.tscn" id="2_ob46e"]
 [ext_resource type="PackedScene" uid="uid://c2dsnpd68ppwm" path="res://scenes/main_menu/quit_confirmation.tscn" id="3_uqeha"]
 [ext_resource type="PackedScene" uid="uid://cl2lfpk0ndkxr" path="res://scenes/main_menu/credits.tscn" id="4_wem23"]
-[ext_resource type="Texture2D" uid="uid://xqrjgb7ks8pe" path="res://assets/ui/MainMenu/ItchCover.png" id="5_wem23"]
-[ext_resource type="AudioStream" uid="uid://bd0g67c6wrmkh" path="res://assets/audio/music/Main_menu_music.wav" id="6_3ovsr"]
-[ext_resource type="FontFile" uid="uid://fxedkfqik2h5" path="res://assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf" id="6_4xg86"]
-[ext_resource type="Texture2D" uid="uid://bibn5pkw42yr7" path="res://assets/Cursed-title.png" id="6_x2yjq"]
-[ext_resource type="FontFile" uid="uid://bqrph8yksy3le" path="res://assets/fonts/Crimson_Text/CrimsonText-Regular.ttf" id="7_thkx5"]
-[ext_resource type="AudioStream" uid="uid://bfkebyrv258v" path="res://assets/audio/sfx/uiSounds/Bip_2.ogg" id="9_thkx5"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4xg86"]
-bg_color = Color(0.53333336, 0.27058825, 0.1882353, 1)
-border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
-border_blend = true
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-shadow_size = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_thkx5"]
-bg_color = Color(0.5739654, 0.23951626, 0.07355072, 1)
-border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
-border_blend = true
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-shadow_size = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2yjq"]
-bg_color = Color(0.6488623, 0.3408208, 0.24437883, 1)
-border_color = Color(0.79940134, 0.7831411, 0.90776074, 1)
-border_blend = true
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-shadow_size = 5
+[ext_resource type="StyleBox" uid="uid://dhdq6m60m0j03" path="res://assets/ui/Style_boxes/button/button_texture_normal.tres" id="6_3ovsr"]
+[ext_resource type="StyleBox" uid="uid://bislrtiraa7x1" path="res://assets/ui/Style_boxes/button/button_texture_pressed.tres" id="7_thkx5"]
+[ext_resource type="StyleBox" uid="uid://bwoo7t7b46bgy" path="res://assets/ui/Style_boxes/button/button_texture_hover.tres" id="8_x2yjq"]
+[ext_resource type="StyleBox" uid="uid://c3k7kkpm0wm3d" path="res://assets/ui/Style_boxes/button/button_texture_disabled.tres" id="9_lqpn7"]
 
 [node name="MainMenu" type="CanvasLayer" unique_id=1188773545]
 script = ExtResource("1_fsom3")
@@ -70,54 +38,6 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.2627451, 0.2509804, 0.21568628, 0.3254902)
 
-[node name="TitleContainer" type="MarginContainer" parent="." unique_id=460788683]
-custom_minimum_size = Vector2(200, 120)
-custom_maximum_size = Vector2(720, 206.25)
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -958.0
-offset_top = 7.0
-offset_right = 962.0
-offset_bottom = 1087.0
-grow_horizontal = 2
-
-[node name="TextureRect" type="TextureRect" parent="TitleContainer" unique_id=1095083149]
-layout_mode = 2
-texture = ExtResource("6_x2yjq")
-
-[node name="SubTitle" type="Label" parent="TitleContainer/TextureRect" unique_id=36627394]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -701.0
-offset_top = 153.0
-offset_right = 698.0
-offset_bottom = 319.0
-grow_horizontal = 2
-size_flags_horizontal = 4
-size_flags_vertical = 1
-theme_override_fonts/font = ExtResource("7_thkx5")
-theme_override_font_sizes/font_size = 50
-text = "A tale between two worlds"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Title" type="Label" parent="TitleContainer" unique_id=1109790667]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("6_4xg86")
-theme_override_font_sizes/font_size = 120
-text = "CURSED"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="ButtonContainer" type="MarginContainer" parent="." unique_id=2062449937]
 custom_minimum_size = Vector2(400, 400)
 anchors_preset = 6
@@ -126,9 +46,9 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = -448.0
-offset_top = 16.0
+offset_top = -256.5
 offset_right = -123.0
-offset_bottom = 318.0
+offset_bottom = 258.5
 grow_horizontal = 0
 grow_vertical = 2
 size_flags_vertical = 4
@@ -136,67 +56,68 @@ size_flags_vertical = 4
 [node name="VBoxContainer" type="VBoxContainer" parent="ButtonContainer" unique_id=596729463]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+theme_override_constants/separation = 10
 
 [node name="NewGameButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=152192843]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("7_thkx5")
-theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_4xg86")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_thkx5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x2yjq")
-text = "New game"
+theme_override_styles/normal = ExtResource("6_3ovsr")
+theme_override_styles/pressed = ExtResource("7_thkx5")
+theme_override_styles/hover = ExtResource("8_x2yjq")
+theme_override_styles/disabled = ExtResource("9_lqpn7")
+theme_override_styles/focus = ExtResource("8_x2yjq")
+text = "NewGame"
 
 [node name="ContinueButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=992396437]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("7_thkx5")
-theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_4xg86")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_thkx5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x2yjq")
+theme_override_styles/normal = ExtResource("6_3ovsr")
+theme_override_styles/pressed = ExtResource("7_thkx5")
+theme_override_styles/hover = ExtResource("8_x2yjq")
+theme_override_styles/disabled = ExtResource("9_lqpn7")
+theme_override_styles/focus = ExtResource("8_x2yjq")
 text = "Continue"
 
 [node name="LoadButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=1960386389]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("7_thkx5")
-theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_4xg86")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_thkx5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x2yjq")
+theme_override_styles/normal = ExtResource("6_3ovsr")
+theme_override_styles/pressed = ExtResource("7_thkx5")
+theme_override_styles/hover = ExtResource("8_x2yjq")
+theme_override_styles/disabled = ExtResource("9_lqpn7")
+theme_override_styles/focus = ExtResource("8_x2yjq")
 text = "Load"
 
 [node name="OptionButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=1413216185]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("7_thkx5")
-theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_4xg86")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_thkx5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x2yjq")
-text = "Settings"
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("6_3ovsr")
+theme_override_styles/pressed = ExtResource("7_thkx5")
+theme_override_styles/hover = ExtResource("8_x2yjq")
+theme_override_styles/disabled = ExtResource("9_lqpn7")
+theme_override_styles/focus = ExtResource("8_x2yjq")
+text = "Options"
 
 [node name="CreditsButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=662455952]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("7_thkx5")
-theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_4xg86")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_thkx5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x2yjq")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("6_3ovsr")
+theme_override_styles/pressed = ExtResource("7_thkx5")
+theme_override_styles/hover = ExtResource("8_x2yjq")
+theme_override_styles/disabled = ExtResource("9_lqpn7")
+theme_override_styles/focus = ExtResource("8_x2yjq")
 text = "Credits"
 
 [node name="QuitButton" type="Button" parent="ButtonContainer/VBoxContainer" unique_id=1814080016]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_fonts/font = ExtResource("7_thkx5")
-theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_4xg86")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_thkx5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_x2yjq")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("6_3ovsr")
+theme_override_styles/pressed = ExtResource("7_thkx5")
+theme_override_styles/hover = ExtResource("8_x2yjq")
+theme_override_styles/disabled = ExtResource("9_lqpn7")
+theme_override_styles/focus = ExtResource("8_x2yjq")
 text = "Quit"
 
 [node name="BGMMainMenu" type="AudioStreamPlayer" parent="." unique_id=843670717]
