@@ -34,11 +34,11 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_m3t5o")
 theme_override_font_sizes/font_size = 35
-text = "Programming, art and music: 
+text = "Programming, art, story and music: 
 -Team HelloWorld261
 Fonts: 
 -Playfair display by Claus Eggers Sørensen
--CrimsonText by Sebastian Koch"
+-CrimsonText by Sebastian Kosch"
 
 [node name="Title" type="Label" parent="ColorRect" unique_id=1877932388]
 layout_mode = 1

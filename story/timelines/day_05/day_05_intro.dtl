@@ -7,5 +7,4 @@ Shateroo, day 5.
 audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
 Narrator: Catherine has stopped pretending she can find another solution.
 Narrator: There is only one day left before she intends to leave Shateroo.
-Narrator: She spends the morning saying goodbye without admitting that she is doing so.
 [signal arg="show_map"]

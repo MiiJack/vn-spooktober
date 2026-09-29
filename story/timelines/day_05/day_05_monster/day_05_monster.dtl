@@ -8,35 +8,35 @@ audio BGS "res://assets/audio/sfx/Night - Sound.wav" [loop="true"]
 join Marloch center
 Marloch: You have returned. I hoped you wouldn't.
 catherine: Then why are you here?
-Marloch: Because I have been thinking. You want to live ? Then I can offer you another solution.
+Marloch: Because I have been thinking. You want to live? Then I can offer you another solution.
 catherine: I want to live more than anything.
-Marloch: There is a person in this town. Their life for yours.
+Marloch: Choose a person in this town. Their life is yours.
 catherine: You mean kill them?
-Marloch: I said nothing of killing.
+Marloch: I said nothing about killing.
 catherine: Their life ends either way.Why offer this now?
-Marloch: Because you have spent days telling me you want to live.
+Marloch (Marloch_what): Because you have spent days telling me you want to live.
 - Accept the bargain
-	catherine: I barely know anyone is this town. It barely matters to me.
-	Marloch: You are really bad at lying, you know. It is obvious that you are already attached to some of them.
+	catherine: I barely know anyone in this town. It barely matters to me.
+	Marloch (Marloch_angry): You are really bad at lying, you know. It is obvious that you are already attached to some of them.
 	catherine: If I have to become someone who can do that to live, then I don't think I want the life you're offering.
-	Marloch: Interesting, but previsible. It’s nice to think you are not as greedy as I hoped for.
+	Marloch (Marloch_satisfied): Interesting, but previsible. It’s nice to think you are not as greedy as I hoped for.
 	catherine: You sound disappointed.
-	Marloch: You don’t know anything.
+	Marloch (Marloch_angry): You don’t know anything.
 	leave Marloch [animation="Fade Out" length="1.0" wait="true"]
 	set {EndingTracking.marloch_feeling} += 1.0
 - Refuse
-	catherine: No. I won’t do that. I will no trade someone’s life for mine.
-	Marloch: You answered quickly. Even if it means dying?
-	Marloch: Foolish. Humans are very strange creatures.
+	catherine: No. I won’t do that. I will not trade someone’s life for mine.
+	Marloch (Marloch_what): You answered quickly. Even if it means dying?
+	Marloch (Marloch_angry): Foolish. Humans are very strange creatures.
 	leave Marloch [animation="Fade Out" length="1.0" wait="true"]
 	set {EndingTracking.marloch_feeling} -= 1.0
 - Question the bargain
 	catherine: Why them?
-	Marloch: Because their life has value, and that is what I am looking for. That is the source of my powers.
+	Marloch (marloch_happy): Because their life has value, and that is what I am looking for. That is the source of my powers.
 	catherine: Then why should mine be worth more?
-	Marloch: ...
+	Marloch (Marloch_angry): ...
 	catherine: You don't actually have an answer, do you?
-	Marloch: You don’t know anything, you fool.
+	Marloch (Marloch_angry): You don’t know anything, you fool.
 	leave Marloch [animation="Fade Out" length="1.0" wait="true"]
 	set {EndingTracking.marloch_feeling} += 1.0
 Narrator: Marloch fades into the lake without saying anything.

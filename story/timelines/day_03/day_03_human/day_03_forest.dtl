@@ -1,37 +1,39 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Shateroo, forest.
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/Forest3D_Placeholder.png" fade="0.0"]
+[background arg="res://assets/backgrounds/Forest_day.png" fade="0.0"]
 audio BGS "res://assets/audio/sfx/Forest - sound.wav" [loop="true"]
 join Vlad center
-catherine: *screams* Oh, an ugly man.
-Vlad: *astonished and a little bit hurt* Oh God! Wha ...what are you doing here ?
-catherine: Is there a point of hiding something anymore ?
-Vlad: Absolutely not, but you are quite brave, despite how frail you look. You know wild animals could kill you here.
+audio music "res://assets/audio/music/Town_road_bgm.wav"
+catherine: *Screams* Oh, an ugly man.
+Vlad (Vlad_confused): *Astonished and a little bit hurt* Oh God! Wha ...what are you doing here?
+catherine: Is there a point in hiding anymore?
+Vlad (Vlad_angry): Absolutely not, but you are quite brave, despite how frail you look. You know wild animals could kill you here.
 catherine: It's not the wild animals that are worrying me.
-Vlad: Still looking for hum, monsters *cough*. Are you ?
+Vlad (Vlad_sad): Still looking for hum, monsters *cough*. Are you?
 - Admit you are still looking but will do it alone.
-	catherine: Yes, I am still looking. But I already saw 2 of them earlier. So I will find what I am seaching for.
+	catherine: Yes, I am still looking. But I already saw 2 of them earlier. So I will find what I am searching for.
 	Vlad (Vlad_confused): You are .. admirable. No, not admirable. Crazy.
 	Vlad (Vlad_happy): Yes, you are crazy.
 	Vlad: I don't wanna deal with crazy people looking for monsters... and trouble.
 	leave Vlad
 	set {EndingTracking.catherine_sympathy} -= 1.0
-- Ask fr more informations.
-	catherine: You seem to know a lot about them. Why won't you tell me more.
-	Vlad: You say I am an ugly man and then you patronize me. You're such a little brat. Even if you almost looks like a ghost.
-	catherine: I would have looked better if you helped me from the start.
-	Vlad: Fine, well.. listen. brat. Every move you make in this is tracked by the creatures you was earlier.
-	Vlad: Once you said outloud that you wanna meet.. whatever, I assure you he knows that.
-	Vlad: And if you are "intresting" enough, he will come find you. Trust me.
-	Vlad: So, just be patient.
-	catherine: You just tell me to wait for someone to approach me ?
-	Vlad: YES.
-	catherine: Every encounter I had was random anyway so I don't really have a choice. I am still going to wonder around while waiting.. Vlad.
-	Vlad: Yes, that's it. Now siou, go away before the ugly man eats you.. or something.
+- Ask for more information.
+	catherine: You seem to know a lot about them. Why won't you tell me more?
+	Vlad (Vlad_normal): You say I am an ugly man and then you patronize me. You're such a little brat. Even if you almost look like a ghost.
+	catherine: I would have looked better if you had helped me from the start.
+	Vlad (Vlad_talk): Fine, well.. listen. Every move you make in this is tracked by the creatures you met earlier.
+	Vlad (Vlad_happy): Once you said outloud that you wanted to meet... whatever, I assure you he knows that.
+	Vlad (Vlad_happy): And if you are "interesting" enough, he will come find you. Trust me.
+	Vlad (Vlad_normal): So, just be patient.
+	catherine: You just tell me to wait for someone to approach me?
+	Vlad (Vlad_talk): YES.
+	catherine: Every encounter I had was random anyway so I don't really have a choice. I am still going to wander around while waiting. Vlad.
+	Vlad (Vlad_happy): Yes, that's it. Now you, go away before the ugly man eats you.. or something.
 	catherine: Haha, very funny.
 	leave Vlad
 	set {EndingTracking.catherine_sympathy} += 1.0
 audio music - [loop="true"]
+audio BGS - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 jump day_03_monster/

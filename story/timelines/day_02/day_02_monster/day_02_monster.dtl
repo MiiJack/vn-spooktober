@@ -1,11 +1,17 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
-Narrator: Catherine finds a tall, slender figure there, grey skin gone strangely handsome up close, gloved hands, a smirk that doesn't reach his eyes.
+Narrator: Catherine finds a tall, slender figure there, strangely handsome up close, gloved hands, a smirk that doesn't reach his eyes.
 [background arg="res://assets/backgrounds/lake_side_nigh.png" fade="1.0" wait="true"]
 audio music "res://assets/audio/music/Scene_1_monster.wav" [loop="true"]
 join Idris (Idris_smile) center [animation="Fade In" length="1.0" wait="true"]
 if {ChapterTracking.is_evil} == true:
 	Idris (Idris_angry): Word travels fast in this town. I hear you've been calling us monsters.
-	catherine: What do you mean, I was only repeating what I'd heard.
+	catherine: What, what are you? I've never seen you in town before.
+	Idris (Idris_angry): Of course, you haven't. I am not the kind to mingle with those people.
+	Idris (Idris_angry): Even if this body I use used to do that.
+	catherine: What do you mean?
+	Idris (Idris_angry): Nevermind. We don't like the things you talk about with the villagers here.
+	Idris (Idris_angry): And since you are here now, I don't find any reason to keep you alive.
+	catherine: No, wait. I didn't mean to...
 	- Respond with kindness and understanding
 		catherine: I didn't know you heard what I was saying. I don't know you at all.
 		Idris (Idris_angry): So you will only put respect on us if you know you are being watched ? Pathethic.
@@ -15,6 +21,7 @@ if {ChapterTracking.is_evil} == true:
 		leave Idris
 		catherine: I geniunely felt threatened this time. But why don't they do nothing to me.
 		catherine: I need to be careful next time. I don't think finding that creature that could cure me is even a good idea now.
+		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 		set {EndingTracking.marloch_feeling} += 1.0
 	- Respond with fear and condescension
 		catherine: Well, can you blame anyone, looking at what you are?

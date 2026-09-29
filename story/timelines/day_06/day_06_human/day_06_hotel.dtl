@@ -1,24 +1,25 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
-Shateroo, Inn
+Shateroo, Inn.
 [background arg="res://assets/backgrounds/Inn_placeholder.jpg" fade="0.0"]
 Narrator: Arlette is behind the reception desk when Catherine comes downstairs.
 join Arlette center
-Arlette: Are you leaving today? Catherine?
+Arlette (Arlette_disappointed): Are you leaving today? Catherine?
 catherine: I suppose my stay has come to an end.
-Arlette: I shall miss having someone interesting to gossip about.
+Arlette (Arlette_disappointed): I shall miss having someone interesting to gossip about.
 catherine: I thought you were supposed to be courteous.
-Arlette: I am courteous. I never said I was innocent.
+Arlette (Arlette_smug): I am courteous. I never said I was innocent.
 - Leave Arlette with hope
 	catherine: Thank you for giving me somewhere to stay.
-	Arlette: You are welcome.
+	Arlette (Arlette_talking): You are welcome.
 	catherine: If you ever hear another strange story about this town, remember that sometimes the creature in the story has a reason for what it does.
-	Arlette: You sound almost fond of them.
+	Arlette (Arlette_smug): You sound almost fond of them.
 	catherine: Perhaps I am, I came here hoping for something and I didn’t get it. But I think I got something different.
-	Arlette: Cheer yourself up, Catherine. This isn't over until it is.
+	Arlette (Arlette_smug): Cheer yourself up, Catherine. This isn't over until it is.
 	catherine: What does that even mean?
-	Arlette: I don’t know. Well, all I can say is I was enchanted to meet you.
-	catherine: Same, friends?
-	Arlette: Friends
+	Arlette (Arlette_smug): I don’t know. Well, all I can say is I was enchanted to meet you.
+	Arlette (Arlette_disappointed): Yes, I was enchanted to meet you.
+	catherine: Same Arlette, friends?
+	Arlette (Arlette_smug): Friends.
 	leave Arlette
 	[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	set {ChapterTracking.current_day} = 0
@@ -27,11 +28,11 @@ Arlette: I am courteous. I never said I was innocent.
 	catherine: If anyone asks about me after I leave, tell them not to follow my path.
 	Arlette: Why?
 	catherine: Because some wishes are better left unanswered.
-	Arlette: What happened?
+	Arlette (Arlette_angry): What happened?
 	catherine: I found what I came looking for. I wish I hadn't.
-	Arlette: And?
-	catherine: I know you are searching for something yourself. But don’t get too deep in this, sometimes, fate is fate. Trying to change it will lead to worst outcomes.
-	Arlette: That is a lesson I had learn a long time ago. That’s the whole reason I have to stay here.
+	Arlette (Arlette_confused): And?
+	catherine: I know you are searching for something yourself. But don’t get too deep in this, sometimes, fate is fate. Trying to change it will lead to worse outcomes.
+	Arlette (Arlette_disappointed): That is a lesson I had learned a long time ago. That’s the whole reason I have to stay here.
 	leave Arlette
 	[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	set {ChapterTracking.is_evil} = true

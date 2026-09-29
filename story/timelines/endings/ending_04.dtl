@@ -1,9 +1,12 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 audio music "res://assets/audio/music/Scene_1_monster.wav" [fade="2.0" loop="true"]
 Narrator: Deeply upset by Catherine’s words and behavior, Marloch ends up leaching out on her.
-Narrator: *something in him finally breaks loose, ugly and total* Of course. Of course it ends like this. It always does.
+Narrator: Something in him finally breaks loose.
+join Marloch (Marloch_angry) center [animation="Fade In" length="1.0" wait="true"]
+Marloch (Marloch_angry): Something in him finally breaks loose. Of course. Of course, it ends like this. It always does.
 Narrator: Catherine's words or choices have undone whatever fragile restraint Marloch had left.
-Narrator: He unleashes centuries of fury on Shateroo. Catherine flees, but the town does not survive the night  homes, streets, the fountain in the square, all of it erased before morning.
+Narrator: He unleashes centuries of fury on Shateroo. Catherine flees, but the town does not survive the night. Homes, streets, the fountain, all of it erased before morning.
+leave Marloch [animation="Fade Out" length="1.0" wait="true"]
 [background arg="res://assets/cg/End/End_04.png" fade="1.0" wait="true"]
 audio BGS "res://assets/audio/sfx/Earthquake - sound.wav"
 Narrator: The villagers who survive never forgive her. She should never have come, they say. Wanting to live, in the face of what she was owed by fate, was its own kind of greed.

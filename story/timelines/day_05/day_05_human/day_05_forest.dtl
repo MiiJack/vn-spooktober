@@ -1,17 +1,16 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
-Shateroo, Inn
+Shateroo, forest.
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/Inn_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/Forest_day.png" fade="0.0"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
 audio BGS "res://assets/audio/sfx/Forest - sound.wav" [loop="true"]
 Narrator: Simon is standing beside an old tree, looking at whatever is on the ground. Catherine approaches slowly until Simon notices her.
 [wait time="1.0"]
-audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
 join Simon center
-Simon: Oh, I didn’t see you there. Are you leaving Shateroo ? You look like someone preparing to leave.
+Simon: Oh, I didn’t see you there. Are you leaving Shateroo? You look like someone is preparing to leave.
 catherine: I don’t know. I don’t know anything anymore.
 Simon: I hope you have found what you came for.
-catherine: I found it but It wasn't enough. I wish I had more time to figure things out.
+catherine: I found it but it wasn't enough. I wish I had more time to figure things out.
 - Ask Simon whether wanting more is selfish
 	catherine: Is it selfish to want more time? Even when you know you cannot have it?
 	Simon: I don’t think so, wanting something is not a crime.
@@ -20,9 +19,9 @@ catherine: I found it but It wasn't enough. I wish I had more time to figure thi
 	leave Simon
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
-- Ask Simon whether she should accept fate
+- Ask Simon whether Catherine should accept fate
 	catherine: Perhaps I should simply accept that this is how things end.
-	Simon: Sometimes we don’t really have a choice you know, look at me. Do you think I want to be a grave polisher? But acceptance is not always surrender.
+	Simon: Sometimes we don’t really have a choice, you know, look at me. Do you think I want to be a grave polisher? But acceptance is not always surrender.
 	catherine: Stop with your philosophical speech. What's the difference anyway?
 	Simon: Let’s put it like this. Acceptance says, "This is what happened." Surrender says, "There was never anything worth fighting for."
 	catherine: And which one do you think I'm doing?

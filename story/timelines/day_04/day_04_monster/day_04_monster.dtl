@@ -6,41 +6,42 @@ audio BGS "res://assets/audio/sfx/Night - Sound.wav" [loop="true"]
 Narrator: He looks less threatening than before.
 [background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="1.0" wait="true"]
 join Marloch (Marloch_normal) center
-Marloch: You came back.
+Marloch (Marloch_satisfied): You came back.
 catherine: So did you.
-Marloch: I live here.
+Marloch (Marloch_what): I live here.
 catherine: Do you?
-Marloch (Marloch_angry): What sort of question is that?  it’s the least of pleasantries, yes, I’m not from here. You came all this way for nothing.
+Marloch (Marloch_angry): What sort of question is that?  It’s the least of pleasantries, yes, I’m not from here. You came all this way for nothing.
 catherine: Thank you for reminding me…
-Marloch: The universe can be unfair from time to time, I’m sorry
-Marloch: You seem disappointed. Is it because I refused to help you?
+Marloch (Marloch_satisfied): The universe can be unfair from time to time.
+Marloch (Marloch_angry): You seem disappointed. Is it because I refused to help you?
 catherine: Because I thought the stories were true. Perhaps that is what hurts most.
 catherine: My mother spent years telling me about this place.
-Marloch: And what did she say?
+Marloch (Marloch_what): And what did she say?
 catherine: That you were kind and powerful and understanding and.. whatever. Not like this.
-Marloch: Your mother was wrong.
-catherine: I don’t think she was, at least some of it is true. I believe you weren’t like someone bad before. Not as bad as you might look to be. I also don’t think you enjoyed becoming what you are.
-Marloch: You know nothing about me.
+Marloch (Marloch_satisfied): Your mother was wrong.
+catherine: I don’t think she was, at least some of it is true. I believe you weren’t like someone bad before. Not as bad as you might look. I also don’t think you enjoyed becoming what you are.
+Marloch (Marloch_angry): You know nothing about me.
 catherine: No. But I know what it is like to be trapped inside something you never chose.
-catherine: Catherine's eyes begin to water.m I'm afraid. I am afraid of dying
+Narrator: Catherine's eyes begin to water.
+catherine: I'm afraid. I am afraid of dying.
 catherine: I still want to live. I want to travel. I want to see things. I want to be old and complain about my knees.
-Marloch: The universe can be unfair from time to time.
+Marloch (Marloch_normal): The universe can be unfair from time to time.
 - Go against fate.
 	catherine: I don't care what your universe or fate or whatever you are saying. I want what I want.
 	Marloch (Marloch_angry): As if you have any possibility of getting it on your own.
 	Marloch (Marloch_angry): You just sound desperate and angry. Your anger will change nothing.
-	catherine: And you ? is that true that you helped people before ?
+	catherine: And you? Is that true that you helped people before?
 	Marloch (Marloch_angry): Yes it's true. But it's all in the past now.
-	catherine: So what is the difference between my anger and your anger. You will aso change nothing
+	catherine: So what is the difference between my anger and your anger. You will also change nothing.
 	catherine: Stuck in this dying town full of.. nothing.
 	leave Marloch
 	set {EndingTracking.marloch_feeling} -= 1.0
 - Accept your fate.
-	catherine: You know what ? life has given me lemons without any juice. I just wanna give up.
+	catherine: You know what? Life has given me lemons without any juice. I just wanna give up.
 	Marloch (Marloch_what): I didn't expect you to take it like that.
 	catherine: I am almost used to it. Almost.
-	Marloch (Marloch_what): You don't have what I want. And you are not willing to push for more. I guess you don't really wanna live.
-	catherine: I still do, but not in the detriment of others.
+	Marloch (Marloch_what): You don't have what I want. And you are not willing to push for more. I guess you don't really want to live.
+	catherine: I still do, but not to the detriment of others.
 	Marloch (Marloch_satisfied): You are quite special, quite interesting.
 	Marloch (Marloch_satisfied): I am sure this won't be the last time we meet.
 	leave Marloch

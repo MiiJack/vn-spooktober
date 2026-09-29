@@ -1,12 +1,12 @@
-Shateroom cemetery
+Shateroo, cemetery.
 [background arg="res://assets/backgrounds/cemetery_placeholder.jpg" fade="0.0"]
 Narrator: Simon is waiting beside the cemetery gate.
 join Simon center [animation="Fade In" length="1.0" wait="true"]
-Simon: I heard you were leaving.
-catherine: Yes I am, word travels quickly here.
+Simon (Simon_surprised): I heard you were leaving.
+catherine: Yes I am.
 - Thank Simon
 	catherine: Thank you, Simon.
-	Simon (Simon_surprised): For what do you thank me for?
+	Simon (Simon_surprised): For what do you thank me?
 	catherine: For speaking honestly with me.
 	Simon (Simon_talking): You may find that honesty is easier when one has nothing left to lose.
 	Simon (Simon_talking): Take care of yourself, Catherine.

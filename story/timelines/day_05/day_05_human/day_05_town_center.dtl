@@ -1,6 +1,6 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Shateroo, town center.
-[background arg="res://assets/backgrounds/town_center_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/town_center_day_2.png" fade="0.0"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
 Narrator: The old woman is feeding the pigeons again.
 join Old_woman center
@@ -14,20 +14,20 @@ catherine: More like you have grown an instinct to judge people
 	catherine: What do you do with them?
 	Old_woman: I feed them to the pigeons.
 	catherine: That explains a great deal.
-	Old_woman: Regret is useful only when it teaches you something. If it doesn’t, Then it is merely another weight.
+	Old_woman: Regret is useful only when it teaches you something. If it doesn’t, then it is merely another weight.
 	catherine: I don't think I have room for any more.
 	leave Old_woman
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
 - Ask whether people deserve miracles
 	catherine: Do you think people deserve miracles?
-	Old_woman: No, People deserve food, shelter, kindness and perhaps a little luck.
+	Old_woman: No, people deserve food, shelter, kindness, and perhaps a little luck.
 	Old_woman: Miracles are dangerous because people begin believing they are entitled to them.
 	catherine: Even if they are suffering?
 	Old_woman: Especially then.
 	catherine: That’s harsh.
-	Old_woman: It make me sound like I am wise, but I am as foolish as everyone else.
-	catherine: I’ve been fooled believing in miracles. Maybe I should have known better.
+	Old_woman: It makes me sound like I am wise, but I am as foolish as everyone else.
+	catherine: I’ve been fooled by believing in miracles. Maybe I should have known better.
 	Old_woman: You didn’t know anything when you made that decision. You just took your chances. Don’t blame yourself for taking a shot at it.
 	catherine: What you say might be true but, in the end, I am the one who will suffer for the consequences. I am the one who won’t be here anymore.
 	Old_woman: Poor soul.
