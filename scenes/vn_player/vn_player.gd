@@ -1,3 +1,4 @@
+class_name vn_player
 extends Node
 ## Host scene for the actual visual novel (res://scenes/vn_player/).
 ##
@@ -57,3 +58,4 @@ func _open_save_menu() -> void:
 
 func _on_timeline_ended() -> void:
 	SaveManager.quit_to_menu()
+	

@@ -12,3 +12,4 @@ catherine: This can be a new beginning for me. I need to gather as much informat
 catherine: Where should I go first? Let's see.
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [signal arg="show_map"]
+[wait_input]

@@ -1,10 +1,10 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
-Narrator: That evening, Catherine finds Marloch sitting beside the lake. Almost tired.
+Narrator: That evening, Catherine finds Marloch sitting beside the forest. Almost tired.
 audio music "res://assets/audio/music/Scene_1_monster.wav" [loop="true"]
 audio BGS "res://assets/audio/sfx/Night - Sound.wav" [loop="true"]
 [background arg="res://assets/cg/Meet/Meet_02.png" fade="0.0"]
 Narrator: He looks less threatening than before.
-[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="1.0" wait="true"]
+[background arg="res://assets/backgrounds/Forest_night.png" fade="1.0" wait="true"]
 join Marloch (Marloch_normal) center
 Marloch (Marloch_satisfied): You came back.
 catherine: So did you.

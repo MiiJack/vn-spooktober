@@ -9,3 +9,4 @@ Narrator: Catherine spends the morning walking through Shateroo without much pur
 Narrator: For the first time, she is not searching for the creature. She is simply looking for someone to talk to.
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [signal arg="show_map"]
+[wait_input]

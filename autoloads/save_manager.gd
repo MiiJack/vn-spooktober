@@ -161,7 +161,7 @@ func take_pending_slot() -> String:
 func quit_to_menu() -> void:
 	await Dialogic.end_timeline()
 	await Dialogic.clear(Dialogic.ClearFlags.FULL_CLEAR)
-	SceneTransition.go_to(MAIN_MENU_SCENE)
+	GameManager.go_to(MAIN_MENU_SCENE)
 #endregion
 
 #region INTERNAL

@@ -13,6 +13,8 @@ extends CanvasLayer
 	"hotel" : $Buttons/Hotel
 }
 
+
+
 var location_available_day: Dictionary = {
 	1: ["town_center","hotel", "lake_side"],
 	2: ["hotel", "cemetery", "lake_side"],
@@ -39,23 +41,30 @@ func _go_to_location(location_id: String) -> void:
 	current_day = Dialogic.VAR.get_variable("ChapterTracking.current_day")
 	var timelime_name: String = "day_0%1d_%s" % [current_day, location_id]
 	print(timelime_name)
-	get_tree().current_scene.queue_free()
+	
+	#get_tree().current_scene.queue_free()
 	Dialogic.start(timelime_name)
 
 func _on_town_center_pressed() -> void:
 	_go_to_location("town_center")
+	queue_free()
 
 func _on_lake_side_pressed() -> void:
 	_go_to_location("lake_side")
+	queue_free()
 
 func _on_main_road_pressed() -> void:
 	_go_to_location("main_road")
+	queue_free()
 
 func _on_cemetery_pressed() -> void:
 	_go_to_location("cemetery")
+	queue_free()
 
 func _on_forest_pressed() -> void:
 	_go_to_location("forest")
+	queue_free()
 
 func _on_hotel_pressed() -> void:
 	_go_to_location("hotel")
+	queue_free()

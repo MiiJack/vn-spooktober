@@ -9,7 +9,7 @@ Narrator: It looks human, well, human enough with some weird quirks.
 Narrator: Intrigued, Catherine approaches slowly until she is face to face with the creature.
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/town_center_day_2.png" fade="1.0" wait="true"]
+[background arg="res://assets/backgrounds/town_center_night.png" fade="1.0" wait="true"]
 join Marloch center
 Marloch (Marloch_satisfied): It seems that you are looking for me.
 catherine: Who are you?

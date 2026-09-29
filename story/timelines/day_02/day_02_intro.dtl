@@ -10,3 +10,4 @@ Narrator: Catherine wakes up early, continuing her research.
 catherine: I’ve got a little time left, but I know the tales are real. I’m sure someone in this town can point me toward the one that can cure my sickness.
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [signal arg="show_map"]
+[wait_input]

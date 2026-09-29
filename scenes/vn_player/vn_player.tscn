@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" uid="uid://d11nerjbh1soq" path="res://scenes/vn_player/vn_player.gd" id="1_vnplayer"]
 
-[node name="VnPlayer" type="Node" unique_id=1158810389]
+[node name="VnPlayer" type="Node" unique_id=1158810389 groups=["vn_player_group"]]
 script = ExtResource("1_vnplayer")

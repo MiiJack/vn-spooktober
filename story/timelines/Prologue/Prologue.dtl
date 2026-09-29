@@ -4,7 +4,7 @@ Narrator_catherine: Hello, my name is Catherine.
 audio music "res://assets/audio/music/Town_road_bgm.wav" [fade="0.0" loop="true"]
 [background arg="res://assets/cg/Prologue_final/Prologue_02.png" fade="2.0" wait="true"]
 Narrator_catherine: Since birth, I have been destined for an early death. That’s not something anyone would want to live through.
-Narrator_catherine: But as bleak as it seemed, my mother, Grace, kept supporting me and wanted to give me the life I could never have.
+Narrator_catherine: But as bleak as it seemed, my mother kept supporting me and wanted to give me the life I could never have.
 Narrator_catherine: Each night before sleep, she told me tales of a magical town located on the outskirts of the country.
 [background arg="res://assets/cg/Prologue_final/Prologue_03.png" fade="2.0" wait="true"]
 Narrator_catherine: A magical town where normal meets supernatural, where normal folks and mystical creatures live in harmony.

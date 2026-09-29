@@ -11,3 +11,4 @@ Narrator: She coughs more and more. She knows that if she continues like that, h
 Narrator: Doomed either way, she decides to continue. But the atmosphere in the town feels heavier than the days before.
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [signal arg="show_map"]
+[wait_input]

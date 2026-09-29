@@ -9,3 +9,4 @@ Narrator: Morning comes too quickly. Catherine packs her belongings. There is no
 catherine: This day feels heavy. I don't like this.
 catherine: I should go around town to say goodbye, I think that's the least that I can do.
 [signal arg="show_map"]
+[wait_input]

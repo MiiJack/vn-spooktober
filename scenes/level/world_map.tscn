@@ -8,6 +8,7 @@
 [ext_resource type="StyleBox" uid="uid://b8vhhre24qdd8" path="res://assets/ui/texture/button/button-map.tres" id="5_vjdg6"]
 
 [node name="WorldMap" type="CanvasLayer" unique_id=919446563]
+layer = 5
 script = ExtResource("1_ts6qr")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=590661525]

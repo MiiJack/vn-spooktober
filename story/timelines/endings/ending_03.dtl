@@ -1,11 +1,12 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 audio music "res://assets/audio/music/Scene_1_monster.wav" [loop="true"]
-[background arg="res://assets/cg/End/End_03.png" fade="0.0"]
 join Marloch (Marloch_angry) center [animation="Fade In" length="1.0" wait="true"]
-Marloch: I won't help you. I'm sorry. No, I'm not sorry. I don't know what I am anymore?
+Marloch: I won't help you. I'm sorry. No, I'm not sorry. I don't know what I am anymore.
 catherine: I know. I think I understood, before I even asked, that you might say no.
 catherine: I came here for myself. That was always the truth of it. Thank you for hearing me out anyway.
+leave Marloch [animation="Fade In" length="1.0" wait="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+[background arg="res://assets/cg/End/End_03.png" fade="0.0"]
 audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
 Narrator: She turns and walks back into town, and does not come looking for him again.
 Narrator: Catherine's last days pass quietly, among the people and creatures she's come to know in Shateroo.
