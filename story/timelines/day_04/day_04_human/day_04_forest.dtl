@@ -30,6 +30,7 @@ catherine: Yeah… But he… it is not what I thought it would be. Things are to
 	catherine: Well, forcing things won't help. Might as well go home for the time being.
 	set {EndingTracking.catherine_sympathy} += 1.0
 	leave Vlad
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_04_monster/

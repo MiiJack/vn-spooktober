@@ -15,7 +15,7 @@ catherine: Since I am already here, I think you might know something about this 
 	catherine: It might come off weird but do your guests talk about monsters or ghosts sometimes?
 	Arlette (Arlette_confused): Monsters, you say? Well, most of them leave before I had the chance to make a chat with them.
 	Arlette (Arlette_talking): But yeah, I’ve heard some weird encounter stories.
-	catherine: Oh okay. Actually, I am looking for one if they do exist..
+	catherine: Oh, okay. Actually, I am looking for one if they do exist..
 	Arlette (Arlette_smug): Oh, bold, like a ghostbuster. Best of luck to you.
 	Arlette (Arlette_smug): If you ever meet something, tell me.
 	catherine: Yes, I will, and thanks for the room. See you around town.
@@ -34,6 +34,7 @@ catherine: Since I am already here, I think you might know something about this 
 	leave Arlette
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_01_monster/

@@ -3,6 +3,7 @@ Shateroo, Inn
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/Inn_placeholder.jpg" fade="0.0"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
+audio BGS "res://assets/audio/sfx/Forest - sound.wav" [loop="true"]
 Narrator: Simon is standing beside an old tree, looking at whatever is on the ground. Catherine approaches slowly until Simon notices her.
 [wait time="1.0"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
@@ -29,6 +30,7 @@ catherine: I found it but It wasn't enough. I wish I had more time to figure thi
 	leave Simon
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_05_monster/

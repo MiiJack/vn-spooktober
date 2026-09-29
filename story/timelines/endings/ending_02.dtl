@@ -6,10 +6,13 @@ Marloch: I am done taking. For once  just once  I would like to give something b
 catherine: Marloch, don't.
 Marloch: My immortality, for your ordinary, breakable, wonderful life. It's not a trade. It's a gift. Take it.
 Narrator: Before she can refuse again, it's already done. Marloch's form flickers  ancient, then young, then achingly human, white-haired, mortal  and then still.
+leave Marloch [animation="Fade In" length="1.0" wait="true"]
 [background arg="res://assets/cg/End/End_02.png" fade="1.0" wait="true"]
+[wait time="1.0"]
 catherine: You didn't have to.
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+audio music - [loop="true"]
 Narrator: She leaves Shateroo the next morning, alive, human, and carrying a debt she will spend the rest of her life trying to be worthy of.
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="3.0" wait="true"]
 [signal arg="game_end"]

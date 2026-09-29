@@ -28,6 +28,7 @@ Old_woman: You look tired. Did you find what you are searching for?
 	leave Old_woman
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_04_monster/

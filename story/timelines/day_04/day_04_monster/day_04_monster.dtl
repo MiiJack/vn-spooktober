@@ -45,6 +45,7 @@ Marloch: The universe can be unfair from time to time.
 	Marloch (Marloch_satisfied): I am sure this won't be the last time we meet.
 	leave Marloch
 	set {EndingTracking.marloch_feeling} += 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_05_intro/

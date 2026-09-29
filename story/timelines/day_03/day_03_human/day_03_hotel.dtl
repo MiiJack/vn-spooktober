@@ -42,6 +42,7 @@ Arlette: I’ve got my own issues and things that make me stay in this town.
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
 leave Arlette
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_03_monster/

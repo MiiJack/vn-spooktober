@@ -40,6 +40,7 @@ catherine: May I ask you something?
 	leave Old_woman [animation="Fade In Up" length="1.0" wait="true"]
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_03_monster/

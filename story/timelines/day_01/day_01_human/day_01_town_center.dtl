@@ -6,7 +6,7 @@ Narrator: Catherine reaches the town center with magnificent buildings and a big
 Narrator: As she walks by, she notices an old woman giving breadcrumbs to pigeons.
 Narrator: Thinking to herself that the woman might know a lot about the story of this town, she decides to walk up and talk to her.
 join Old_woman center [animation="Fade In Up" length="1.0" wait="true"]
-catherine: Hello, My name is Catherine and I am a newcomer to this town. Do you happen to have a minute ? I’ve got some questions to ask.
+catherine: Hello, my name is Catherine and I am a newcomer to this town. Do you happen to have a minute? I’ve got some questions to ask.
 Old_woman: Morning !
 Old_woman: A new face coming to town, that’s quite peculiar. What can I do for you dear ?
 - Directly ask about the monsters and the tales Catherine’s mother told
@@ -40,5 +40,6 @@ Old_woman: A new face coming to town, that’s quite peculiar. What can I do for
 	leave Old_woman [animation="Slide From Left" wait="true"]
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 jump day_01_monster/

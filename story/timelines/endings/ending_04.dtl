@@ -5,8 +5,9 @@ Narrator: *something in him finally breaks loose, ugly and total* Of course. Of 
 Narrator: Catherine's words or choices have undone whatever fragile restraint Marloch had left.
 Narrator: He unleashes centuries of fury on Shateroo. Catherine flees, but the town does not survive the night  homes, streets, the fountain in the square, all of it erased before morning.
 [background arg="res://assets/cg/End/End_04.png" fade="1.0" wait="true"]
-audio "res://assets/audio/sfx/Earthquake - sound.wav"
+audio BGS "res://assets/audio/sfx/Earthquake - sound.wav"
 Narrator: The villagers who survive never forgive her. She should never have come, they say. Wanting to live, in the face of what she was owed by fate, was its own kind of greed.
 Narrator: Catherine dies days later in fear, and in guilt she never finds a way to put down.
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="3.0" wait="true"]
 [signal arg="game_end"]

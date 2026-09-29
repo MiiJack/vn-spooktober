@@ -32,5 +32,6 @@ Vlad: Still looking for hum, monsters *cough*. Are you ?
 	catherine: Haha, very funny.
 	leave Vlad
 	set {EndingTracking.catherine_sympathy} += 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 jump day_03_monster/

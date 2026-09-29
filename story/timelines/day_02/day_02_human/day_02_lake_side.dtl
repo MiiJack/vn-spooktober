@@ -19,5 +19,6 @@ Vlad: I … I didn't know if you'd come. I got a chair if you wanna talk for a b
 	leave Vlad
 	set {EndingTracking.catherine_sympathy} += 1.0
 	set {ChapterTracking.is_evil} = false
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
 jump day_02_monster/

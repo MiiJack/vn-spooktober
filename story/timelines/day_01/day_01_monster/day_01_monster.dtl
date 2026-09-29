@@ -8,30 +8,30 @@ Narrator: the creature has  grey skin,  white hair with a part of his vertices v
 join Nyo center [animation="Fade In" length="1.0" wait="true"]
 if {ChapterTracking.is_evil} == true:
 	catherine: *surprised*
-	audio "res://assets/audio/sfx/DARK ENERGY - Soundt.wav"
-	Nyo: Grr...What brings a mere human to my hideout? Why are you following me, little brat?
-	catherine: *frozen* I... I didn't mean to intrude, I swear
+	audio "res://assets/audio/sfx/DARK ENERGY - Soundt.wav" [volume="-10.0"]
+	Nyo (Nyo_angry): Grr...What brings a mere human to my hideout? Why are you following me, little brat?
+	catherine: *frozen* I... I didn't mean to intrude, I swear.
 	- Respond with kindness and understanding
 		catherine: I'm sorry for startling you. I only followed out of curiosity. I meant no harm, and I still mean none.
-		Nyo: *a pause* ...Curiosity. Most who say that are lying. You, oddly, might not be.
+		Nyo (Nyo_surprised):  ...Curiosity. Most who say that are lying. You, oddly, might not be.
 		leave Nyo [animation="Fade Out" length="0.0" wait="true"]
 		set {EndingTracking.marloch_feeling} += 1.0
 		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	- Respond with fear and condescension
 		catherine: Backing away I just stay back, please, I don't want any trouble from a thing like you
-		Nyo: Baring his teeth "A thing." Charming. Go home, human, before your manners get you hurt.
+		Nyo (Nyo_angry): "A thing." Charming. Go home, human, before your manners get you hurt.
 		leave Nyo [animation="Fade Out" length="0.0" wait="true"]
 		set {EndingTracking.marloch_feeling} -= 1.0
 		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 else:
-	Nyo: ...You're not screaming. Most humans scream when they see me for the first time.
+	Nyo (Nyo_surprised): ...You're not screaming. Most humans scream when they see me for the first time.
 	catherine: I’ve heard countless tales about creatures like you. And from what I’ve heard in this town, should I be ?
-	Nyo: Depends what you plan to do next.
+	Nyo (Nyo_angry): Depends what you plan to do next.
 	- Dismiss him, keep your distance
 		catherine: I don' t know what you are.. just stay away from me.
-		Nyo: Hahaha, you a re the one that followed me to this cemetery.
-		Nyo: And you are alone here. Do you think something will find you if something happens ?
-		Nyo: No one know you yet, you migh as well be gone and no one would bat an eye.
+		Nyo (Nyo_surprised): Hahaha, you a re the one that followed me to this cemetery.
+		Nyo (Nyo_angry): And you are alone here. Do you think something will find you if something happens ?
+		Nyo (Nyo_angry): No one know you yet, you migh as well be gone and no one would bat an eye.
 		catherine: I need to run away. I need to run away now.
 		leave Nyo [animation="Fade Out" length="0.0" wait="true"]
 		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
@@ -42,11 +42,11 @@ else:
 		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	- Validate him, stay and talk
 		catherine: I don't what you really are. But my mother told countless tales about some magical creatures in this town. I suppose you are one of ther ?
-		Nyo: Quite bold of you to stay. Well I think it's obvious that I am not really.. human.
+		Nyo (Nyo_angry): Quite bold of you to stay. Well I think it's obvious that I am not really.. human.
 		catherine: I am not going stirr the pot. I need to know. Are you the one who can fulfil any desires ? I am sick and I...
-		Nyo: Stop right there, why the hurry. Don't you even feel threatned ?
+		Nyo (Nyo_angry): Stop right there, why the hurry. Don't you even feel threatned ?
 		catherine: I... feel threat.. I need help ? I need help because I am dying.
-		Nyo: I see.. well. This town is a place of mystery. You might find who you are searching for here. But sadly, that's not me.
+		Nyo (Nyo_talk): I see.. well. This town is a place of mystery. You might find who you are searching for here. But sadly, that's not me.
 		Narrator: Nyo melts back into the  of the cemetery. Word, somehow, has a way of reaching further than Shateroo's streets.
 		leave Nyo [animation="Fade Out" length="1.0" wait="true"]
 		catherine: Wait, then who is it ?

@@ -36,6 +36,7 @@ Arlette: I am courteous. I never said I was innocent.
 	[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_06_monster/

@@ -3,35 +3,36 @@ Narrator: Shateroo, Lake
 [background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="1.0" transition="Push Left" wait="true"]
 audio BGS "res://assets/audio/sfx/Lake - sound.wav" [loop="true"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav"
-Narrator: Near the lake, a thin young weird man sits alone, flinching every time someone walks too close.
+Narrator: Near the lake, a thin, weird man sits alone, flinching every time someone walks too close.
 join Vlad (Vlad_normal) center
 catherine: Um, hello. Sorry to bother you. Mind if I sit?
-Vlad (Vlad_confused): *flinches*...Oh. Um. N-no, not really, but who are you ? I've never seen you around town.
-catherine: My name is Catherine, I am a newcomer here and I am looking for something, I don’t know if you can help me.
-Vlad (Vlad_talk): And what are you looking for ?
+Vlad (Vlad_confused): *Flinches*...Oh. Um. N-no, not really, I am Vlad. But who are you? I've never seen you around town.
+catherine: My name is Catherine. I am a newcomer here, and I am looking for something. I don’t know if you can help me.
+Vlad (Vlad_talk): And what are you looking for?
 - Tell him you are looking for something
-	catherine: Is it true, are there monsters living in and around this town ?
-	Vlad (Vlad_confused): What kind of question is that? where did you hear that from ?
-	catherine: I was just wondering
-	Vlad (Vlad_happy): Tell me straight. You are looking for something, are you ?
+	catherine: Is it true, are there monsters living in and around this town?
+	Vlad (Vlad_confused): What kind of question is that? Where did you hear that from?
+	catherine: I was just wondering.
+	Vlad (Vlad_happy): Tell me straight. You are looking for something, are you?
 	catherine: Yes I am. And it has something to do with the creatures there.
 	Vlad (Vlad_angry): *Flinching* They're dangerous. People who go looking don't always come back the same. You shouldn't go looking either.
 	leave Vlad
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
-- Ask about the creatures, out of curiosity
+- Tell him about your mother's tales
 	catherine: My mother told me tales of magical creatures in this town. The kinds like in fairy tales.
 	catherine: And I was just wondering if...
-	Vlad (Vlad_confused): Hahaha, fairy tales ?
+	Vlad (Vlad_confused): Hahaha, fairy tales?
 	Vlad (Vlad_angry): I think you are mistaken, young girl. There is no such thing. Especially here.
 	catherine: I know but I just...
-	Vlad (Vlad_angry): You know ? well... why are you searching for that then ?
-	Vlad (Vlad_talk): Anyway, if you ever find it, tell me. It's a great way to be famous and know by everyone.
+	Vlad (Vlad_angry): You know? Well... why are you searching for that then?
+	Vlad (Vlad_happy): Anyway, if you ever find it, tell me. It's a great way to be famous and known by everyone.
 	Vlad (Vlad_angry): Fairy tales, really...
 	leave Vlad
 	catherine: Guess I have no luck today. Well, my questions are also really weird. I need to find another way to find the creatures.
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_01_monster/

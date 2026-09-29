@@ -83,12 +83,13 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -422.0
-offset_top = -222.0
-offset_right = -22.0
-offset_bottom = 380.0
+offset_left = -446.0
+offset_top = -87.0
+offset_right = 3.333374
+offset_bottom = 515.0
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(0.75, 0.75)
 size_flags_vertical = 4
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ButtonContainer" unique_id=596729463]

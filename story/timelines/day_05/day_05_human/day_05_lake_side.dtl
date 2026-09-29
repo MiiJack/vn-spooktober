@@ -3,20 +3,38 @@ Shateroo, lake.
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
+audio BGS "res://assets/audio/sfx/Lake - sound.wav" [loop="true"]
 join Vlad center
 catherine: It’s you, again.
 Vlad (Vlad_sad): ...sorry you have to see my face… I know it’s ugly and scary as you repeatedly said. But you look terrible, are you okay ?
-catherine: *sighs. I’m alright, just a little cold…
-- Bad
-	catherine: That heartless monster… he asked for something I could not afford. I feel like I’m losing hope in my body and my soul.
+catherine: *sighs*. I’m alright, just a little cold…
+Vlad (Vlad_confused): This doesn't look like little cold to me. You said you were sick, right ?
+Vlad (Vlad_sad): It seems like your condition is worsening.
+catherine: Do I look that bad ? really ?
+catherine: Marloch appears often now. But no matter what I say to him. It's like I am on a dead end.
+catherine: Or like he is trying to test me before doing anything.
+Vlad (Vlad_talk): Well, can't you blame him. I think he doesn't fulfill the wishes freely. So it's fair if he want to check on someone before granting them any wishes.
+Vlad (Vlad_talk): You should...try to understand him.
+- Disagree with Vlad
+	catherine: That heartless monster… there is nothing to understand about him.
+	catherine: he asked for something I could not afford. I feel like I’m losing hope in my body and my soul.
+	Vlad (Vlad_sad): That's my point. He is not going to give you any services if you keep dismissing  him like that.
+	catherine: But... anyway. You are in no use yourself.
+	Vlad (Vlad_sad): I hope you will understand before it's too late.
 	leave Vlad
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
-- Good
-	catherine: I’m sad, actually. But I think I can understand him somehow. In this life, everything comes at a price.
+- Agree with Vlad.
+	catherine: I’m sad, actually.
+	Vlad (Vlad_sad): I know that sometimes it's disheartening. But take a step back. You might be on to something.
+	catherine: But I think I can understand him somehow. In this life, everything comes at a price.
+	catherine: Thanks for being so supportive of me Vlad. Even if I am still a complete stranger.
+	Vlad (Vlad_happy): You've been arround enough. I am starting to know how you. You know ?
+	Vlad (Vlad_happy): Now, keep going. I beleive in you.
 	leave Vlad
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 jump day_05_monster/

@@ -6,24 +6,25 @@ Simon: I heard you were leaving.
 catherine: Yes I am, word travels quickly here.
 - Thank Simon
 	catherine: Thank you, Simon.
-	Simon: For what do you thank me for?
+	Simon (Simon_surprised): For what do you thank me for?
 	catherine: For speaking honestly with me.
-	Simon: You may find that honesty is easier when one has nothing left to lose.
-	Simon: Take care of yourself, Catherine.
+	Simon (Simon_talking): You may find that honesty is easier when one has nothing left to lose.
+	Simon (Simon_talking): Take care of yourself, Catherine.
 	leave Simon [animation="Fade In" length="1.0" wait="true"]
 	[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	set {ChapterTracking.is_evil} = false
 	set {EndingTracking.catherine_sympathy} += 0.0
 - Say you regret coming
 	catherine: Sometimes I wish I'd never found this place.
-	Simon: Yet here you are. Regret cannot return you to the person you were before you came here.
+	Simon (Simon_surprised): Yet here you are. Regret cannot return you to the person you were before you came here.
 	catherine: Yes. I know.
-	Simon: Then perhaps it is better to leave knowing what you know now.
+	Simon (Simon_talking): Then perhaps it is better to leave knowing what you know now.
 	catherine: That is a really bleak way to put it
-	Simon: It isn’t my story, you take what you can from it.
+	Simon (Simon_normal): It isn’t my story, you take what you can from it.
 	leave Simon [animation="Fade In" length="1.0" wait="true"]
 	[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0
+audio music - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 jump day_06_monster/
