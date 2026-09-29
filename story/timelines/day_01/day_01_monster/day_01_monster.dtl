@@ -2,7 +2,7 @@
 Narrator: As dusk falls, Catherine notices a pale, ghostly silhouette slipping between the houses. She follows it all the way to an empty cemetery.
 audio music "res://assets/audio/music/Scene_1_monster.wav" [loop="true"]
 audio BGS "res://assets/audio/sfx/Night - Sound.wav" [loop="true"]
-[background arg="res://assets/backgrounds/cemetery_night_placeholder.webp" fade="1.0" wait="true"]
+[background arg="res://assets/backgrounds/cemetery_night.png" fade="1.0" wait="true"]
 Narrator: The weird silhouette turns and reveals itself.
 Narrator: The creature has grey skin, white hair with a part of his vertices visible. It's like his neck's skin is transparent.
 join Nyo center [animation="Fade In" length="1.0" wait="true"]

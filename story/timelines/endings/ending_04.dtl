@@ -12,5 +12,6 @@ audio BGS "res://assets/audio/sfx/Earthquake - sound.wav"
 Narrator: The villagers who survive never forgive her. She should never have come, they say. Wanting to live, in the face of what she was owed by fate, was its own kind of greed.
 Narrator: Catherine dies days later in fear, and in guilt she never finds a way to put down.
 audio music - [loop="true"]
+audio BGS - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="3.0" wait="true"]
 [signal arg="game_end"]

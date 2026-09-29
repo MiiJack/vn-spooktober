@@ -2,6 +2,12 @@
 Shateroo, Inn
 [background arg="res://assets/backgrounds/Inn_placeholder.jpg" fade="0.0"]
 join Arlette center
+if {CharaMeeting.meet_arlette} == false:
+	Arlette (Arlette_smug): Hi, you arrived yesterday night but we didn't have time to talk properly.
+	Arlette (Arlette_talking): I am Arlette, the keeper of this inn. Nice to meet you ...
+	catherine: Catherine. Sorry. I was a bit lost yesterday.
+	Arlette (Arlette_smug): Yes, I saw that. No worries.
+	set {CharaMeeting.meet_arlette} = true
 Arlette: Slept alright,? You look a little pale, paler than usual.
 catherine: I slept well, thank you. Actually. I came here pretty late yesterday. But I meet someone, or something. I don’t know what it was.
 Arlette: What ? tell me more about it ghostbuster.

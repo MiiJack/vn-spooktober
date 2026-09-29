@@ -3,11 +3,19 @@ Shateroo, forest.
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/Forest_day.png" fade="0.0"]
 audio BGS "res://assets/audio/sfx/Forest - sound.wav" [loop="true"]
-join Vlad center
 audio music "res://assets/audio/music/Town_road_bgm.wav"
-catherine: *Screams* Oh, an ugly man.
-Vlad (Vlad_confused): *Astonished and a little bit hurt* Oh God! Wha ...what are you doing here?
-catherine: Is there a point in hiding anymore?
+if {CharaMeeting.meet_vlad} == false:
+	Narrator: Near the trees in the forest, a thin weird man sits alone.
+	join Vlad (Vlad_normal) center
+	catherine: Um, hello. Sorry to bother you ?
+	Vlad (Vlad_confused): Oh. Um. N-no, not really, I am Vlad. But who are you? I've never seen you around town.
+	Vlad (Vlad_confused): And what are you doing here ?
+	set {CharaMeeting.meet_vlad} = true
+else:
+	join Vlad (Vlad_normal) center
+	catherine: *Screams* Oh, an ugly man.
+	Vlad (Vlad_confused): *Astonished and a little bit hurt* Oh God! What ? Again ...what are you doing here?
+catherine: You look hella scary ? Should I hide from you or something ?
 Vlad (Vlad_angry): Absolutely not, but you are quite brave, despite how frail you look. You know wild animals could kill you here.
 catherine: It's not the wild animals that are worrying me.
 Vlad (Vlad_sad): Still looking for hum, monsters *cough*. Are you?

@@ -5,9 +5,17 @@ Shateroo, main road.
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/main_road_placeholder.jpg" fade="0.0"]
 audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
-Narrator: The old woman is sitting alone today.
 join Old_woman center
-Old_woman: You look tired. Did you find what you were searching for?
+if {CharaMeeting.meet_old_woman} == false:
+	catherine: Hi, I've seen you around but we never talked before.
+	catherine: I am Catherine.
+	Old_woman (Old_woman_talking): Hi, Catherine. I've heard about you.
+	Old_woman (Old_woman_talking): You were the one that was searching for something, right?
+	Old_woman (Old_woman_talking): Did you find what you were searching for?
+	set {CharaMeeting.meet_old_woman} = true
+else:
+	Narrator: The old woman is sitting alone today.
+	Old_woman: You look tired. Did you find what you were searching for?
 - Admit you are giving up
 	catherine: I think I did. It wasn't the miracle I hoped for.
 	Old_woman (Old_woman_confused): Well, that’s already a step toward the right direction. Take your time.

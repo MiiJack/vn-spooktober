@@ -34,9 +34,11 @@ func _unhandled_input(event: InputEvent) -> void:
 
 	elif event.is_action_pressed("open_save_menu"):
 		if is_instance_valid(_save_menu):
+			Dialogic.paused = false
 			_save_menu.queue_free()
 		else:
 			_open_save_menu()
+			Dialogic.paused = true
 		get_viewport().set_input_as_handled()
 
 
@@ -54,6 +56,8 @@ func _open_save_menu() -> void:
 	_save_menu = SAVE_MENU_SCENE.instantiate()
 	add_child(_save_menu)
 	_save_menu.tree_exited.connect(func(): _save_menu = null)
+	
+	
 
 
 func _on_timeline_ended() -> void:

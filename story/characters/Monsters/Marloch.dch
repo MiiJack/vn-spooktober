@@ -26,6 +26,60 @@
 "scale": 1,
 "scene": ""
 },
+"Marloch_human/marloch_human_angry": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_human/Marloch_human_angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Marloch_human/marloch_human_disappointed": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_human/Marloch_human_disappointed.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Marloch_human/marloch_human_normal": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_human/Marloch_human_normal.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Marloch_human/marloch_human_sad": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_human/Marloch_human_sad.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Marloch_human/marloch_human_smile": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_human/Marloch_human_smile.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Marloch_human/marloch_human_what": {
+"export_overrides": {
+"image": "\"res://assets/characters/Marloch/Marloch_human/Marloch_human_what.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "Marloch_normal": {
 "export_overrides": {
 "image": "\"res://assets/characters/Marloch/Marloch_normal.png\""
@@ -56,15 +110,6 @@
 "marloch_happy": {
 "export_overrides": {
 "image": "\"res://assets/characters/Marloch/Marloch_happy.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"marloch_placeholder": {
-"export_overrides": {
-"image": "\"res://assets/characters/placeholders/01.1 BustPlaceholder.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

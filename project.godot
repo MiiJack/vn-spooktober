@@ -99,6 +99,12 @@ variables={
 "current_day": 0.0,
 "is_evil": false
 },
+"CharaMeeting": {
+"meet_arlette": false,
+"meet_old_woman": false,
+"meet_simon": false,
+"meet_vlad": false
+},
 "EndingTracking": {
 "catherine_sympathy": 0,
 "marloch_feeling": 0

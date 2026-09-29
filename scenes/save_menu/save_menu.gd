@@ -84,6 +84,7 @@ func _on_settings_pressed() -> void:
 func _on_close_button_pressed() -> void:
 	$ButtonSFX.play()
 	await get_tree().create_timer(0.2).timeout
+	Dialogic.paused = false
 	queue_free()
 
 #func _unhandled_input(event: InputEvent) -> void:

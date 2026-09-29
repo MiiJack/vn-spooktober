@@ -8,6 +8,7 @@ Narrator: Thinking to herself that the woman might know a lot about the story of
 join Old_woman center [animation="Fade In Up" length="1.0" wait="true"]
 catherine: Hello, my name is Catherine and I am a newcomer to this town. Do you happen to have a minute? I’ve got some questions to ask.
 Old_woman: Good morning.
+set {CharaMeeting.meet_old_woman} = true
 Old_woman (Old_woman_talking): A new face coming to town, that’s quite peculiar. What can I do for you?
 - Ask about the monsters and the tales Catherine’s mother told
 	catherine: I know it may come off as weird, but I’ve heard a lot of tales surrounding this town, something about magic and monsters.

@@ -4,9 +4,17 @@ var vn_player_ref: vn_player
 
 @onready var map_ref: PackedScene = preload("res://scenes/level/world_map.tscn")
 
+var autoskip: bool
+
+var option_menu_ref: option
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Dialogic.signal_event.connect(_on_show_map_triggered)
+	option_menu_ref = get_tree().get_first_node_in_group("options_group")
+	print(option_menu_ref)
+	if option_menu_ref:
+		option_menu_ref.set_autoskip_bool.connect(_on_autoskip_set)
 
 
 func go_to(scene_path:String) -> void:
@@ -28,5 +36,9 @@ func _on_show_map_triggered(argument: String) -> void:
 		get_tree().root.add_child(new_map)
 		SceneTransition._fade_in()
 
+func _on_autoskip_set(toggled_on: bool) -> void:
+	autoskip = toggled_on
+	if Dialogic:
+		Dialogic.Inputs.auto_skip.enabled = autoskip
 
-#go_to("res://scenes/level/world_map.tscn")
+	

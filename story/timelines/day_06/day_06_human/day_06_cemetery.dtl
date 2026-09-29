@@ -1,5 +1,5 @@
 Shateroo, cemetery.
-[background arg="res://assets/backgrounds/cemetery_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/cemetery_day.png" fade="0.0"]
 Narrator: Simon is waiting beside the cemetery gate.
 join Simon center [animation="Fade In" length="1.0" wait="true"]
 Simon (Simon_surprised): I heard you were leaving.

@@ -4,7 +4,7 @@ Narrator: In a twist of events, Marloch reappears before Catherine with an offer
 join Marloch (Marloch_satisfied) center [animation="Fade In" length="1.0" wait="true"]
 Marloch: I am done taking. For once  just once  I would like to give something back, without asking anything in return.
 catherine: Marloch, don't.
-Marloch: My immortality, for your ordinary, breakable, wonderful life. It's not a trade. It's a gift. Take it.
+Marloch (Marloch_human/marloch_human_smile): My immortality, for your ordinary, breakable, wonderful life. It's not a trade. It's a gift. Take it.
 Narrator: Before she can refuse again, it's already done. Marloch's form flickers  ancient, then young, then achingly human, white-haired, mortal  and then still.
 leave Marloch [animation="Fade In" length="1.0" wait="true"]
 [background arg="res://assets/cg/End/End_02.png" fade="1.0" wait="true"]
@@ -12,7 +12,8 @@ leave Marloch [animation="Fade In" length="1.0" wait="true"]
 catherine: You didn't have to.
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
-audio music - [loop="true"]
 Narrator: She leaves Shateroo the next morning, alive, human, and carrying a debt she will spend the rest of her life trying to be worthy of.
+audio music - [loop="true"]
+audio BGS - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="3.0" wait="true"]
 [signal arg="game_end"]

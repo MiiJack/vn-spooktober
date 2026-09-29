@@ -3,13 +3,18 @@ Shateroo, lake.
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
-audio BGS "res://assets/audio/sfx/Lake - sound.wav" [loop="true"]
+audio BGS "res://assets/audio/sfx/Lake - sound.wav" [volume="-30.0" loop="true"]
 join Vlad center
-catherine: It’s you, again.
-Vlad (Vlad_sad): ...Sorry, you have to see my face… I know it’s ugly and scary, as you repeatedly said. But you look terrible, are you okay?
+if {CharaMeeting.meet_vlad} == false:
+	Vlad (Vlad_happy): Hi, I am Vlad. First time seeing you around. It's nice seeing new people in town.
+	Vlad (Vlad_confused): But you look a little pale, are you okay?
+	set {CharaMeeting.meet_vlad} = true
+else:
+	catherine: It’s you, again.
+	Vlad (Vlad_sad): ...Sorry, you have to see my face… I know it’s ugly and scary, as you repeatedly said. But you look terrible, are you okay?
 catherine: *Sighs*. I’m alright, just a little cold…
 Vlad (Vlad_confused): This doesn't look like a little cold to me. You said you were sick, right?
-Vlad (Vlad_sad): It seems like your condition is worsening.
+Vlad (Vlad_sad): I don't think this is just a cold. It looks worse than that.
 catherine: Do I look that bad? Really?
 catherine: Marloch appears often now. But no matter what I say to him. It's like I am on a dead end.
 catherine: Or like he is trying to test me before doing anything.

@@ -4,7 +4,7 @@ Narrator: Just before she leaves, Marloch appears on the road.
 [wait time="1.0"]
 audio music "res://assets/audio/music/Scene_1_monster.wav" [loop="true"]
 audio BGS "res://assets/audio/sfx/Night - Sound.wav" [loop="true"]
-[background arg="res://assets/backgrounds/main_road_placeholder.jpg" fade="1.0" wait="true"]
+[background arg="res://assets/backgrounds/town_center_night.png" fade="1.0" wait="true"]
 join Marloch (Marloch_normal) center
 catherine: I suppose this is goodbye.
 Marloch (Marloch_angry): You were really going to leave without saying anything?

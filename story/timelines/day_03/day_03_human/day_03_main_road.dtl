@@ -1,14 +1,25 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 Shateroo, main road.
-[background arg="res://assets/backgrounds/main_road_placeholder.jpg" fade="0.0"]
-Narrator: The old woman is sitting beneath the same tree as before, feeding the pigeons. Catherine approaches and notices that she has a small bundle of letters beside her.
-join Old_woman center [animation="Fade In Up" length="1.0" wait="true"]
-catherine: You're rather here often.
-Old_woman (Old_woman_talking): And so are you. I was beginning to wonder whether Shateroo had swallowed you whole.
-catherine: Not yet, but I am starting to get my way around this town. It’s also not that big.
-Old_woman (Old_woman_normal): That's a good sign.
-catherine: May I ask you something?
+[background arg="res://assets/backgrounds/town_center_day_2.png" fade="0.0"]
+audio music "res://assets/audio/music/Town_road_bgm.wav"
+if {CharaMeeting.meet_old_woman} == false:
+	Narrator: Catherine reaches the town center with magnificent buildings and a big fountain.
+	Narrator: As she walks by, she notices an old woman giving breadcrumbs to pigeons.
+	Narrator: Catherine approaches and notices that she has a small bundle of letters beside her.
+	Narrator: Thinking to herself that the woman might know a lot about the story of this town, she decides to walk up and talk to her.
+	join Old_woman center [animation="Fade In Up" length="1.0" wait="true"]
+	catherine: Hello, my name is Catherine and I am a newcomer to this town. Do you happen to have a minute? I’ve got some questions to ask.
+	Old_woman: Good morning.
+	set {CharaMeeting.meet_old_woman} = true
+else:
+	Narrator: The old woman is sitting beneath the same tree as before, feeding the pigeons. Catherine approaches and notices that she has a small bundle of letters beside her.
+	join Old_woman center [animation="Fade In Up" length="1.0" wait="true"]
+	catherine: You're rather here often.
+	Old_woman (Old_woman_talking): And so are you. I was beginning to wonder whether Shateroo had swallowed you whole.
+	catherine: Not yet, but I am starting to get my way around this town. It’s also not that big.
+	Old_woman (Old_woman_normal): That's a good sign.
+	catherine: May I ask you something?
 - Ask about the letters
 	catherine: That’s a lot of letters you have, who are those letters for?
 	Old_woman: People who no longer live here.

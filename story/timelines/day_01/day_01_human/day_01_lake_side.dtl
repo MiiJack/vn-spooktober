@@ -1,12 +1,13 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Narrator: Shateroo, Lake
 [background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="1.0" transition="Push Left" wait="true"]
-audio BGS "res://assets/audio/sfx/Lake - sound.wav" [loop="true"]
+audio BGS "res://assets/audio/sfx/Lake - sound.wav" [volume="-30.0" loop="true"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav"
 Narrator: Near the lake, a thin, weird man sits alone, flinching every time someone walks too close.
 join Vlad (Vlad_normal) center
 catherine: Um, hello. Sorry to bother you. Mind if I sit?
 Vlad (Vlad_confused): *Flinches*...Oh. Um. N-no, not really, I am Vlad. But who are you? I've never seen you around town.
+set {CharaMeeting.meet_vlad} = true
 catherine: My name is Catherine. I am a newcomer here, and I am looking for something. I don’t know if you can help me.
 Vlad (Vlad_talk): And what are you looking for?
 - Tell him you are looking for something

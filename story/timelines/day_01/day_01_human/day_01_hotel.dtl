@@ -6,6 +6,7 @@ Narrator: The road Catherine takes leads to a small inn.
 Narrator: Behind the desk, a woman in an old-fashioned headdress looks up at her.
 join Arlette (Arlette_talking) center [animation="Fade In Up" length="1.0" wait="true"]
 Arlette: Well, aren't you a new face! I am Arlette, the keeper of this inn. Checking in?
+set {CharaMeeting.meet_arlette} = true
 catherine: Yes, I just arrived. Is there any room free at this time?
 Arlette: We don't have that many visitors, let me check.
 Arlette (Arlette_smug): Yes, most of the rooms are free at the moment.

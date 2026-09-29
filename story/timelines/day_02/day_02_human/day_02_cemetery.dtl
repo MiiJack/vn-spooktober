@@ -1,7 +1,7 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Shateroo, cemetery.
 audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
-[background arg="res://assets/backgrounds/cemetery_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/cemetery_day.png" fade="0.0"]
 Narrator: The cemetery gate creaks. A tall man in a black coat is polishing a headstone, murmuring to it like an old friend.
 join Simon center
 catherine: Good … morning, I am sorry to disturb you but I have a few questions to ask.
@@ -11,6 +11,7 @@ catherine: But since you are here, can you do me a favor? You see, I am looking 
 Simon: GHOSTS !?
 catherine: What ? Ghost ? no ? What’s up with you and ghosts ?
 Simon: I am joking, kids like you are previsible. Hi. I am Simon.
+set {CharaMeeting.meet_simon} = true
 Simon: Let me guess, you heard of legends around this town and are looking for a quick buck ? Right ?
 - Admit it
 	catherine: Yes, you got me. But it’s not about money. I want to live.
@@ -32,7 +33,7 @@ Simon: Let me guess, you heard of legends around this town and are looking for a
 	Simon: Don't make me laugh kid. I saw you yesterday. There is no way you haven’t seen something or someone unusual in this town.
 	Simon: But listen, if you really want to be stubborn.
 	Simon: What might seem as simple desire in your mind will be interpreted as pure greed by other creatures. And that will kill you. I will keep a place for you here.
-	Simon: I just hope to see you again, alaive and breathing.
+	Simon: I just hope to see you again, alive and breathing.
 	leave Simon
 	set {ChapterTracking.is_evil} = true
 	set {EndingTracking.catherine_sympathy} -= 1.0

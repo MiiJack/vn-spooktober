@@ -10,11 +10,13 @@ Narrator: Marloch has told her everything now. The wishes, the losses, the centu
 join Marloch (marloch_happy) center
 Marloch: I could cure you. Or... I could give you something else. A longer answer than a cure.
 catherine: Tell me.
-Marloch (Marloch_satisfied): Become like me. No sickness, no clock running out  but no home to go back to, either. Not really. Not as you were.
+Marloch (marloch_happy): Become like me. No sickness, no clock running out  but no home to go back to, either. Not really. Not as you were.
 catherine: I stopped wanting to go back the day I understood what "home" cost people like you.
 Marloch (Marloch_satisfied): Then let's not waste any more of either of our centuries.
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
+leave Marloch
 Narrator: Catherine becomes a creature of Shateroo's hidden world, and stays there, with Marloch, at the edge of the trees where the two worlds meet.
 audio music - [loop="true"]
+audio BGS - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="3.0" wait="true"]
 [signal arg="game_end"]

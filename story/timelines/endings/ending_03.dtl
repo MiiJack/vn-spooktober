@@ -15,5 +15,6 @@ Narrator: Marloch had braced for hatred, the way he'd always been hated.
 Narrator: Instead, he watches humans and monsters mourn her together, side by side, and something old and closed in him creaks open, just slightly.
 Narrator: He begins granting wishes again. But only to those he judges worthy of one.
 audio music - [loop="true"]
+audio BGS - [loop="true"]
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="3.0" wait="true"]
 [signal arg="game_end"]
