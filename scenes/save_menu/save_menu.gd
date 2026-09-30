@@ -112,7 +112,10 @@ func _on_quit_button_pressed() -> void:
 
 func _on_save_pressed() -> void:
 	mode = Mode.SAVE
-
+	$Control/VBoxContainer/Save.disabled = true
+	$Control/VBoxContainer/Load.disabled = false
 
 func _on_load_pressed() -> void:
 	mode = Mode.LOAD
+	$Control/VBoxContainer/Save.disabled = false
+	$Control/VBoxContainer/Load.disabled = true
