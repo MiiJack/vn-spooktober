@@ -4,46 +4,65 @@ extends CanvasLayer
 
 enum Mode { SAVE, LOAD }
 
-@export var mode: Mode = Mode.SAVE
-@export var option_menu_ref : PackedScene
+@export var mode: Mode = Mode.SAVE:
+	set(value):
+		mode = value
+		# Update UI whenever mode changes after the node is ready
+		# (toggle button, or setting mode after add_child).
+		if is_node_ready():
+			_apply_mode()
+			_refresh()
+@export var option_menu_ref: PackedScene
+@export var quit_box_ref: PackedScene
+@export var show_pause_menu_actions: bool = true
 
 const SLOT_SCENE := preload("res://scenes/ui_components/save_slot_button.tscn")
 
 @onready var _slot_list: VBoxContainer = %SlotList
 @onready var _title_label: Label = %MenuTitle
-@export var show_pause_menu_actions: bool = true
-
-@export var quit_box_ref: PackedScene
-
 @onready var _close_button: Button = $Control/VBoxContainer/CloseButton
+@onready var _mode_button: Button = $Control/VBoxContainer/Save
+
+## Visible only when opened from the in-game pause menu.
 @onready var _pause_only_nodes: Array[CanvasItem] = [
 	$Control/VBoxContainer/Save,
-	$Control/VBoxContainer/Load,
-	$Control/VBoxContainer/CloseButton,
 	$Control/VBoxContainer/MainMenu,
 	$Control/VBoxContainer/Settings,
-	$Control/VBoxContainer/QuitButton
+	$Control/VBoxContainer/QuitButton,
 ]
 
 
 func _ready() -> void:
-	_title_label.text = "Save Game" if mode == Mode.SAVE else "Load Game"
+	# Hide the old dedicated Load button if it still exists in the scene.
+	var load_btn := get_node_or_null("Control/VBoxContainer/Load")
+	if load_btn:
+		load_btn.visible = false
+
 	for node in _pause_only_nodes:
 		node.visible = show_pause_menu_actions
 	# "Continue" only makes sense when there's a paused game to continue.
 	_close_button.text = "Continue" if show_pause_menu_actions else "Back"
+
+	_apply_mode()
 	SaveManager.slots_changed.connect(_refresh)
 	_refresh()
 
+
+func _apply_mode() -> void:
+	_title_label.text = "Save Game" if mode == Mode.SAVE else "Load Game"
+	_mode_button.text = "Load" if mode == Mode.SAVE else "Save"
+
+
 func close() -> void:
 	queue_free()
+
 
 func _refresh() -> void:
 	for child in _slot_list.get_children():
 		child.queue_free()
 
-	# Quick-save slot first, and in SAVE mode it's read-only here
-	# so it stays under the control of the quick-save key.
+	# Quick-save slot first; only offered in LOAD mode so it stays
+	# under the control of the quick-save key in SAVE mode.
 	if mode == Mode.LOAD:
 		_add_slot(SaveManager.QUICK_SLOT, "Quick Save")
 
@@ -52,7 +71,7 @@ func _refresh() -> void:
 
 
 func _add_slot(slot_name: String, display_name: String) -> void:
-	var info : Dictionary = SaveManager.get_slot_display_info(slot_name)
+	var info: Dictionary = SaveManager.get_slot_display_info(slot_name)
 
 	# Nothing to load from an empty slot, so don't offer it in LOAD mode.
 	if mode == Mode.LOAD and not info.get("exists", false):
@@ -100,22 +119,13 @@ func _on_close_button_pressed() -> void:
 	Dialogic.paused = false
 	queue_free()
 
-#func _unhandled_input(event: InputEvent) -> void:
-	#if event.is_action_pressed("open_save_menu"):
-		#queue_free()
-
 
 func _on_quit_button_pressed() -> void:
 	var new_quit_box = quit_box_ref.instantiate()
 	add_child(new_quit_box)
 
 
+## Connected to the Save button in the scene. Toggles SAVE ↔ LOAD.
+## The mode setter handles title, button label, and slot list refresh.
 func _on_save_pressed() -> void:
-	mode = Mode.SAVE
-	$Control/VBoxContainer/Save.disabled = true
-	$Control/VBoxContainer/Load.disabled = false
-
-func _on_load_pressed() -> void:
-	mode = Mode.LOAD
-	$Control/VBoxContainer/Save.disabled = false
-	$Control/VBoxContainer/Load.disabled = true
+	mode = Mode.LOAD if mode == Mode.SAVE else Mode.SAVE
