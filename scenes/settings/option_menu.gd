@@ -58,8 +58,7 @@ func _on_return_pressed() -> void:
 
 func _on_auto_skip_check_box_toggled(toggled_on: bool) -> void:
 	print(toggled_on)
-	set_autoskip_bool.emit(toggled_on)
-	
+	GameManager.set_autoskip(toggled_on)
 
 func _on_auto_advance_delay_changed(value: float) -> void:
 	value = text_advance_delay_h_slider.value

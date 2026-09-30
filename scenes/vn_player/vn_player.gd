@@ -20,12 +20,22 @@ func _ready() -> void:
 	# SaveManager parks a slot name here before changing scenes. Empty = new game.
 	# Doing the load here (rather than in SaveManager) guarantees we are already
 	# in the tree, so Dialogic never rebuilds its layout over the main menu.
-	var slot := SaveManager.take_pending_slot()
+	var slot : String = SaveManager.take_pending_slot()
 	if slot.is_empty():
 		Dialogic.start(opening_timeline)
+		_debug()
 	else:
 		Dialogic.Save.load(slot)
-
+		_debug()
+	
+func _debug() -> void:
+	await get_tree().process_frame
+	await get_tree().process_frame
+	var layout = Dialogic.Styles.get_layout_node()
+	print("=== Layout children ===")
+	for c in layout.get_children():
+		print(c.name, "  script = ", c.get_script())
+		
 func _unhandled_input(event: InputEvent) -> void:
 
 	if event.is_action_pressed("quick_save"):

@@ -42,7 +42,9 @@ func _go_to_location(location_id: String) -> void:
 	var timelime_name: String = "day_0%1d_%s" % [current_day, location_id]
 	print(timelime_name)
 	
-	#get_tree().current_scene.queue_free()
+	#Reset Skip
+	Dialogic.Inputs.auto_skip.enabled = false
+
 	Dialogic.start(timelime_name)
 
 func _on_town_center_pressed() -> void:

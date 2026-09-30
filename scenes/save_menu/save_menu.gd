@@ -11,14 +11,27 @@ const SLOT_SCENE := preload("res://scenes/ui_components/save_slot_button.tscn")
 
 @onready var _slot_list: VBoxContainer = %SlotList
 @onready var _title_label: Label = %MenuTitle
+@export var show_pause_menu_actions: bool = true
 
 @export var quit_box_ref: PackedScene
 
-
+@onready var _close_button: Button = $Control/VBoxContainer/CloseButton
+@onready var _pause_only_nodes: Array[CanvasItem] = [
+	$Control/VBoxContainer/MainMenu,
+	$Control/VBoxContainer/Spacer2,
+	$Control/VBoxContainer/Settings,
+	$Control/VBoxContainer/Spacer3,
+	$Control/VBoxContainer/QuitButton,
+	$Control/VBoxContainer/Spacer,
+]
 
 
 func _ready() -> void:
 	_title_label.text = "Save Game" if mode == Mode.SAVE else "Load Game"
+	for node in _pause_only_nodes:
+		node.visible = show_pause_menu_actions
+	# "Continue" only makes sense when there's a paused game to continue.
+	_close_button.text = "Continue" if show_pause_menu_actions else "Back"
 	SaveManager.slots_changed.connect(_refresh)
 	_refresh()
 
@@ -39,7 +52,7 @@ func _refresh() -> void:
 
 
 func _add_slot(slot_name: String, display_name: String) -> void:
-	var info := SaveManager.get_slot_display_info(slot_name)
+	var info : Dictionary = SaveManager.get_slot_display_info(slot_name)
 
 	# Nothing to load from an empty slot, so don't offer it in LOAD mode.
 	if mode == Mode.LOAD and not info.get("exists", false):

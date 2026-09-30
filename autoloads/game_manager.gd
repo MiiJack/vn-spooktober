@@ -10,6 +10,8 @@ var auto_advance_speed: float = 0.5
 
 var option_menu_ref: option
 
+signal autoskip_changed(enabled: bool)
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Dialogic.signal_event.connect(_on_show_map_triggered)
@@ -37,10 +39,19 @@ func _on_show_map_triggered(argument: String) -> void:
 
 func _on_autoskip_set(toggled_on: bool) -> void:
 	print("Autoskip gameManagerTriggered")
-	autoskip = toggled_on
+	set_autoskip(toggled_on)
+	#autoskip = toggled_on
+	#if Dialogic:
+		#Dialogic.Inputs.auto_advance.enabled_forced = autoskip
+		
+func set_autoskip(enabled: bool) -> void:
+	if autoskip == enabled:
+		return
+	autoskip = enabled
 	if Dialogic:
 		Dialogic.Inputs.auto_advance.enabled_forced = autoskip
-		
+	autoskip_changed.emit(autoskip)
+	
 func option_screen_ready() -> void:
 	option_menu_ref = get_tree().get_first_node_in_group("options_group")
 	print(option_menu_ref)

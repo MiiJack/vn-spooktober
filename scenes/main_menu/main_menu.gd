@@ -11,7 +11,7 @@ const SAVE_MENU_SCENE := preload("res://scenes/save_menu/save_menu.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var has_saves := SaveManager.has_any_save()
+	var has_saves : bool = SaveManager.has_any_save()
 	_continue_button.disabled = not has_saves
 	_load_button.disabled = not has_saves
 	$BGMMainMenu.play()
@@ -19,6 +19,7 @@ func _ready() -> void:
 func _open_load_menu() -> void:
 	var menu := SAVE_MENU_SCENE.instantiate()
 	menu.mode = menu.Mode.LOAD
+	menu.show_pause_menu_actions = false
 	add_child(menu)
 	
 func _start_game() -> void:
