@@ -49,7 +49,7 @@ else:
 		Nyo (Nyo_angry): Stop right there, why the hurry. Don't you even feel threatened?
 		catherine: I... feel threat.. I need help? I need help because I am dying.
 		Nyo (Nyo_talk): I see.. well. This town is a place of mystery. You might find who you are searching for here. But sadly, that's not me.
-		Narrator: Nyo melts back into the  cemetery. Word, somehow, is spreading faster and further in Shateroo.
+		Narrator: Nyo melts back into the cemetery. Word, somehow, is spreading faster and further in Shateroo.
 		leave Nyo [animation="Fade Out" length="1.0" wait="true"]
 		catherine: Wait, then who is it?
 		Narrator: The town's creatures all seem to know each other. I think if I continue to go out at night, I will find him, or her.. or them..

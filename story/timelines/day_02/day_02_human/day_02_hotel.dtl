@@ -11,7 +11,7 @@ if {CharaMeeting.meet_arlette} == false:
 Arlette (Arlette_talking): Slept alright? You look a little pale, paler than usual.
 catherine: I slept well, thank you. Actually. I came here pretty late yesterday. But I meet someone, or something. I don’t know what it was.
 Arlette: What ? tell me more about it ghostbuster.
-- say you saw something that wasn't human yesterday.
+- Say you saw something that wasn't human yesterday.
 	catherine: I saw someone last night, near the cemetery. It didn’t look human. Well it wasn’t human at all. It talked to me.
 	Arlette: And what did he tell you?
 	catherine: It just told me to go home and not mess with him or his kind.

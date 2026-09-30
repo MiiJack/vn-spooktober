@@ -2,10 +2,10 @@
 audio music "res://assets/audio/music/Scene_1_monster.wav" [loop="true"]
 Narrator: In a twist of events, Marloch reappears before Catherine with an offer.
 join Marloch (Marloch_satisfied) center [animation="Fade In" length="1.0" wait="true"]
-Marloch: I am done taking. For once  just once  I would like to give something back, without asking anything in return.
+Marloch: I am done taking. For once just once I would like to give something back, without asking anything in return.
 catherine: Marloch, don't.
 Marloch (Marloch_human/marloch_human_smile): My immortality, for your ordinary, breakable, wonderful life. It's not a trade. It's a gift. Take it.
-Narrator: Before she can refuse again, it's already done. Marloch's form flickers  ancient, then young, then achingly human, white-haired, mortal  and then still.
+Narrator: Before she can refuse again, it's already done. Marloch's form flickers ancient, then young, then achingly human, white-haired, mortal and then still.
 leave Marloch [animation="Fade In" length="1.0" wait="true"]
 [background arg="res://assets/cg/End/End_02.png" fade="1.0" wait="true"]
 [wait time="1.0"]
