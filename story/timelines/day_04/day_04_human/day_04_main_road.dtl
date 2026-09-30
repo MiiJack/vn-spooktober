@@ -3,7 +3,7 @@ audio music -
 audio BGS -
 Shateroo, main road.
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/main_road_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/town_edited.png" fade="0.0"]
 audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
 join Old_woman center
 if {CharaMeeting.meet_old_woman} == false:

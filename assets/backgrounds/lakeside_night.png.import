@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cklluoyvb5pby"
-path="res://.godot/imported/Inn_placeholder.jpg-e9f09834a82cc0530c4229090b425f18.ctex"
+uid="uid://c73lcruq01bcc"
+path="res://.godot/imported/lakeside_night.png-1d9ca1b79f16d4c1443487fdc0584a31.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/Inn_placeholder.jpg"
-dest_files=["res://.godot/imported/Inn_placeholder.jpg-e9f09834a82cc0530c4229090b425f18.ctex"]
+source_file="res://assets/backgrounds/lakeside_night.png"
+dest_files=["res://.godot/imported/lakeside_night.png-1d9ca1b79f16d4c1443487fdc0584a31.ctex"]
 
 [params]
 

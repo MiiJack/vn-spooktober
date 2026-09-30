@@ -120,7 +120,7 @@ theme_override_styles/pressed = ExtResource("5_egmap")
 theme_override_styles/hover = ExtResource("6_jbvyk")
 text = "Continue"
 
-[node name="MainMenu2" type="Button" parent="Control/VBoxContainer" unique_id=275707692]
+[node name="MainMenu" type="Button" parent="Control/VBoxContainer" unique_id=275707692]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("3_5a421")
@@ -156,6 +156,6 @@ stream = ExtResource("4_7g4mk")
 [connection signal="pressed" from="Control/VBoxContainer/Save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/Load" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/CloseButton" to="." method="_on_close_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/MainMenu2" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

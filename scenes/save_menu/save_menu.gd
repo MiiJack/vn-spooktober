@@ -17,12 +17,12 @@ const SLOT_SCENE := preload("res://scenes/ui_components/save_slot_button.tscn")
 
 @onready var _close_button: Button = $Control/VBoxContainer/CloseButton
 @onready var _pause_only_nodes: Array[CanvasItem] = [
+	$Control/VBoxContainer/Save,
+	$Control/VBoxContainer/Load,
+	$Control/VBoxContainer/CloseButton,
 	$Control/VBoxContainer/MainMenu,
-	$Control/VBoxContainer/Spacer2,
 	$Control/VBoxContainer/Settings,
-	$Control/VBoxContainer/Spacer3,
-	$Control/VBoxContainer/QuitButton,
-	$Control/VBoxContainer/Spacer,
+	$Control/VBoxContainer/QuitButton
 ]
 
 

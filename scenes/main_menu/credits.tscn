@@ -38,10 +38,7 @@ text = "Programming, art, story and music:
 -Team HelloWorld261
 Fonts: 
 -Playfair display by Claus Eggers Sørensen
--CrimsonText by Sebastian Kosch
-Backgrounds:
-Lake: https://spiralatlas.itch.io/stylized-fantasy-provencal-backgrounds
-Inn: https://sigelus.itch.io/visual-novel-backgrounds-lakeside"
+-CrimsonText by Sebastian Kosch"
 
 [node name="Title" type="Label" parent="ColorRect" unique_id=1877932388]
 layout_mode = 1

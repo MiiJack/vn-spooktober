@@ -38,7 +38,7 @@ else:
 		leave Nyo [animation="Fade Out" length="0.0" wait="true"]
 		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 		Narrator: Catherine ran until she reached a place with some lighting.
-		[background arg="res://assets/backgrounds/hotel_placeholder.jpg" fade="1.0" wait="true"]
+		[background arg="res://assets/backgrounds/main_raod_night.png" fade="1.0" wait="true"]
 		catherine: Here, I might be safe here. I am going in.
 		set {EndingTracking.marloch_feeling} -= 1.0
 		[background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]

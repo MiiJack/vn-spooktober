@@ -1,7 +1,7 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 [wait time="1.0"]
 Shateroo, main road.
-[background arg="res://assets/backgrounds/town_center_day_2.png" fade="0.0"]
+[background arg="res://assets/backgrounds/town_edited.png" fade="0.0"]
 audio music "res://assets/audio/music/Town_road_bgm.wav"
 if {CharaMeeting.meet_old_woman} == false:
 	Narrator: As Catherine walks by, she notices an old woman giving breadcrumbs to pigeons.

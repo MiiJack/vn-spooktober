@@ -1,7 +1,7 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Shateroo, Inn.
 audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
-[background arg="res://assets/backgrounds/Attributed_background/Inn_placeholder_final.jpg" fade="1.0" transition="Push Left" wait="true"]
+[background arg="res://assets/backgrounds/00-04.png" fade="1.0" transition="Push Left" wait="true"]
 Narrator: The road Catherine takes leads to a small inn.
 Narrator: Behind the desk, a woman in an old-fashioned headdress looks up at her.
 join Arlette (Arlette_talking) center [animation="Fade In Up" length="1.0" wait="true"]

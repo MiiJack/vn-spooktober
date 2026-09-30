@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b31frk10x0rnv"
-path="res://.godot/imported/lake_side_nigh.png-1c1caac161f007803e242c1c57938d59.ctex"
+uid="uid://b1lfixe23n68s"
+path="res://.godot/imported/main_raod_night.png-20f848535d04ceca079fcb65acbaaccb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/lake_side_nigh.png"
-dest_files=["res://.godot/imported/lake_side_nigh.png-1c1caac161f007803e242c1c57938d59.ctex"]
+source_file="res://assets/backgrounds/main_raod_night.png"
+dest_files=["res://.godot/imported/main_raod_night.png-20f848535d04ceca079fcb65acbaaccb.ctex"]
 
 [params]
 
