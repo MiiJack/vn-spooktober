@@ -108,3 +108,11 @@ func _on_close_button_pressed() -> void:
 func _on_quit_button_pressed() -> void:
 	var new_quit_box = quit_box_ref.instantiate()
 	add_child(new_quit_box)
+
+
+func _on_save_pressed() -> void:
+	mode = Mode.SAVE
+
+
+func _on_load_pressed() -> void:
+	mode = Mode.LOAD

@@ -2,8 +2,8 @@
 Shateroo, Lake.
 [wait time="1.0"]
 if {CharaMeeting.meet_vlad} == false:
-	Narrator: Near the lake, a thin young weird man sits alone on a bench, flinching every time someone walks too close.
-	[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
+	Narrator: Near the lake, a weird man sits alone on a bench, flinching every time someone walks too close.
+	[background arg="res://assets/backgrounds/Attributed_background/Lake_placeholder_final.jpg" fade="0.0"]
 	audio BGS "res://assets/audio/sfx/Lake - sound.wav" [volume="-30.0" loop="true"]
 	audio music "res://assets/audio/music/Town_road_bgm.wav"
 	join Vlad (Vlad_happy) center

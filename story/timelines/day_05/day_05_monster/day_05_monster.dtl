@@ -2,7 +2,7 @@
 Narrator: Catherine returns to the lake at dusk.
 Narrator: Marloch is already waiting.
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/Attributed_background/Lake_placeholder_final_night.png" fade="0.0"]
 audio "res://assets/audio/music/Scene_1_monster.wav"
 audio BGS "res://assets/audio/sfx/Night - Sound.wav" [loop="true"]
 join Marloch center

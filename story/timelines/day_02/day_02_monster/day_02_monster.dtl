@@ -1,6 +1,6 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Narrator: Catherine finds a tall, slender figure there, strangely handsome up close, gloved hands, a smirk that doesn't reach his eyes.
-[background arg="res://assets/backgrounds/lake_side_nigh.png" fade="1.0" wait="true"]
+[background arg="res://assets/backgrounds/Attributed_background/Lake_placeholder_final_night.png" fade="1.0" wait="true"]
 audio music "res://assets/audio/music/Scene_1_monster.wav" [loop="true"]
 join Idris (Idris_smile) center [animation="Fade In" length="1.0" wait="true"]
 if {ChapterTracking.is_evil} == true:

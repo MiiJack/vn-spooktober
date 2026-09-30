@@ -4,8 +4,7 @@ Shateroo, main road.
 [background arg="res://assets/backgrounds/town_center_day_2.png" fade="0.0"]
 audio music "res://assets/audio/music/Town_road_bgm.wav"
 if {CharaMeeting.meet_old_woman} == false:
-	Narrator: Catherine reaches the town center with magnificent buildings and a big fountain.
-	Narrator: As she walks by, she notices an old woman giving breadcrumbs to pigeons.
+	Narrator: As Catherine walks by, she notices an old woman giving breadcrumbs to pigeons.
 	Narrator: Catherine approaches and notices that she has a small bundle of letters beside her.
 	Narrator: Thinking to herself that the woman might know a lot about the story of this town, she decides to walk up and talk to her.
 	join Old_woman center [animation="Fade In Up" length="1.0" wait="true"]

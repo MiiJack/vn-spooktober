@@ -1,7 +1,7 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Shateroo, lake.
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/Attributed_background/Lake_placeholder_final.jpg" fade="0.0"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
 audio BGS "res://assets/audio/sfx/Lake - sound.wav" [volume="-30.0" loop="true"]
 join Vlad center

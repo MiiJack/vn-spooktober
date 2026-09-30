@@ -3,7 +3,7 @@ audio music -
 audio BGS -
 Shateroo, Inn.
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/Inn_placeholder.jpg" fade="0.0"]
+[background arg="res://assets/backgrounds/Attributed_background/Inn_placeholder_final.jpg" fade="0.0"]
 audio music "res://assets/audio/music/Town_road_bgm.wav"
 if {CharaMeeting.meet_arlette} == false:
 	join Arlette center

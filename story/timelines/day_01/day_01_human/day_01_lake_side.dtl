@@ -1,6 +1,6 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Narrator: Shateroo, Lake
-[background arg="res://assets/backgrounds/lake_side_placeholder.jpg" fade="1.0" transition="Push Left" wait="true"]
+[background arg="res://assets/backgrounds/Attributed_background/Lake_placeholder_final.jpg" fade="1.0" transition="Push Left" wait="true"]
 audio BGS "res://assets/audio/sfx/Lake - sound.wav" [volume="-30.0" loop="true"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav"
 Narrator: Near the lake, a thin, weird man sits alone, flinching every time someone walks too close.
