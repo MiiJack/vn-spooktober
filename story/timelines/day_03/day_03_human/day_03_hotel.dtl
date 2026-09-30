@@ -9,8 +9,8 @@ if {CharaMeeting.meet_arlette} == false:
 	join Arlette center
 	Arlette (Arlette_smug): Hi, you arrived yesterday night but we didn't have time to talk properly.
 	Arlette (Arlette_talking): I am Arlette, the keeper of this inn. Nice to meet you ...
-	catherine: Catherine. Sorry. I just took a random empty room since I didn't see anyone at the desk. But today is my third day in this town.
-	Arlette (Arlette_smug): 3rd day ? And I didn't see you ? I am very sorry. I know this is the only inn in town. I hope you were comfortable even if I wasn't there to greet you.
+	catherine: Sorry. I just took an empty room since I didn't see anyone at the desk. But today is my third day in this town.
+	Arlette (Arlette_smug): 3rd day? And I didn't see you? I am very sorry. I know this is the only inn in town. I hope you were comfortable even if I wasn't there to greet you.
 	catherine: It's fine. And I am sorry if I trespassed. I didn't really have a choice.
 	set {CharaMeeting.meet_arlette} = true
 else:

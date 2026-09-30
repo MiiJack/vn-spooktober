@@ -1,11 +1,15 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Shateroo, Inn.
 [background arg="res://assets/backgrounds/Inn_placeholder.jpg" fade="0.0"]
-Narrator: Arlette is behind the reception desk when Catherine comes downstairs.
+if {CharaMeeting.meet_arlette} == false:
+	Narrator: Arlette, the receptionist, is behind the reception desk when Catherine comes downstairs.
+	set {CharaMeeting.meet_arlette} = true
+else:
+	Narrator: Arlette is behind the reception desk when Catherine comes downstairs.
 join Arlette center
 Arlette (Arlette_disappointed): Are you leaving today? Catherine?
 catherine: I suppose my stay has come to an end.
-Arlette (Arlette_disappointed): I shall miss having someone interesting to gossip about.
+Arlette (Arlette_disappointed): I shall miss having someone interesting to gossip with.
 catherine: I thought you were supposed to be courteous.
 Arlette (Arlette_smug): I am courteous. I never said I was innocent.
 - Leave Arlette with hope

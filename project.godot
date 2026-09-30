@@ -149,6 +149,7 @@ audio/channel_defaults={
 }
 }
 audio/type_sound_bus="BGM"
+text/autoadvance_fixed_delay=0.5
 
 [display]
 

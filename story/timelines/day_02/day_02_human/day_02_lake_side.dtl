@@ -17,7 +17,7 @@ else:
 	audio BGS "res://assets/audio/sfx/Lake - sound.wav" [volume="-30.0" loop="true"]
 	audio music "res://assets/audio/music/Town_road_bgm.wav"
 	join Vlad (Vlad_happy) center
-	Vlad: I … I didn't know if you'd come. I got a chair if you wanna talk for a bit.
+	Vlad: I … I didn't know if you'd come. I got a chair if you want to talk for a bit.
 - Ask about the monsters
 	catherine: Have you seen the monster who lives by the lake? Sharp dressed, doesn't blink much. The tales about him are unsettling.
 	Vlad: Stay away from him. He's not cruel, exactly, but he's not safe either. Not for a human, alone.

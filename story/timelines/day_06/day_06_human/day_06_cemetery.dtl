@@ -1,8 +1,16 @@
 Shateroo, cemetery.
 [background arg="res://assets/backgrounds/cemetery_day.png" fade="0.0"]
-Narrator: Simon is waiting beside the cemetery gate.
-join Simon center [animation="Fade In" length="1.0" wait="true"]
-Simon (Simon_surprised): I heard you were leaving.
+if {CharaMeeting.meet_simon} == false:
+	Narrator: Someone is waiting beside the cemetery gate.
+	join Simon center [animation="Fade In" length="1.0" wait="true"]
+	Simon (Simon_surprised): Hi, you there. I've seen you around town. I am Simon.
+	catherine: Hi... Simon. Wait. Am I that noticeable?
+	Simon (Simon_talking): Haha, yes. Yes you are.
+	set {CharaMeeting.meet_simon} = true
+else:
+	Narrator: Simon is waiting beside the cemetery gate.
+	join Simon center [animation="Fade In" length="1.0" wait="true"]
+Simon (Simon_surprised): I heard you were leaving already.
 catherine: Yes I am.
 - Thank Simon
 	catherine: Thank you, Simon.

@@ -2,11 +2,20 @@
 Shateroo, town center.
 [background arg="res://assets/backgrounds/town_center_day_2.png" fade="0.0"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
-Narrator: The old woman is feeding the pigeons again.
-join Old_woman center
-Old_woman: You have that look. The look of someone who has made a decision and wishes someone else would make it for her.
+if {CharaMeeting.meet_old_woman} == false:
+	Narrator: An old woman is feeding the pigeons.
+	join Old_woman center
+	Old_woman (Old_woman_talking): Hi, you approached me finally. I've noticed you running around town for days.
+	catherine: I didn't know I was that noticeable.
+	Old_woman (Old_woman_confused): Oh it is, especially in a town like this one.
+	Old_woman (Old_woman_talking): But do you like it here?
+	set {CharaMeeting.meet_old_woman} = true
+else:
+	Narrator: The old woman is feeding the pigeons again.
+	join Old_woman center
+Old_woman (Old_woman_confused): You have that look. The look of someone who has made a decision and regrets it.
 catherine: That's rather specific.
-Old_woman: I've lived a long time, I know a lot of specific looks.
+Old_woman (Old_woman_talking): I've lived a long time, I know a lot of specific looks.
 catherine: More like you have grown an instinct to judge people
 - Ask about her regret
 	catherine: Do you have any regrets?  Having lived as long as you have been.

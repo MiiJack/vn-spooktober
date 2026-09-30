@@ -8,7 +8,7 @@ if {CharaMeeting.meet_arlette} == false:
 	catherine: Catherine. Sorry. I was a bit lost yesterday.
 	Arlette (Arlette_smug): Yes, I saw that. No worries.
 	set {CharaMeeting.meet_arlette} = true
-Arlette: Slept alright,? You look a little pale, paler than usual.
+Arlette (Arlette_talking): Slept alright? You look a little pale, paler than usual.
 catherine: I slept well, thank you. Actually. I came here pretty late yesterday. But I meet someone, or something. I don’t know what it was.
 Arlette: What ? tell me more about it ghostbuster.
 - say you saw something that wasn't human yesterday.

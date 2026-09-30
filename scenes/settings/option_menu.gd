@@ -6,6 +6,7 @@ extends CanvasLayer
 @onready var sfx_volume_h_slider: HSlider = $VBoxContainer/EffectVolumeSlider/SFXVolumeHSlider
 @onready var text_speed_h_slider: HSlider = $VBoxContainer/TextSpeedSlider/TextSpeedHSlider
 @onready var auto_skip_check_box: CheckBox = $VBoxContainer/HBoxAutoskip/AutoSkipCheckBox
+@onready var text_advance_delay_h_slider: HSlider = $VBoxContainer/AutoAdvanceDelay/TextAdvanceDelayHSlider
 
 
 var bus_music_idx := AudioServer.get_bus_index("BGM")
@@ -26,11 +27,16 @@ func _ready() -> void:
 	sfx_volume_h_slider.value = db_to_linear(AudioServer.get_bus_volume_db(bus_sfx_idx))
 	sfx_volume_h_slider.value_changed.connect(_on_sfx_value_changed)
 	
-	#text speed setter
-	text_speed_h_slider.value_changed.connect(_on_text_speed_changed)
+	##text speed setter
+	#text_speed_h_slider.value_changed.connect(_on_text_speed_changed)
+	#text_speed_h_slider.set_value_no_signal(GameManager.text_speed)
 	
 	#autoskip setter
-	auto_skip_check_box.toggle_mode = GameManager.autoskip
+	GameManager.option_screen_ready()
+	auto_skip_check_box.button_pressed = GameManager.autoskip
+	
+	text_advance_delay_h_slider.value_changed.connect(_on_auto_advance_delay_changed)
+	text_advance_delay_h_slider.set_value_no_signal(GameManager.auto_advance_speed)
 
 func _on_music_value_changed(new_value: float) -> void:
 	AudioServer.set_bus_volume_db(bus_music_idx, linear_to_db(new_value))
@@ -38,9 +44,10 @@ func _on_music_value_changed(new_value: float) -> void:
 func _on_sfx_value_changed(new_value: float) -> void:
 	AudioServer.set_bus_volume_db(bus_sfx_idx, linear_to_db(new_value))
 	
-func _on_text_speed_changed(value: float) -> void:
-	if Dialogic:
-		Dialogic.Settings.text_speed = text_speed_h_slider.max_value - value
+#func _on_text_speed_changed(value: float) -> void:
+	#value = text_speed_h_slider.value
+	#if Dialogic:
+		#GameManager.update_text_speed(value)
 
 
 func _on_return_pressed() -> void:
@@ -50,4 +57,11 @@ func _on_return_pressed() -> void:
 
 
 func _on_auto_skip_check_box_toggled(toggled_on: bool) -> void:
+	print(toggled_on)
 	set_autoskip_bool.emit(toggled_on)
+	
+
+func _on_auto_advance_delay_changed(value: float) -> void:
+	value = text_advance_delay_h_slider.value
+	if Dialogic:
+		GameManager.update_base_delay(value)

@@ -92,6 +92,7 @@ step = 0.1
 value = 1.0
 
 [node name="TextSpeedSlider" type="VBoxContainer" parent="VBoxContainer" unique_id=854735608]
+visible = false
 layout_mode = 2
 
 [node name="TextSpeedLabel" type="Label" parent="VBoxContainer/TextSpeedSlider" unique_id=985446751]
@@ -105,9 +106,10 @@ layout_mode = 2
 theme_override_icons/grabber = ExtResource("6_h8hh0")
 theme_override_icons/grabber_highlight = ExtResource("7_t5ld7")
 theme_override_icons/grabber_disabled = ExtResource("8_e46pd")
-max_value = 1.0
-step = 0.2
-value = 0.6
+min_value = 0.002
+max_value = 0.02
+step = 0.002
+value = 0.019999999999999997
 
 [node name="HBoxAutoskip" type="HBoxContainer" parent="VBoxContainer" unique_id=248555825]
 layout_mode = 2
@@ -116,7 +118,7 @@ layout_mode = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_l8xgo")
 theme_override_font_sizes/font_size = 25
-text = "Autoskip dialog"
+text = "Auto-advance dialog"
 
 [node name="Spacer" type="Control" parent="VBoxContainer/HBoxAutoskip" unique_id=1676654783]
 custom_minimum_size = Vector2(10, 0)
@@ -124,6 +126,29 @@ layout_mode = 2
 
 [node name="AutoSkipCheckBox" type="CheckBox" parent="VBoxContainer/HBoxAutoskip" unique_id=668336837]
 layout_mode = 2
+
+[node name="Spacer2" type="Control" parent="VBoxContainer" unique_id=1499812797]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 2
+
+[node name="AutoAdvanceDelay" type="VBoxContainer" parent="VBoxContainer" unique_id=398826080]
+layout_mode = 2
+
+[node name="AutoSkipDelay" type="Label" parent="VBoxContainer/AutoAdvanceDelay" unique_id=831655227]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_l8xgo")
+theme_override_font_sizes/font_size = 25
+text = "Auto-advance delay"
+
+[node name="TextAdvanceDelayHSlider" type="HSlider" parent="VBoxContainer/AutoAdvanceDelay" unique_id=1692553732]
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("6_h8hh0")
+theme_override_icons/grabber_highlight = ExtResource("7_t5ld7")
+theme_override_icons/grabber_disabled = ExtResource("8_e46pd")
+min_value = 0.1
+max_value = 1.0
+step = 0.1
+value = 0.5
 
 [node name="Title" type="Label" parent="." unique_id=756095817]
 anchors_preset = 5

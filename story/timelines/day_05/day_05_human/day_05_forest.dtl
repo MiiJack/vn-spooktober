@@ -4,12 +4,22 @@ Shateroo, forest.
 [background arg="res://assets/backgrounds/Forest_day.png" fade="0.0"]
 audio music "res://assets/audio/music/Placeholder/FlowersAndHoneyBee_1.wav" [loop="true"]
 audio BGS "res://assets/audio/sfx/Forest - sound.wav" [loop="true"]
-Narrator: Simon is standing beside an old tree, looking at whatever is on the ground. Catherine approaches slowly until Simon notices her.
-[wait time="1.0"]
-join Simon center
-Simon: Oh, I didn’t see you there. Are you leaving Shateroo? You look like someone is preparing to leave.
-catherine: I don’t know. I don’t know anything anymore.
-Simon: I hope you have found what you came for.
+if {CharaMeeting.meet_simon} == false:
+	Narrator: Someone is standing beside an old tree, looking at whatever is on the ground. Catherine approaches slowly until he notices her.
+	[wait time="1.0"]
+	join Simon (Simon_normal) center
+	Simon (Simon_surprised): Oh, I didn’t see you there. My name is Simon.
+	catherine: Oh, nice to meet you, Simon.
+	Simon (Simon_talking): You aren't new to Shateroo, right? I've seen you around even if we didn't talk.
+	catherine: Yes, I've been here for a few days already. I was searching for something but I think I will be leaving soon.
+	set {CharaMeeting.meet_simon} = true
+else:
+	Narrator: Simon is standing beside an old tree, looking at whatever is on the ground. Catherine approaches slowly until Simon notices her.
+	[wait time="1.0"]
+	join Simon (Simon_normal) center
+	Simon (Simon_surprised): Oh, I didn’t see you there. Are you leaving Shateroo? You look like someone is preparing to leave.
+	catherine: I don’t know. I don’t know anything anymore.
+Simon (Simon_talking): I hope you have found what you came for.
 catherine: I found it but it wasn't enough. I wish I had more time to figure things out.
 - Ask Simon whether wanting more is selfish
 	catherine: Is it selfish to want more time? Even when you know you cannot have it?

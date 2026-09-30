@@ -140,7 +140,7 @@ theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = ExtResource("3_bxmmq")
 theme_override_styles/pressed = ExtResource("5_egmap")
 theme_override_styles/hover = ExtResource("6_jbvyk")
-text = "Close"
+text = "Continue"
 
 [node name="ButtonSFX" type="AudioStreamPlayer" parent="." unique_id=372918776]
 stream = ExtResource("4_7g4mk")

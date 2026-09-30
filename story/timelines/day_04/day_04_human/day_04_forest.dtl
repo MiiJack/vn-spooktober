@@ -6,9 +6,9 @@ audio music "res://assets/audio/music/Town_road_bgm.wav" [loop="true"]
 audio BGS "res://assets/audio/sfx/Forest - sound.wav" [loop="true"]
 join Vlad center
 if {CharaMeeting.meet_vlad} == false:
-	Vlad (Vlad_happy): Hi, I am Vlad. We haven't met before but I heard a lot of things about you.
-	Vlad (Vlad_happy): You are searching for a monster in this town, right ?
-	Vlad (Vlad_normal): Did you find it ?
+	Vlad (Vlad_happy): Hi, I am Vlad. We haven't met before, but I heard a lot of things about you.
+	Vlad (Vlad_happy): You are searching for a monster in this town, right?
+	Vlad (Vlad_normal): Did you find it?
 	set {CharaMeeting.meet_vlad} = true
 else:
 	Vlad (Vlad_happy): H-hi, you... Did you find what you were looking for?

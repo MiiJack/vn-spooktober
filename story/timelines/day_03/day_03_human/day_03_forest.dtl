@@ -5,11 +5,11 @@ Shateroo, forest.
 audio BGS "res://assets/audio/sfx/Forest - sound.wav" [loop="true"]
 audio music "res://assets/audio/music/Town_road_bgm.wav"
 if {CharaMeeting.meet_vlad} == false:
-	Narrator: Near the trees in the forest, a thin weird man sits alone.
+	Narrator: Near the trees in the forest, a weird man sits alone.
 	join Vlad (Vlad_normal) center
-	catherine: Um, hello. Sorry to bother you ?
+	catherine: Um, hello. Sorry, I don't want to bother you. Do you mind if I sit here?
 	Vlad (Vlad_confused): Oh. Um. N-no, not really, I am Vlad. But who are you? I've never seen you around town.
-	Vlad (Vlad_confused): And what are you doing here ?
+	Vlad (Vlad_confused): And what are you doing here?
 	set {CharaMeeting.meet_vlad} = true
 else:
 	join Vlad (Vlad_normal) center

@@ -1,8 +1,12 @@
 [background arg="res://assets/backgrounds/BlackBaground.png" fade="1.0" wait="true"]
 Shateroo, town center.
 [background arg="res://assets/backgrounds/town_center_day_2.png" fade="0.0"]
-Narrator: The old woman is feeding the pigeons. Catherine stops beside her.
-join Old_woman center
+if {CharaMeeting.meet_old_woman} == false:
+	Narrator: An old woman is feeding the pigeons. Catherine stops beside her.
+	set {CharaMeeting.meet_old_woman} = true
+else:
+	Narrator: The old woman is feeding the pigeons. Catherine stops beside her.
+join Old_woman (Old_woman_normal) center
 Old_woman (Old_woman_confused): Leaving today, are you?
 catherine: Yes. I have seen what I wanted to see. I don’t think there is anything for me here anymore.
 - Say goodbye warmly
